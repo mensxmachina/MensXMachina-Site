@@ -1,0 +1,98 @@
+[
+  {
+    "id": "tsamardinos",
+    "name": "Prof. Ioannis Tsamardinos",
+    "role": "Principal Investigator",
+    "group": "faculty",
+    "photo": "photos/tsamardinos.jpg",
+    "email": "tsamard.it@gmail.com",
+    "url": "https://www.csd.uoc.gr/~tsamard/",
+    "bio": "Professor at the Department of Computer Science, University of Crete. Research interests: causal discovery, AutoML, bioinformatics, machine learning.",
+    "initials": "IT",
+    "color": "#c0392b"
+  },
+  {
+    "id": "triantafillou",
+    "name": "Prof. Sofia Triantafillou",
+    "role": "Faculty",
+    "group": "faculty",
+    "photo": "photos/triantafillou.jpg",
+    "email": "striant4fillou@gmail.com",
+    "url": "#",
+    "bio": "Research interests: causal reasoning, graphical models, and machine learning.",
+    "initials": "ST",
+    "color": "#2980b9"
+  },
+  {
+    "id": "christophides",
+    "name": "Prof. Vassilis Christophides",
+    "role": "Faculty",
+    "group": "faculty",
+    "photo": "photos/christophides.jpg",
+    "email": "",
+    "url": "#",
+    "bio": "Research interests: data management, knowledge graphs, anomaly detection.",
+    "initials": "VC",
+    "color": "#8e44ad"
+  },
+  {
+    "id": "fotopoulos",
+    "name": "John Fotopoulos",
+    "role": "Technical Staff",
+    "group": "staff",
+    "photo": "photos/fotopoulos.jpg",
+    "email": "",
+    "url": "#",
+    "bio": "Technical staff, Department of Computer Science, University of Crete.",
+    "initials": "JF",
+    "color": "#27ae60"
+  },
+  {
+    "id": "myrtakis",
+    "name": "Nikos Myrtakis",
+    "role": "PhD Student",
+    "group": "phd",
+    "photo": "photos/myrtakis.jpg",
+    "email": "",
+    "url": "#",
+    "bio": "PhD student, Department of Computer Science, University of Crete. Research: anomaly detection, data management.",
+    "initials": "NM",
+    "color": "#e67e22"
+  },
+  {
+    "id": "papoutsoglou",
+    "name": "Georgios Papoutsoglou",
+    "role": "PhD Student",
+    "group": "phd",
+    "photo": "photos/papoutsoglou.jpg",
+    "email": "",
+    "url": "#",
+    "bio": "PhD student, Department of Computer Science, University of Crete. Research: bioinformatics, AutoML.",
+    "initials": "GP",
+    "color": "#1abc9c"
+  },
+  {
+    "id": "biza",
+    "name": "Konstantina Biza",
+    "role": "PhD Student",
+    "group": "phd",
+    "photo": "photos/biza.jpg",
+    "email": "",
+    "url": "#",
+    "bio": "PhD student, Department of Computer Science, University of Crete. 2024 Excellence Award recipient.",
+    "initials": "KB",
+    "color": "#9b59b6"
+  },
+  {
+    "id": "ntroumpogiannis",
+    "name": "Antonios Ntroumpogiannis",
+    "role": "PhD Student",
+    "group": "phd",
+    "photo": "photos/ntroumpogiannis.jpg",
+    "email": "",
+    "url": "#",
+    "bio": "PhD student, Department of Computer Science, University of Crete. Research: online anomaly detection.",
+    "initials": "AN",
+    "color": "#2ecc71"
+  }
+]

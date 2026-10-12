@@ -1,0 +1,90 @@
+[
+  {
+    "id": "proj-001",
+    "title": "CAUSALPATH",
+    "subtitle": "ERC Grant — Causal Discovery from Biological Pathways",
+    "status": "current",
+    "period": "2022 – 2026",
+    "funder": "European Research Council (ERC)",
+    "description": "Development of next-generation causal analysis methods inspired by the induction of biological pathways from cytometry data. The project aims to bridge causal discovery and biological pathway analysis.",
+    "url": "#",
+    "tags": ["Causal Discovery", "Bioinformatics", "ERC"]
+  },
+  {
+    "id": "proj-002",
+    "title": "JADBio AutoML Platform",
+    "subtitle": "Automated Machine Learning for Biomedical Data",
+    "status": "current",
+    "period": "2020 – ongoing",
+    "funder": "Industry / Spin-off",
+    "description": "A fully automated machine learning platform designed for biomedical researchers with no programming background. Supports classification, regression, and survival analysis on omics and clinical data.",
+    "url": "https://jadbio.com",
+    "tags": ["AutoML", "Biomedical", "Software"]
+  },
+  {
+    "id": "proj-003",
+    "title": "ML4Microbiome",
+    "subtitle": "Machine Learning for Human Microbiome Studies",
+    "status": "current",
+    "period": "2021 – 2025",
+    "funder": "COST Action",
+    "description": "A COST Action network focusing on the application of machine learning methods to human microbiome research, covering feature selection, biomarker identification, disease prediction, and treatment.",
+    "url": "#",
+    "tags": ["Machine Learning", "Microbiome", "COST Action"]
+  },
+  {
+    "id": "proj-004",
+    "title": "Lung & Mesothelioma Cancer Screening",
+    "subtitle": "Blood test for early detection in high-risk individuals",
+    "status": "current",
+    "period": "2020 – 2025",
+    "funder": "National / EU Funding",
+    "description": "Development of a blood test for screening of smokers and asbestos-exposed individuals to detect lung cancer and mesothelioma at an early, curable stage using liquid biopsy and AutoML.",
+    "url": "#",
+    "tags": ["Cancer", "Liquid Biopsy", "Biomarkers"]
+  },
+  {
+    "id": "proj-005",
+    "title": "BioDataome",
+    "subtitle": "Uniform Preprocessing of Public Genomic Datasets",
+    "status": "past",
+    "period": "2017 – 2021",
+    "funder": "FORTH / University of Crete",
+    "description": "Creation of a large database of uniformly preprocessed and disease-annotated genomic and epigenomic data. Currently includes 7,345 datasets spanning 847 diseases, enabling large-scale meta-analysis.",
+    "url": "http://dataome.mensxmachina.org/",
+    "tags": ["Bioinformatics", "Database", "Genomics"]
+  },
+  {
+    "id": "proj-006",
+    "title": "ETIA — End-to-end Causal Analysis",
+    "subtitle": "Automated causal discovery pipeline",
+    "status": "past",
+    "period": "2018 – 2022",
+    "funder": "University of Crete",
+    "description": "Development of ETIA, a comprehensive automated causal discovery pipeline that handles preprocessing, causal graph learning, and causal effect estimation in an end-to-end fashion.",
+    "url": "#",
+    "tags": ["Causal Discovery", "AutoML", "Software"]
+  },
+  {
+    "id": "proj-007",
+    "title": "DIADEx",
+    "subtitle": "Predictive Explanation of Data Anomalies",
+    "status": "past",
+    "period": "2019 – 2022",
+    "funder": "Huawei / FORTH",
+    "description": "Research and development of methods for predictive explanation of data anomalies, resulting in a best paper award at BDA 2021. Produced the DIADEx software tool.",
+    "url": "#",
+    "tags": ["Anomaly Detection", "Explainability", "Industry"]
+  },
+  {
+    "id": "proj-008",
+    "title": "T2DM Liquid Biopsy Biosignatures",
+    "subtitle": "Machine learning for Type 2 Diabetes diagnosis",
+    "status": "past",
+    "period": "2019 – 2022",
+    "funder": "Clinical Collaboration",
+    "description": "Application of AutoML to identify circulating cell-free DNA methylation signatures for accurate diagnosis and monitoring of Type 2 Diabetes Mellitus, achieving AUC of 0.927.",
+    "url": "#",
+    "tags": ["Diabetes", "Liquid Biopsy", "AutoML"]
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "id": "news-001",
+    "date": "2024-06-25",
+    "title": "The Excellence Award \"Professor Zoe Dimitriadis Prize\" to Konstantina Biza",
+    "excerpt": "The University of Crete announces the awarding of the \"Professor Zoe Dimitriadis Prize for Excellence\" for the academic year 2022–2023, granted to postgraduate member of our laboratory Konstantina Biza.",
+    "category": "awards",
+    "link": "#"
+  },
+  {
+    "id": "news-002",
+    "date": "2022-06-22",
+    "title": "Prof. Tsamardinos awarded the European Research Council Proof of Concept grant 2021",
+    "excerpt": "The European Research Council Proof of Concept was awarded to Professor Tsamardinos in 2021, recognizing outstanding work in causal machine learning.",
+    "category": "awards",
+    "link": "#"
+  },
+  {
+    "id": "news-003",
+    "date": "2022-06-22",
+    "title": "Best paper award from the 37th BDA 2021 conference — \"On Predictive Explanation of Data Anomalies\"",
+    "excerpt": "Best paper award from the 37th BDA 2021 conference in the National French conference on Data Management. Authors: Myrtakis N., Tsamardinos I., Christophides V.",
+    "category": "awards",
+    "link": "#"
+  },
+  {
+    "id": "news-004",
+    "date": "2019-07-18",
+    "title": "Open positions available — Calls for Expression of Interest",
+    "excerpt": "Several contractual positions are open at the MensXMachina research group. Our group is highly multi-disciplinary focusing on data analysis and machine learning with an emphasis on biomedical data.",
+    "category": "positions",
+    "link": "#"
+  }
+]
