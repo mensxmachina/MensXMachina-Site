@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>mens X machina</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Raleway:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --blue:   #1a4a7a;   /* primary accent — dark blue */
+      --blue2:  #1d5491;   /* slightly lighter for hover states */
+      --blue3:  #e8f0f9;   /* very light blue tint for backgrounds */
+      --dark:   #1a2433;   /* near-black with blue tint */
+      --mid:    #4a5568;
+      --light:  #7a8899;
+      --border: #dce6f0;
+      --bg:     #f0f5fb;   /* light blue-tinted background */
+      --white:  #fff;
+      --accent: #1a6eb5;
+    }
+    body { font-family: 'Open Sans', sans-serif; font-size: 14px; color: var(--dark); background: var(--white); line-height: 1.6; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; color: var(--blue); }
+
+    /* TOP BAR */
+    #topbar { background: var(--dark); color: #9aadbe; font-size: 12px; padding: 6px 0; }
+    #topbar .inner { max-width: 1100px; margin: 0 auto; padding: 0 20px; display: flex; justify-content: flex-end; gap: 16px; }
+    #topbar a { color: #9aadbe; } #topbar a:hover { color: #fff; text-decoration: none; }
+
+    /* HEADER */
+    #header { background: var(--white); border-bottom: 3px solid var(--blue); padding: 18px 0; }
+    #header .inner { max-width: 1100px; margin: 0 auto; padding: 0 20px; display: flex; align-items: center; justify-content: space-between; }
+    #logo .name { font-family: 'Raleway', sans-serif; font-weight: 800; font-size: 32px; color: var(--dark); letter-spacing: -1px; }
+    #logo .name span { color: var(--blue); }
+    #logo .tagline { font-size: 11px; color: var(--light); letter-spacing: 2px; text-transform: uppercase; margin-top: 2px; }
+    #header-logos { display: flex; align-items: center; gap: 20px; }
+    .inst-badge { text-align: center; font-size: 11px; color: #888; line-height: 1.3; }
+    .inst-badge strong { display: block; font-size: 13px; color: #444; }
+    .inst-divider { width: 1px; height: 40px; background: #ddd; }
+
+    /* NAV */
+    #nav { background: var(--dark); }
+    #nav .inner { max-width: 1100px; margin: 0 auto; padding: 0 20px; display: flex; }
+    #nav ul { list-style: none; display: flex; }
+    #nav ul li { position: relative; }
+    #nav ul li > a { display: block; color: #b0c4d8; padding: 14px 18px; font-size: 13px; font-weight: 600; letter-spacing: 0.5px; text-transform: uppercase; transition: background .2s, color .2s; }
+    #nav ul li > a:hover, #nav ul li.active > a { background: var(--blue); color: #fff; text-decoration: none; }
+    #nav ul li ul { display: none; position: absolute; top: 100%; left: 0; background: #243447; min-width: 200px; z-index: 100; flex-direction: column; }
+    #nav ul li:hover ul { display: flex; }
+    #nav ul li ul li a { padding: 10px 16px; font-size: 12px; text-transform: none; font-weight: 400; color: #b0c4d8; white-space: nowrap; border-bottom: 1px solid #344d63; }
+    #nav ul li ul li a:hover { background: var(--blue); color: #fff; }
+
+    /* HERO */
+    #hero { position: relative; height: 420px; overflow: hidden; background: #0d1f33; }
+    .slide { position: absolute; inset: 0; display: flex; align-items: center; opacity: 0; transition: opacity .8s; }
+    .slide:nth-child(1) { background: linear-gradient(135deg,#0d1f33,#1a4a7a); }
+    .slide:nth-child(2) { background: linear-gradient(135deg,#0d2137,#1d5491); }
+    .slide:nth-child(3) { background: linear-gradient(135deg,#0a1628,#153d6b); }
+    .slide.active { opacity: 1; }
+    .slide-overlay { position: absolute; inset: 0; background: linear-gradient(135deg,rgba(0,0,0,.6) 0%,rgba(0,0,0,.2) 100%); }
+    .slide-deco { position: absolute; right: 80px; top: 50%; transform: translateY(-50%); opacity: .12; z-index: 1; }
+    .slide-content { position: relative; z-index: 2; max-width: 1100px; margin: 0 auto; padding: 0 20px; color: #fff; }
+    .slide-content h2 { font-family: 'Raleway', sans-serif; font-size: 38px; font-weight: 700; line-height: 1.2; margin-bottom: 14px; text-shadow: 0 2px 8px rgba(0,0,0,.5); max-width: 600px; }
+    .slide-content p { font-size: 15px; line-height: 1.7; max-width: 520px; color: rgba(255,255,255,.85); margin-bottom: 20px; }
+    .btn { display: inline-block; background: var(--blue); color: #fff; padding: 10px 24px; font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; transition: background .2s; }
+    .btn:hover { background: var(--blue2); text-decoration: none; color: #fff; }
+    .slider-dots { position: absolute; bottom: 18px; left: 50%; transform: translateX(-50%); display: flex; gap: 8px; z-index: 10; }
+    .dot { width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,.35); cursor: pointer; transition: background .3s; }
+    .dot.active { background: var(--blue2); }
+
+    /* BREADCRUMB */
+    #breadcrumb { background: var(--bg); border-bottom: 1px solid var(--border); padding: 8px 0; font-size: 12px; color: var(--light); }
+    #breadcrumb .inner { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+    #breadcrumb a { color: var(--mid); } #breadcrumb span { color: var(--blue); }
+
+    /* LAYOUT */
+    #main { max-width: 1100px; margin: 36px auto; padding: 0 20px; display: grid; grid-template-columns: 1fr 300px; gap: 36px; }
+
+    /* SECTION TITLES */
+    .section-title { font-family: 'Raleway', sans-serif; font-size: 20px; font-weight: 700; color: var(--dark); border-bottom: 3px solid var(--blue); padding-bottom: 10px; margin-bottom: 24px; text-transform: uppercase; letter-spacing: .5px; }
+
+    /* TABS */
+    .tabs { display: flex; border-bottom: 2px solid var(--border); margin-bottom: 20px; }
+    .tab-btn { padding: 10px 20px; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .5px; color: var(--mid); background: none; border: none; cursor: pointer; border-bottom: 2px solid transparent; margin-bottom: -2px; transition: color .2s; }
+    .tab-btn.active { color: var(--blue); border-bottom-color: var(--blue); }
+    .tab-content { display: none; } .tab-content.active { display: block; }
+
+    /* PROJECTS SLIDER */
+    .proj-slider-wrap {
+      position: relative;
+      margin-bottom: 32px;
+    }
+    .proj-slider-label {
+      font-family: 'Raleway', sans-serif;
+      font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px;
+      color: var(--white);
+      padding: 6px 14px;
+      display: inline-block;
+      margin-bottom: 12px;
+    }
+    .label-current { background: var(--blue); }
+    .label-past    { background: #5a6e84; }
+
+    .proj-viewport { overflow: hidden; }
+    .proj-track {
+      display: flex;
+      gap: 16px;
+      transition: transform .4s cubic-bezier(.25,.46,.45,.94);
+      will-change: transform;
+    }
+    .project-card {
+      flex: 0 0 calc(50% - 8px);   /* 2 cards visible */
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-top: 3px solid var(--blue);
+      padding: 20px 18px 16px;
+      position: relative;
+      box-shadow: 0 2px 8px rgba(26,74,122,.06);
+      transition: box-shadow .2s;
+    }
+    .proj-slider-wrap.past .project-card { border-top-color: #8a9daf; }
+    .project-card:hover { box-shadow: 0 6px 22px rgba(26,74,122,.14); }
+    .project-card h4 {
+      font-family: 'Raleway', sans-serif; font-size: 14px; font-weight: 700;
+      color: var(--dark); margin-bottom: 3px; padding-right: 52px; line-height: 1.3;
+    }
+    .project-card .proj-subtitle { font-size: 12px; color: var(--blue); font-weight: 600; margin-bottom: 10px; }
+    .proj-slider-wrap.past .project-card .proj-subtitle { color: #5a6e84; }
+    .project-card p { font-size: 12px; color: var(--mid); line-height: 1.6; margin-bottom: 10px; }
+    .proj-meta { display: flex; flex-wrap: wrap; gap: 10px; font-size: 11px; color: var(--light); margin-bottom: 8px; }
+    .proj-period::before { content: '📅 '; }
+    .proj-funder::before { content: '🏛 '; }
+    .proj-tags { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 8px; }
+    .proj-tag {
+      background: var(--blue3); color: var(--blue); font-size: 10px; font-weight: 700;
+      padding: 2px 8px; text-transform: uppercase; letter-spacing: .5px; border: 1px solid #c5d9ef;
+    }
+    .proj-slider-wrap.past .proj-tag { background: #eef0f3; color: #5a6e84; border-color: #d0d8e0; }
+    .proj-link { font-size: 12px; color: var(--blue); font-weight: 600; display: inline-block; margin-top: 8px; }
+    .proj-link:hover { color: var(--dark); }
+
+    /* nav arrows + dots */
+    .proj-nav {
+      display: flex; align-items: center; justify-content: space-between;
+      margin-top: 14px;
+    }
+    .proj-dots { display: flex; gap: 6px; }
+    .proj-dot {
+      width: 8px; height: 8px; border-radius: 50%;
+      background: var(--border); cursor: pointer; transition: background .25s;
+      border: none; padding: 0;
+    }
+    .proj-dot.active { background: var(--blue); }
+    .proj-slider-wrap.past .proj-dot.active { background: #5a6e84; }
+    .proj-arrows { display: flex; gap: 6px; }
+    .proj-arrow {
+      width: 32px; height: 32px; border-radius: 50%;
+      background: var(--bg); border: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: center;
+      cursor: pointer; font-size: 14px; color: var(--mid);
+      transition: background .2s, color .2s; line-height: 1;
+      user-select: none;
+    }
+    .proj-arrow:hover { background: var(--blue); color: #fff; border-color: var(--blue); }
+    .proj-slider-wrap.past .proj-arrow:hover { background: #5a6e84; border-color: #5a6e84; }
+    .proj-arrow:disabled { opacity: .35; cursor: default; pointer-events: none; }
+    .proj-counter { font-size: 11px; color: var(--light); font-weight: 600; }
+
+    .no-items { color: var(--light); font-size: 13px; font-style: italic; padding: 16px 0; }
+
+    /* NEWS */
+    .news-item { border-bottom: 1px solid var(--border); padding: 18px 0; display: flex; gap: 16px; }
+    .news-date { min-width: 70px; text-align: center; }
+    .news-date .day { display: block; font-size: 28px; font-weight: 700; color: var(--blue); line-height: 1; font-family: 'Raleway', sans-serif; }
+    .news-date .month-year { display: block; font-size: 11px; color: var(--light); text-transform: uppercase; letter-spacing: 1px; }
+    .news-body h3 { font-size: 14px; font-weight: 600; color: var(--dark); margin-bottom: 6px; line-height: 1.4; }
+    .news-body h3 a { color: var(--dark); } .news-body h3 a:hover { color: var(--blue); }
+    .news-body p { font-size: 13px; color: var(--mid); line-height: 1.6; }
+    .read-more { display: inline-block; margin-top: 6px; font-size: 12px; color: var(--blue); font-weight: 600; text-transform: uppercase; letter-spacing: .5px; }
+    .read-more:hover { text-decoration: none; color: var(--dark); }
+    .news-cat-badge { display: inline-block; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; padding: 2px 7px; margin-bottom: 6px; }
+    .cat-awards    { background: #d0eaff; color: #0d4a7a; }
+    .cat-positions { background: #d1f5e4; color: #0c5440; }
+    .cat-general   { background: #e2e8f0; color: #383d41; }
+
+    /* PUBLICATIONS */
+    .pub-item { padding: 12px 0; border-bottom: 1px solid var(--border); font-size: 13px; line-height: 1.6; }
+    .pub-year-badge { display: inline-block; background: var(--blue); color: #fff; font-size: 11px; padding: 1px 7px; font-weight: 700; margin-right: 6px; vertical-align: middle; }
+    .pub-title { font-weight: 600; color: var(--dark); }
+    .pub-meta { color: var(--light); font-size: 12px; margin-top: 3px; }
+    .pub-links { margin-top: 4px; }
+    .pub-links a { font-size: 11px; background: var(--bg); border: 1px solid var(--border); padding: 2px 8px; margin-right: 4px; color: var(--mid); font-weight: 600; display: inline-block; }
+    .pub-links a:hover { background: var(--blue); color: #fff; text-decoration: none; border-color: var(--blue); }
+    .pub-year-group { margin-top: 20px; }
+    .pub-year-header { font-family: 'Raleway', sans-serif; font-size: 16px; font-weight: 700; color: var(--blue); border-bottom: 1px solid var(--border); padding-bottom: 6px; margin-bottom: 4px; }
+    #pub-loading { color: var(--light); font-size: 13px; font-style: italic; padding: 12px 0; display: flex; align-items: center; gap: 8px; }
+    .spinner { width: 16px; height: 16px; border: 2px solid var(--border); border-top-color: var(--blue); border-radius: 50%; animation: spin .7s linear infinite; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    #pub-config { background: var(--blue3); border: 1px solid #c5d9ef; padding: 12px 16px; margin-bottom: 16px; font-size: 12px; color: #1a3a5c; border-radius: 2px; }
+    #pub-config code { background: rgba(26,74,122,.1); padding: 1px 5px; font-family: monospace; }
+
+    /* TEAM */
+    .team-filter { display: flex; gap: 8px; margin-bottom: 20px; flex-wrap: wrap; }
+    .filter-btn { padding: 5px 14px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .5px; color: var(--mid); background: var(--bg); border: 1px solid var(--border); cursor: pointer; transition: all .2s; }
+    .filter-btn.active, .filter-btn:hover { background: var(--blue); color: #fff; border-color: var(--blue); }
+    .team-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 18px; }
+    .team-card { text-align: center; transition: transform .2s; }
+    .team-card:hover { transform: translateY(-2px); }
+    .team-avatar-wrap { width: 90px; height: 90px; border-radius: 50%; margin: 0 auto 10px; overflow: hidden; border: 3px solid var(--border); transition: border-color .2s; position: relative; }
+    .team-card:hover .team-avatar-wrap { border-color: var(--blue); }
+    .team-avatar-wrap img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .team-avatar-fallback { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; font-size: 26px; color: #fff; font-weight: 700; font-family: 'Raleway', sans-serif; }
+    .team-card h4 { font-size: 12px; font-weight: 600; color: var(--dark); margin-bottom: 2px; line-height: 1.3; }
+    .team-card .role { font-size: 11px; color: var(--light); }
+    .team-card a.team-link { color: var(--dark); text-decoration: none; }
+    .team-card a.team-link:hover h4 { color: var(--blue); }
+
+    /* STATS */
+    #stats { background: var(--dark); padding: 30px 0; }
+    #stats .inner { max-width: 1100px; margin: 0 auto; padding: 0 20px; display: grid; grid-template-columns: repeat(4,1fr); gap: 20px; text-align: center; }
+    .stat-num { font-family: 'Raleway', sans-serif; font-size: 42px; font-weight: 800; color: #5ba3e0; line-height: 1; }
+    .stat-label { font-size: 12px; color: #7a9ab5; text-transform: uppercase; letter-spacing: 2px; margin-top: 6px; }
+
+    /* SIDEBAR */
+    .sidebar-widget { margin-bottom: 32px; }
+    .sidebar-title { font-family: 'Raleway', sans-serif; font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--white); background: var(--blue); padding: 10px 14px; }
+    .sidebar-body { background: var(--bg); padding: 16px 14px; border: 1px solid var(--border); border-top: none; }
+    .software-list { list-style: none; }
+    .software-list li { padding: 10px 0; border-bottom: 1px solid var(--border); display: flex; align-items: flex-start; gap: 8px; }
+    .software-list li::before { content: '▶'; color: var(--blue); font-size: 10px; margin-top: 4px; flex-shrink: 0; }
+    .software-list li a { font-weight: 600; font-size: 13px; color: var(--dark); }
+    .software-list li a:hover { color: var(--blue); }
+    .software-list small { display: block; color: var(--light); font-size: 11px; margin-top: 2px; }
+    .quick-links { list-style: none; }
+    .quick-links li { border-bottom: 1px solid var(--border); }
+    .quick-links li:last-child { border-bottom: none; }
+    .quick-links li a { display: flex; align-items: center; gap: 8px; padding: 9px 0; font-size: 13px; color: var(--dark); }
+    .quick-links li a::before { content: '›'; color: var(--blue); font-size: 18px; font-weight: 700; line-height: 1; }
+    .quick-links li a:hover { color: var(--blue); text-decoration: none; }
+    .affil-logos { display: flex; flex-direction: column; gap: 10px; }
+    .affil-logo-box { background: #fff; border: 1px solid var(--border); padding: 10px 14px; text-align: center; font-size: 12px; color: var(--mid); font-weight: 600; }
+    .affil-logo-box span { display: block; font-size: 10px; color: var(--light); font-weight: 400; margin-top: 2px; }
+    .contact-info p { font-size: 12px; color: var(--mid); line-height: 1.8; margin-bottom: 6px; }
+    .contact-info strong { color: var(--dark); }
+
+    /* FOOTER */
+    #footer { background: #111c27; color: #7a9ab5; padding: 40px 0 20px; }
+    #footer .inner { max-width: 1100px; margin: 0 auto; padding: 0 20px; display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px; }
+    #footer h4 { color: var(--white); font-family: 'Raleway', sans-serif; font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 1px solid #243447; }
+    #footer p, #footer li { font-size: 12px; line-height: 1.8; color: #6a8aa5; }
+    #footer ul { list-style: none; }
+    #footer ul li::before { content: '› '; color: #5ba3e0; }
+    #footer ul li a { color: #6a8aa5; } #footer ul li a:hover { color: #fff; text-decoration: none; }
+    .footer-bottom { max-width: 1100px; margin: 30px auto 0; padding: 16px 20px 0; border-top: 1px solid #243447; display: flex; justify-content: space-between; align-items: center; font-size: 11px; color: #3d5a73; }
+    .footer-logo { font-family: 'Raleway', sans-serif; font-size: 18px; font-weight: 800; color: #3d5a73; }
+    .footer-logo span { color: #5ba3e0; }
+
+    /* more link */
+    .more-link { font-size: 12px; color: var(--blue); font-weight: 600; text-transform: uppercase; letter-spacing: .5px; }
+    .more-link:hover { color: var(--dark); }
+
+    /* RESPONSIVE */
+    @media (max-width: 900px) {
+      #main { grid-template-columns: 1fr; }
+      .team-grid { grid-template-columns: repeat(3,1fr); }
+      .projects-grid { grid-template-columns: 1fr; }
+      #stats .inner { grid-template-columns: repeat(2,1fr); }
+      #footer .inner { grid-template-columns: 1fr; gap: 24px; }
+    }
+    @media (max-width: 600px) {
+      .team-grid { grid-template-columns: repeat(2,1fr); }
+      .slide-content h2 { font-size: 24px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div id="topbar">
+  <div class="inner">
+    <a href="#contact">Contact</a>
+    <a href="#">Greek</a>
+    <a href="#">English</a>
+  </div>
+</div>
+
+<!-- HEADER -->
+<div id="header">
+  <div class="inner">
+    <div id="logo">
+      <div class="name">mens <span>X</span> machina</div>
+      <div class="tagline">Machine Learning Research Group &nbsp;·&nbsp; University of Crete &amp; FORTH</div>
+    </div>
+    <div id="header-logos">
+      <div class="inst-badge"><strong>University<br>of Crete</strong></div>
+      <div class="inst-divider"></div>
+      <div class="inst-badge"><strong>FORTH</strong><br>IACM</div>
+    </div>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav id="nav">
+  <div class="inner">
+    <ul>
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">Research ▾</a>
+        <ul>
+          <li><a href="#">Causal Discovery</a></li>
+          <li><a href="#">AutoML</a></li>
+          <li><a href="#">Bioinformatics</a></li>
+          <li><a href="#">Feature Selection</a></li>
+        </ul>
+      </li>
+      <li><a href="#">People ▾</a>
+        <ul>
+          <li><a href="#">Faculty</a></li>
+          <li><a href="#">PhD Students</a></li>
+          <li><a href="#">Staff</a></li>
+          <li><a href="#">Alumni</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Publications ▾</a>
+        <ul>
+          <li><a href="#">Journals</a></li>
+          <li><a href="#">Conferences</a></li>
+          <li><a href="#">Books</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Software</a></li>
+      <li><a href="#">Projects ▾</a>
+        <ul>
+          <li><a href="#">Current Projects</a></li>
+          <li><a href="#">Past Projects</a></li>
+        </ul>
+      </li>
+      <li><a href="#">News</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- BREADCRUMB -->
+<div id="breadcrumb">
+  <div class="inner"><a href="#">Home</a> &rsaquo; <span>Welcome</span></div>
+</div>
+
+<!-- HERO -->
+<div id="hero">
+  <div class="slide active">
+    <svg class="slide-deco" width="300" height="300" viewBox="0 0 300 300">
+      <circle cx="150" cy="40" r="16" fill="rgba(255,255,255,.3)"/>
+      <circle cx="70" cy="120" r="12" fill="rgba(255,255,255,.2)"/>
+      <circle cx="230" cy="120" r="12" fill="rgba(255,255,255,.2)"/>
+      <circle cx="40" cy="220" r="10" fill="rgba(255,255,255,.15)"/>
+      <circle cx="150" cy="220" r="10" fill="rgba(255,255,255,.15)"/>
+      <circle cx="240" cy="220" r="10" fill="rgba(255,255,255,.15)"/>
+      <circle cx="150" cy="270" r="14" fill="rgba(255,255,255,.25)"/>
+      <line x1="150" y1="40" x2="70" y2="120" stroke="rgba(255,255,255,.2)" stroke-width="1.5"/>
+      <line x1="150" y1="40" x2="230" y2="120" stroke="rgba(255,255,255,.2)" stroke-width="1.5"/>
+      <line x1="70" y1="120" x2="40" y2="220" stroke="rgba(255,255,255,.15)" stroke-width="1"/>
+      <line x1="70" y1="120" x2="150" y2="220" stroke="rgba(255,255,255,.15)" stroke-width="1"/>
+      <line x1="230" y1="120" x2="150" y2="220" stroke="rgba(255,255,255,.15)" stroke-width="1"/>
+      <line x1="230" y1="120" x2="240" y2="220" stroke="rgba(255,255,255,.15)" stroke-width="1"/>
+      <line x1="40" y1="220" x2="150" y2="270" stroke="rgba(255,255,255,.15)" stroke-width="1"/>
+      <line x1="150" y1="220" x2="150" y2="270" stroke="rgba(255,255,255,.15)" stroke-width="1"/>
+      <line x1="240" y1="220" x2="150" y2="270" stroke="rgba(255,255,255,.15)" stroke-width="1"/>
+    </svg>
+    <div class="slide-overlay"></div>
+    <div class="slide-content">
+      <h2>Machine Learning &amp; Causal Discovery Research</h2>
+      <p>An internationally known academic research group at the University of Crete and FORTH, focusing on machine learning, causal analysis, bioinformatics, and AI applications.</p>
+      <a href="#" class="btn">Learn More</a>
+    </div>
+  </div>
+  <div class="slide">
+    <div class="slide-overlay"></div>
+    <div class="slide-content">
+      <h2>Automated Machine Learning &amp; Biomedical Applications</h2>
+      <p>We develop state-of-the-art AutoML methods and apply them to challenging biomedical problems — cancer screening, diabetes diagnosis, and multi-omics data analysis.</p>
+      <a href="#" class="btn">Our Research</a>
+    </div>
+  </div>
+  <div class="slide">
+    <div class="slide-overlay"></div>
+    <div class="slide-content">
+      <h2>Open Positions Available</h2>
+      <p>We are looking for talented, independent-thinking researchers, PhD and MSc students, and scientific developers. Join a highly multi-disciplinary and multi-national team.</p>
+      <a href="#" class="btn">Apply Now</a>
+    </div>
+  </div>
+  <div class="slider-dots">
+    <div class="dot active" onclick="goSlide(0)"></div>
+    <div class="dot" onclick="goSlide(1)"></div>
+    <div class="dot" onclick="goSlide(2)"></div>
+  </div>
+</div>
+
+<!-- MAIN -->
+<div id="main">
+  <div><!-- LEFT COLUMN -->
+
+    <!-- PROJECTS — two independent sliders -->
+    <div style="margin-bottom:36px">
+      <div class="section-title">Projects</div>
+
+      <!-- ① Current Projects slider -->
+      <div class="proj-slider-wrap" id="slider-current">
+        <div class="proj-slider-label label-current">Current Projects</div>
+        <div class="proj-viewport">
+          <div class="proj-track" id="track-current"></div>
+        </div>
+        <div class="proj-nav">
+          <div class="proj-dots" id="dots-current"></div>
+          <div style="display:flex;align-items:center;gap:12px">
+            <span class="proj-counter" id="counter-current"></span>
+            <div class="proj-arrows">
+              <button class="proj-arrow" id="prev-current" onclick="slideProj('current',-1)">&#8592;</button>
+              <button class="proj-arrow" id="next-current" onclick="slideProj('current', 1)">&#8594;</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ② Past Projects slider -->
+      <div class="proj-slider-wrap past" id="slider-past">
+        <div class="proj-slider-label label-past">Past Projects</div>
+        <div class="proj-viewport">
+          <div class="proj-track" id="track-past"></div>
+        </div>
+        <div class="proj-nav">
+          <div class="proj-dots" id="dots-past"></div>
+          <div style="display:flex;align-items:center;gap:12px">
+            <span class="proj-counter" id="counter-past"></span>
+            <div class="proj-arrows">
+              <button class="proj-arrow" id="prev-past" onclick="slideProj('past',-1)">&#8592;</button>
+              <button class="proj-arrow" id="next-past" onclick="slideProj('past', 1)">&#8594;</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- NEWS — loaded from data/news.json -->
+    <div style="margin-bottom:36px">
+      <div class="section-title">Recent News</div>
+      <div class="tabs">
+        <button class="tab-btn active" onclick="switchTab(this,'tab-all')">All News</button>
+        <button class="tab-btn" onclick="switchTab(this,'tab-awards')">Awards</button>
+        <button class="tab-btn" onclick="switchTab(this,'tab-positions')">Positions</button>
+      </div>
+      <div id="tab-all"       class="tab-content active"></div>
+      <div id="tab-awards"    class="tab-content"></div>
+      <div id="tab-positions" class="tab-content"></div>
+    </div>
+
+    <!-- PUBLICATIONS — fetched live from BibSonomy -->
+    <div style="margin-bottom:36px">
+      <div class="section-title">Recent Publications</div>
+
+      <div id="pub-loading"><div class="spinner"></div> Loading from BibSonomy…</div>
+      <div id="pub-list"></div>
+      <div style="text-align:right;margin-top:12px">
+        <a id="pub-more-link" href="#" class="more-link">View All Publications »</a>
+      </div>
+    </div>
+
+    <!-- TEAM — loaded from data/team.json -->
+    <div>
+      <div class="section-title">Our Team</div>
+      <div class="team-filter">
+        <button class="filter-btn active" onclick="filterTeam(this,'all')">All</button>
+        <button class="filter-btn" onclick="filterTeam(this,'faculty')">Faculty</button>
+        <button class="filter-btn" onclick="filterTeam(this,'phd')">PhD Students</button>
+        <button class="filter-btn" onclick="filterTeam(this,'staff')">Staff</button>
+      </div>
+      <div class="team-grid" id="team-grid"></div>
+      <div style="text-align:right;margin-top:16px">
+        <a href="#" class="more-link">View Full Team »</a>
+      </div>
+    </div>
+
+  </div><!-- /left column -->
+
+  <!-- SIDEBAR -->
+  <aside>
+    <div class="sidebar-widget">
+      <div class="sidebar-title">Our Software</div>
+      <div class="sidebar-body">
+        <ul class="software-list">
+          <li><div><a href="#">JADBio</a><small>AutoML platform for biomedical data</small></div></li>
+          <li><div><a href="#">ETIA</a><small>Automated causal discovery pipeline</small></div></li>
+          <li><div><a href="#">AutoCD</a><small>Causal discovery from large datasets</small></div></li>
+          <li><div><a href="#">BioDataome</a><small>7,345 uniformly preprocessed genomic datasets</small></div></li>
+          <li><div><a href="#">DIADEx</a><small>Predictive explanation of data anomalies</small></div></li>
+          <li><div><a href="#">MRPC</a><small>Causal graph learning with FDR control</small></div></li>
+        </ul>
+      </div>
+    </div>
+    <div class="sidebar-widget">
+      <div class="sidebar-title">Quick Links</div>
+      <div class="sidebar-body">
+        <ul class="quick-links">
+          <li><a href="#">Computer Science Dept., UoC</a></li>
+          <li><a href="#">FORTH — IACM</a></li>
+          <li><a href="#">JADBio Platform</a></li>
+          <li><a href="#">GitHub Repositories</a></li>
+          <li><a href="#">BibSonomy Profile</a></li>
+          <li><a href="#">Google Scholar</a></li>
+          <li><a href="#">Join Our Team</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="sidebar-widget">
+      <div class="sidebar-title">Affiliations</div>
+      <div class="sidebar-body">
+        <div class="affil-logos">
+          <div class="affil-logo-box">University of Crete<span>Department of Computer Science</span></div>
+          <div class="affil-logo-box">FORTH<span>Institute of Applied &amp; Computational Mathematics</span></div>
+          <div class="affil-logo-box">European Research Council<span>ERC Grant Holder</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="sidebar-widget" id="contact">
+      <div class="sidebar-title">Contact</div>
+      <div class="sidebar-body">
+        <div class="contact-info">
+          <p><strong>Prof. Ioannis Tsamardinos</strong></p>
+          <p>Department of Computer Science<br>University of Crete<br>Heraklion, Crete, Greece</p>
+          <p>📧 <a href="mailto:tsamard.it@gmail.com">tsamard.it@gmail.com</a></p>
+          <p style="margin-top:10px;font-size:11px;color:#9aadbe">Also affiliated with IACM, FORTH, Heraklion</p>
+        </div>
+      </div>
+    </div>
+  </aside>
+</div><!-- /main -->
+
+<!-- STATS -->
+<div id="stats">
+  <div class="inner">
+    <div><div class="stat-num" data-target="350">0</div><div class="stat-label">Publications</div></div>
+    <div><div class="stat-num" data-target="20">0</div><div class="stat-label">Team Members</div></div>
+    <div><div class="stat-num" data-target="30">0</div><div class="stat-label">Research Projects</div></div>
+    <div><div class="stat-num" data-target="15">0</div><div class="stat-label">Software Tools</div></div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer id="footer">
+  <div class="inner">
+    <div>
+      <h4>About mens X machina</h4>
+      <p>An internationally known academic research group at the Computer Science Department of the University of Crete, also affiliated with the Institute of Applied and Computational Mathematics of FORTH.</p>
+      <p style="margin-top:10px">Research focuses on machine learning, causal discovery, bioinformatics, and AI — with a strong emphasis on biomedical applications.</p>
+    </div>
+    <div>
+      <h4>Navigation</h4>
+      <ul>
+        <li><a href="#">Home</a></li><li><a href="#">Research</a></li><li><a href="#">People</a></li>
+        <li><a href="#">Publications</a></li><li><a href="#">Software</a></li>
+        <li><a href="#">Projects</a></li><li><a href="#">News</a></li><li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Research Topics</h4>
+      <ul>
+        <li><a href="#">Causal Discovery</a></li><li><a href="#">AutoML</a></li>
+        <li><a href="#">Bioinformatics</a></li><li><a href="#">Feature Selection</a></li>
+        <li><a href="#">Biomarker Discovery</a></li><li><a href="#">Anomaly Detection</a></li>
+        <li><a href="#">Multi-omics</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-logo">mens <span>X</span> machina</div>
+    <div>© 2024 MensXMachina Research Group — University of Crete &amp; FORTH</div>
+  </div>
+</footer>
+
+<script>
+/* ═══════════════════════════════════════════════
+   CONFIGURATION
+   ═══════════════════════════════════════════════ */
+const BIBSONOMY_USER = 'mensxmachina';   // ← your BibSonomy username
+const BIBSONOMY_APIKEY = 'b76c7b4cc60e51e3043db596fd9f7708';             // ← paste your API key here (Settings → API key)
+const PUB_LIMIT      = 8;
+
+/* ═══════════════════════════════════════════════
+   HERO SLIDER
+   ═══════════════════════════════════════════════ */
+let cur = 0;
+const slides = document.querySelectorAll('.slide');
+const dots   = document.querySelectorAll('.dot');
+function goSlide(n) {
+  slides[cur].classList.remove('active'); dots[cur].classList.remove('active');
+  cur = n;
+  slides[cur].classList.add('active'); dots[cur].classList.add('active');
+}
+setInterval(() => goSlide((cur + 1) % slides.length), 5000);
+
+/* ═══════════════════════════════════════════════
+   TABS (shared helper)
+   ═══════════════════════════════════════════════ */
+function switchTab(btn, id) {
+  // only affect siblings in the same tab group
+  const tabs = btn.closest('.tabs');
+  tabs.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  // find sibling tab-contents (next siblings of the tabs element)
+  let el = tabs.nextElementSibling;
+  while (el && el.classList.contains('tab-content')) {
+    el.classList.remove('active');
+    el = el.nextElementSibling;
+  }
+  document.getElementById(id).classList.add('active');
+}
+
+/* ═══════════════════════════════════════════════
+   PROJECTS — two independent sliders
+   ═══════════════════════════════════════════════ */
+
+// State for each slider
+const sliderState = {
+  current: { index: 0, total: 0, perPage: 2 },
+  past:    { index: 0, total: 0, perPage: 2 }
+};
+
+function projectCardHTML(p) {
+  const tags = (p.tags || []).map(t => `<span class="proj-tag">${t}</span>`).join('');
+  const link = p.url && p.url !== '#'
+    ? `<a class="proj-link" href="${p.url}" target="_blank">View Project →</a>` : '';
+  return `
+    <div class="project-card">
+      <h4>${p.title}</h4>
+      <div class="proj-subtitle">${p.subtitle}</div>
+      <div class="proj-meta">
+        <span class="proj-period">${p.period}</span>
+        <span class="proj-funder">${p.funder}</span>
+      </div>
+      <p>${p.description}</p>
+      ${tags ? `<div class="proj-tags">${tags}</div>` : ''}
+      ${link}
+    </div>`;
+}
+
+function initSlider(key, items) {
+  const track   = document.getElementById(`track-${key}`);
+  const dotsEl  = document.getElementById(`dots-${key}`);
+  const counter = document.getElementById(`counter-${key}`);
+  const state   = sliderState[key];
+
+  if (!items.length) {
+    track.innerHTML = `<p class="no-items" style="padding:16px 0">No ${key} projects listed.</p>`;
+    document.getElementById(`prev-${key}`).disabled = true;
+    document.getElementById(`next-${key}`).disabled = true;
+    return;
+  }
+
+  // Render all cards into the track
+  track.innerHTML = items.map(projectCardHTML).join('');
+
+  // Figure out how many "pages" (groups of 2)
+  const cards = track.querySelectorAll('.project-card');
+  state.total = Math.ceil(cards.length / state.perPage);
+
+  // Build dots
+  dotsEl.innerHTML = '';
+  for (let i = 0; i < state.total; i++) {
+    const d = document.createElement('button');
+    d.className = 'proj-dot' + (i === 0 ? ' active' : '');
+    d.setAttribute('aria-label', `Page ${i+1}`);
+    d.onclick = () => goToPage(key, i);
+    dotsEl.appendChild(d);
+  }
+
+  updateSlider(key);
+}
+
+function updateSlider(key) {
+  const track   = document.getElementById(`track-${key}`);
+  const dotsEl  = document.getElementById(`dots-${key}`);
+  const counter = document.getElementById(`counter-${key}`);
+  const state   = sliderState[key];
+
+  // Card width = half track width minus half gap
+  const cardW   = track.parentElement.offsetWidth;
+  const offset  = state.index * (cardW + 16); // 16 = gap
+  // Each "page" = perPage cards. Translate by page index * (cardW + gap)
+  // Since each card is calc(50%-8px) of the viewport, one page = full viewport width
+  track.style.transform = `translateX(-${state.index * (cardW + 16)}px)`;
+
+  // Update dots
+  dotsEl.querySelectorAll('.proj-dot').forEach((d, i) => {
+    d.classList.toggle('active', i === state.index);
+  });
+
+  // Counter
+  counter.textContent = `${state.index + 1} / ${state.total}`;
+
+  // Arrow states
+  document.getElementById(`prev-${key}`).disabled = state.index === 0;
+  document.getElementById(`next-${key}`).disabled = state.index === state.total - 1;
+}
+
+function slideProj(key, dir) {
+  const state = sliderState[key];
+  const next  = state.index + dir;
+  if (next < 0 || next >= state.total) return;
+  state.index = next;
+  updateSlider(key);
+}
+
+function goToPage(key, i) {
+  sliderState[key].index = i;
+  updateSlider(key);
+}
+
+async function loadProjects() {
+  try {
+    const r = await fetch('data/projects.json');
+    const projects = await r.json();
+    const curr = projects.filter(p => p.status === 'current');
+    const past = projects.filter(p => p.status === 'past');
+    initSlider('current', curr);
+    initSlider('past',    past);
+  } catch(e) {
+    ['current','past'].forEach(key => {
+      document.getElementById(`track-${key}`).innerHTML =
+        '<p class="no-items">Could not load projects. Serve via a web server, not file://.</p>';
+    });
+  }
+}
+
+// Recalculate slider position on resize
+window.addEventListener('resize', () => {
+  ['current','past'].forEach(key => {
+    if (sliderState[key].total > 0) updateSlider(key);
+  });
+});
+
+/* ═══════════════════════════════════════════════
+   NEWS — from data/news.json
+   ═══════════════════════════════════════════════ */
+const MONTHS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+
+function newsItemHTML(item) {
+  const d   = new Date(item.date);
+  const day = d.getDate();
+  const mon = MONTHS[d.getMonth()];
+  const yr  = d.getFullYear();
+  const cat = item.category || 'general';
+  const catLabel = { awards:'Awards', positions:'Positions', general:'News' }[cat] || cat;
+  return `
+    <div class="news-item">
+      <div class="news-date">
+        <span class="day">${String(day).padStart(2,'0')}</span>
+        <span class="month-year">${mon} ${yr}</span>
+      </div>
+      <div class="news-body">
+        <span class="news-cat-badge cat-${cat}">${catLabel}</span>
+        <h3><a href="${item.link || '#'}">${item.title}</a></h3>
+        <p>${item.excerpt}</p>
+        <a class="read-more" href="${item.link || '#'}">Read More »</a>
+      </div>
+    </div>`;
+}
+
+async function loadNews() {
+  try {
+    const r = await fetch('data/news.json');
+    const items = await r.json();
+    items.sort((a,b) => new Date(b.date) - new Date(a.date));
+
+    const all = document.getElementById('tab-all');
+    const awd = document.getElementById('tab-awards');
+    const pos = document.getElementById('tab-positions');
+
+    if (!items.length) { all.innerHTML = '<p class="no-items">No news items yet.</p>'; return; }
+
+    items.forEach(item => {
+      const html = newsItemHTML(item);
+      all.innerHTML += html;
+      if (item.category === 'awards')    awd.innerHTML += html;
+      if (item.category === 'positions') pos.innerHTML += html;
+    });
+
+    if (!awd.innerHTML) awd.innerHTML = '<p class="no-items">No award news yet.</p>';
+    if (!pos.innerHTML) pos.innerHTML = '<p class="no-items">No open positions at the moment.</p>';
+  } catch(e) {
+    document.getElementById('tab-all').innerHTML =
+      '<p class="no-items">Could not load news. Serve via a web server (not file://).</p>';
+  }
+}
+
+/* ═══════════════════════════════════════════════
+   TEAM — from data/team.json
+   ═══════════════════════════════════════════════ */
+let allMembers = [];
+
+function shiftColor(hex) {
+  const map = {'#1a4a7a':'#1d5491','#1d5491':'#27ae60','#155b9e':'#1a4a7a',
+                '#27ae60':'#1a6eb5','#1a6eb5':'#155b9e','#0d3d6b':'#1d5491'};
+  return map[hex] || '#1d5491';
+}
+
+function teamCardHTML(m) {
+  const photoTag = m.photo
+    ? `<img src="${m.photo}" alt="${m.name}" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">` : '';
+  const fbDisplay = m.photo ? 'none' : 'flex';
+  const color2 = shiftColor(m.color || '#1a4a7a');
+  return `
+    <div class="team-card" data-group="${m.group}">
+      <a class="team-link" href="${m.url||'#'}" ${m.url&&m.url!=='#'?'target="_blank"':''}>
+        <div class="team-avatar-wrap">
+          ${photoTag}
+          <div class="team-avatar-fallback"
+               style="background:linear-gradient(135deg,${m.color||'#1a4a7a'},${color2});display:${fbDisplay}">
+            ${m.initials}
+          </div>
+        </div>
+        <h4>${m.name}</h4>
+      </a>
+      <div class="role">${m.role}</div>
+    </div>`;
+}
+
+async function loadTeam() {
+  try {
+    const r = await fetch('data/team.json');
+    allMembers = await r.json();
+    // update colors in team.json to blue tones on the fly
+    allMembers = allMembers.map(m => ({
+      ...m,
+      color: blueify(m.color)
+    }));
+    renderTeam('all');
+  } catch(e) {
+    document.getElementById('team-grid').innerHTML =
+      '<p class="no-items" style="grid-column:1/-1">Could not load team data.</p>';
+  }
+}
+
+// Map any legacy red/green colors to blue tones for the new palette
+function blueify(hex) {
+  const map = {
+    '#c0392b':'#1a4a7a', '#2980b9':'#1d5491', '#8e44ad':'#0d3d6b',
+    '#27ae60':'#155b9e', '#e67e22':'#1a6eb5', '#1abc9c':'#1d5491',
+    '#9b59b6':'#0d3d6b', '#2ecc71':'#1a4a7a'
+  };
+  return map[hex] || hex || '#1a4a7a';
+}
+
+function renderTeam(group) {
+  const grid = document.getElementById('team-grid');
+  const filtered = group === 'all' ? allMembers : allMembers.filter(m => m.group === group);
+  grid.innerHTML = filtered.map(teamCardHTML).join('');
+}
+
+function filterTeam(btn, group) {
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  renderTeam(group);
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   PUBLICATIONS — BibSonomy REST API (Basic Auth via allorigins)
+
+   BibSonomy's website uses a bot-challenge (PoW) on every page/RSS
+   URL, so direct browser fetches and CORS proxies are blocked.
+
+   The REST API (/api/posts) does NOT use the bot challenge — it
+   uses HTTP Basic Auth (username + API key). We still need a CORS
+   proxy because the API doesn't send CORS headers, but the response
+   is clean JSON, not a challenge page.
+
+   How to get your API key:
+     bibsonomy.org → log in → top-right menu → Settings → tab "Settings"
+     → copy the "API key" string → paste into BIBSONOMY_APIKEY above.
+
+   API endpoint used:
+     GET https://www.bibsonomy.org/api/posts
+       ?resourcetype=bibtex   (publications only, not bookmarks)
+       &user=USERNAME
+       &items=100
+       &start=0
+     Authorization: Basic base64(username:apikey)
+     Accept: application/json
+   ═══════════════════════════════════════════════════════════════ */
+async function loadPublications() {
+  const loading   = document.getElementById('pub-loading');
+  const list      = document.getElementById('pub-list');
+  const moreLink  = document.getElementById('pub-more-link');
+  const profileUrl = `https://www.bibsonomy.org/user/${BIBSONOMY_USER}`;
+  moreLink.href   = profileUrl;
+  moreLink.target = '_blank';
+
+  // ── No API key yet → show friendly setup notice ──────────────
+  if (!BIBSONOMY_APIKEY) {
+    loading.style.display = 'none';
+    list.innerHTML = `
+      <div style="background:var(--blue3);border:1px solid #c5d9ef;padding:16px 18px;
+                  font-size:13px;color:#1a3a5c;line-height:1.9;border-radius:2px">
+        <strong>📋 One-time setup needed to load publications automatically:</strong><br>
+        <ol style="margin:10px 0 10px 18px;line-height:2">
+          <li>Go to <a href="https://www.bibsonomy.org" target="_blank">bibsonomy.org</a>
+              and log in</li>
+          <li>Click your username (top right) → <strong>Settings</strong> → tab
+              <strong>"Settings"</strong></li>
+          <li>Copy the <strong>API key</strong> string shown there</li>
+          <li>Open <code>index.html</code> and paste it into:<br>
+              <code style="background:rgba(0,0,0,.07);padding:2px 6px;display:inline-block;margin-top:4px">
+                const BIBSONOMY_APIKEY = 'paste-your-key-here';
+              </code></li>
+          <li>Save and refresh — publications will load automatically from then on</li>
+        </ol>
+        In the meantime, browse them directly:
+        <a href="${profileUrl}" target="_blank" style="font-weight:600">
+          bibsonomy.org/user/${BIBSONOMY_USER}
+        </a>
+      </div>`;
+    return;
+  }
+
+  // ── Build the API request ─────────────────────────────────────
+  // Basic Auth header: base64(username:apikey)
+  const credentials = btoa(`${BIBSONOMY_USER}:${BIBSONOMY_APIKEY}`);
+
+  // The real BibSonomy API URL
+  const apiUrl = `https://www.bibsonomy.org/api/posts`
+    + `?resourcetype=bibtex&user=${BIBSONOMY_USER}&items=100&start=0`;
+
+  // Route through allorigins — it forwards headers and returns
+  // { contents: "<response body>", status: { http_code: N } }
+  // We pass the Authorization header via the proxy's requestHeaders param
+  const proxyUrl = `https://api.allorigins.win/get?url=${encodeURIComponent(apiUrl)}`
+    + `&headers=${encodeURIComponent(JSON.stringify({
+        'Authorization': `Basic ${credentials}`,
+        'Accept': 'application/json'
+      }))}`;
+
+  // Fallback proxy (corsproxy.io supports forwarding headers too)
+  const proxy2Url = `https://corsproxy.io/?${encodeURIComponent(apiUrl)}`;
+
+  let data = null;
+
+  // ── Try allorigins first ──────────────────────────────────────
+  try {
+    const resp = await fetch(proxyUrl, { signal: AbortSignal.timeout(10000) });
+    if (resp.ok) {
+      const json = await resp.json();
+      const body = json.contents;
+      if (body && !body.includes('pow-challenge') && !body.includes('Verifying')) {
+        data = JSON.parse(body);
+      }
+    }
+  } catch(e) { /* fall through */ }
+
+  // ── Try corsproxy with Authorization header directly ──────────
+  if (!data) {
+    try {
+      const resp = await fetch(proxy2Url, {
+        headers: {
+          'Authorization': `Basic ${credentials}`,
+          'Accept': 'application/json'
+        },
+        signal: AbortSignal.timeout(10000)
+      });
+      if (resp.ok) data = await resp.json();
+    } catch(e) { /* fall through */ }
+  }
+
+  // ── Both failed ───────────────────────────────────────────────
+  if (!data) {
+    loading.style.display = 'none';
+    list.innerHTML = `
+      <div style="background:var(--blue3);border:1px solid #c5d9ef;padding:16px;
+                  font-size:13px;color:#1a3a5c;line-height:1.7">
+        <strong>⚠️ Could not reach BibSonomy right now.</strong><br>
+        The CORS proxies may be temporarily down. Try refreshing in a moment.<br><br>
+        Direct link:
+        <a href="${profileUrl}" target="_blank" style="font-weight:600">
+          bibsonomy.org/user/${BIBSONOMY_USER}
+        </a>
+      </div>`;
+    return;
+  }
+
+  // ── Parse BibSonomy JSON response ────────────────────────────
+  // Response shape: { posts: { post: [ { bibtex: {...}, ... }, ... ] } }
+  const posts = data?.posts?.post ?? [];
+
+  if (!posts.length) {
+    loading.style.display = 'none';
+    list.innerHTML = `<p class="no-items">No publications found. Check that your API key is correct.</p>`;
+    return;
+  }
+
+  const pubs = posts.map(post => {
+    const bib     = post.bibtex || {};
+    const title   = bib.title   || post.resource?.title || 'Untitled';
+    const authors = bib.author  || '';
+    const year    = parseInt(bib.year) || 0;
+    const venue   = bib.journal || bib.booktitle || bib.publisher || '';
+    const interhash = bib.interhash || '';
+    const link    = interhash
+      ? `https://www.bibsonomy.org/bibtex/${interhash}/${BIBSONOMY_USER}`
+      : profileUrl;
+    return { title, authors, year, venue, link };
+  });
+
+  // Sort newest first, limit
+  pubs.sort((a,b) => b.year - a.year);
+  const shown  = pubs.slice(0, PUB_LIMIT);
+
+  // Group by year
+  const byYear = {};
+  shown.forEach(p => {
+    const y = p.year || 'n.d.';
+    if (!byYear[y]) byYear[y] = [];
+    byYear[y].push(p);
+  });
+
+  loading.style.display = 'none';
+
+  let html = '';
+  Object.keys(byYear).sort((a,b) => Number(b) - Number(a)).forEach(yr => {
+    html += `<div class="pub-year-group"><div class="pub-year-header">${yr}</div>`;
+    byYear[yr].forEach(p => {
+      // Clean up author list: "Lastname, F. and Lastname2, F2." → readable
+      const authClean = p.authors.replace(/ and /gi, ', ');
+      html += `
+        <div class="pub-item">
+          <div>
+            <span class="pub-year-badge">${yr}</span>
+            <span class="pub-title">
+              <a href="${p.link}" target="_blank"
+                 style="color:inherit;text-decoration:none"
+                 onmouseover="this.style.color='var(--blue)'"
+                 onmouseout="this.style.color='inherit'">${p.title}</a>
+            </span>
+          </div>
+          ${authClean ? `<div class="pub-meta">${authClean}${p.venue ? ' — <em>' + p.venue + '</em>' : ''}</div>` : ''}
+          <div class="pub-links">
+            <a href="${p.link}" target="_blank">BibSonomy</a>
+          </div>
+        </div>`;
+    });
+    html += '</div>';
+  });
+
+  list.innerHTML = html;
+}
+
+/* ═══════════════════════════════════════════════
+   STATS COUNTER
+   ═══════════════════════════════════════════════ */
+function animateCounters() {
+  document.querySelectorAll('.stat-num[data-target]').forEach(el => {
+    const target = parseInt(el.dataset.target);
+    let c = 0;
+    const step = Math.ceil(target / 50);
+    const t = setInterval(() => {
+      c = Math.min(c + step, target);
+      el.textContent = c;
+      if (c >= target) clearInterval(t);
+    }, 30);
+  });
+}
+const statsObs = new IntersectionObserver(entries => {
+  if (entries[0].isIntersecting) { animateCounters(); statsObs.disconnect(); }
+}, { threshold: 0.3 });
+statsObs.observe(document.getElementById('stats'));
+
+/* BOOT */
+loadProjects();
+loadNews();
+loadTeam();
+loadPublications();
+</script>
+</body>
+</html>
