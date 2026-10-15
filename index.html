@@ -75,7 +75,11 @@
     #breadcrumb a { color: var(--mid); } #breadcrumb span { color: var(--blue); }
 
     /* LAYOUT */
-    #main { max-width: 1100px; margin: 36px auto; padding: 0 20px; display: grid; grid-template-columns: 1fr 300px; gap: 36px; }
+    #main { max-width: 1100px; margin: 36px auto; padding: 0 20px; display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 36px; }
+
+    /* Allow the carousel to shrink inside its grid column. */
+    #main > * { min-width: 0; }
+    .project-card { min-width: 0; overflow-wrap: anywhere; }
 
     /* SECTION TITLES */
     .section-title { font-family: 'Raleway', sans-serif; font-size: 20px; font-weight: 700; color: var(--dark); border-bottom: 3px solid var(--blue); padding-bottom: 10px; margin-bottom: 24px; text-transform: uppercase; letter-spacing: .5px; }
@@ -218,7 +222,7 @@
 
     /* STATS */
     #stats { background: var(--dark); padding: 30px 0; }
-    #stats .inner { max-width: 1100px; margin: 0 auto; padding: 0 20px; display: grid; grid-template-columns: repeat(4,1fr); gap: 20px; text-align: center; }
+    #stats .inner { max-width: 1100px; margin: 0 auto; padding: 0 20px; display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; text-align: center; }
     .stat-num { font-family: 'Raleway', sans-serif; font-size: 42px; font-weight: 800; color: #5ba3e0; line-height: 1; }
     .stat-label { font-size: 12px; color: #7a9ab5; text-transform: uppercase; letter-spacing: 2px; margin-top: 6px; }
 
@@ -265,21 +269,39 @@
       #main { grid-template-columns: 1fr; }
       .team-grid { grid-template-columns: repeat(3,1fr); }
       .projects-grid { grid-template-columns: 1fr; }
-      #stats .inner { grid-template-columns: repeat(2,1fr); }
+      #stats .inner { grid-template-columns: repeat(3,1fr); } .stat-num { font-size: 30px; } .stat-label { letter-spacing: 1px; }
       #footer .inner { grid-template-columns: 1fr; gap: 24px; }
     }
     @media (max-width: 600px) {
       .team-grid { grid-template-columns: repeat(2,1fr); }
+      .project-card { flex-basis: 100%; }
+      #nav ul { flex-wrap: wrap; }
+      #nav ul li > a { padding: 10px; }
+      #header .inner { flex-wrap: wrap; gap: 16px; }
+      #logo .tagline { letter-spacing: 1px; }
       .slide-content h2 { font-size: 24px; }
     }
+  
+    .featured-software { display:grid; gap:16px; }
+    .featured-software h3, .directory-grid h3 { font-family:'Raleway',sans-serif; font-size:17px; line-height:1.4; margin-bottom:10px; color:var(--blue); }
+    .see-more { margin-top:20px; }
+    .directory-main { max-width:1100px; margin:36px auto; padding:0 20px; }
+    .directory-main h1 { font-family:'Raleway',sans-serif; font-size:32px; margin-bottom:12px; }
+    .directory-main section { margin:36px 0; scroll-margin-top:20px; }
+    .directory-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:20px; }
+    .directory-nav { display:flex; flex-wrap:wrap; gap:12px; margin-top:24px; }
+    .directory-nav a { padding:8px 16px; background:var(--blue3); font-weight:600; }
+    .directory-note { color:var(--mid); margin-bottom:20px; }
+    @media(max-width:600px) { .directory-grid { grid-template-columns:minmax(0,1fr); } }
   </style>
+<link rel="stylesheet" href="navigation.css">
 </head>
 <body>
 
 <!-- TOP BAR -->
 <div id="topbar">
   <div class="inner">
-    <a href="#contact">Contact</a>
+    <a href="index.html#contact">Contact</a>
     <a href="#">Greek</a>
     <a href="#">English</a>
   </div>
@@ -290,56 +312,34 @@
   <div class="inner">
     <div id="logo">
       <div class="name">mens <span>X</span> machina</div>
-      <div class="tagline">Machine Learning Research Group &nbsp;·&nbsp; University of Crete &amp; FORTH</div>
+      <div class="tagline">AI Research Group &nbsp;·&nbsp; University of Crete</div>
     </div>
     <div id="header-logos">
       <div class="inst-badge"><strong>University<br>of Crete</strong></div>
-      <div class="inst-divider"></div>
-      <div class="inst-badge"><strong>FORTH</strong><br>IACM</div>
     </div>
   </div>
 </div>
 
 <!-- NAV -->
-<nav id="nav">
-  <div class="inner">
-    <ul>
-      <li class="active"><a href="#">Home</a></li>
-      <li><a href="#">Research ▾</a>
-        <ul>
-          <li><a href="#">Causal Discovery</a></li>
-          <li><a href="#">AutoML</a></li>
-          <li><a href="#">Bioinformatics</a></li>
-          <li><a href="#">Feature Selection</a></li>
-        </ul>
-      </li>
-      <li><a href="#">People ▾</a>
-        <ul>
-          <li><a href="#">Faculty</a></li>
-          <li><a href="#">PhD Students</a></li>
-          <li><a href="#">Staff</a></li>
-          <li><a href="#">Alumni</a></li>
-        </ul>
-      </li>
-      <li><a href="#">Publications ▾</a>
-        <ul>
-          <li><a href="#">Journals</a></li>
-          <li><a href="#">Conferences</a></li>
-          <li><a href="#">Books</a></li>
-        </ul>
-      </li>
-      <li><a href="#">Software</a></li>
-      <li><a href="#">Projects ▾</a>
-        <ul>
-          <li><a href="#">Current Projects</a></li>
-          <li><a href="#">Past Projects</a></li>
-        </ul>
-      </li>
-      <li><a href="#">News</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </div>
-</nav>
+<nav id="nav" aria-label="Main navigation"><div class="inner"><ul>
+<li data-page="home" class="active"><a href="index.html">Home</a></li>
+<li data-page="about"><a href="about.html">About</a></li>
+<li data-page="people"><a href="team.html">People ▾</a><ul>
+<li><a href="team.html">Full Team</a></li>
+<li><a href="team.html#faculty">Faculty</a></li>
+<li><a href="team.html#phd">PhD Students</a></li>
+<li><a href="team.html#staff">Staff</a></li>
+<li><a href="team.html#alumni">Alumni</a></li></ul></li>
+<li><a href="index.html#publications">Publications ▾</a><ul>
+<li><a href="index.html#publications">Recent Publications</a></li>
+<li><a href="https://www.bibsonomy.org/user/mensxmachina" target="_blank" rel="noopener">All Publications</a></li></ul></li>
+<li data-page="software"><a href="software.html">Software</a></li>
+<li data-page="projects"><a href="projects.html">Projects ▾</a><ul>
+<li><a href="projects.html#current-projects">Current Projects</a></li>
+<li><a href="projects.html#past-projects">Past Projects</a></li></ul></li>
+<li data-page="news"><a href="news.html">News</a></li>
+<li><a href="index.html#contact">Contact</a></li>
+</ul></div></nav>
 
 <!-- BREADCRUMB -->
 <div id="breadcrumb">
@@ -347,6 +347,7 @@
 </div>
 
 <!-- HERO -->
+<span id="research"></span>
 <div id="hero">
   <div class="slide active">
     <svg class="slide-deco" width="300" height="300" viewBox="0 0 300 300">
@@ -369,9 +370,9 @@
     </svg>
     <div class="slide-overlay"></div>
     <div class="slide-content">
-      <h2>Machine Learning &amp; Causal Discovery Research</h2>
-      <p>An internationally known academic research group at the University of Crete and FORTH, focusing on machine learning, causal analysis, bioinformatics, and AI applications.</p>
-      <a href="#" class="btn">Learn More</a>
+      <h2>Artificial Intelligence, Machine Learning, Causality &amp; Biomedical Informatics</h2>
+      <p>A research group at the University of Crete, founded in 2006 and led by Prof. Ioannis Tsamardinos. We combine theoretical, algorithmic and applied research in causal discovery and machine learning, with collaborations across biology, medicine and industry.</p>
+      <a href="#publications" class="btn">Our Publications</a>
     </div>
   </div>
   <div class="slide">
@@ -379,15 +380,15 @@
     <div class="slide-content">
       <h2>Automated Machine Learning &amp; Biomedical Applications</h2>
       <p>We develop state-of-the-art AutoML methods and apply them to challenging biomedical problems — cancer screening, diabetes diagnosis, and multi-omics data analysis.</p>
-      <a href="#" class="btn">Our Research</a>
+      <a href="#publications" class="btn">Our Publications</a>
     </div>
   </div>
   <div class="slide">
     <div class="slide-overlay"></div>
     <div class="slide-content">
-      <h2>Open Positions Available</h2>
-      <p>We are looking for talented, independent-thinking researchers, PhD and MSc students, and scientific developers. Join a highly multi-disciplinary and multi-national team.</p>
-      <a href="#" class="btn">Apply Now</a>
+      <h2>Automated Causal Discovery</h2>
+      <p>We are building software that takes your data and automatically discovers, explains and visualizes the plausible causal relationships, supporting better decisions and root-cause analysis through a natural-language interface.</p>
+      <a href="#publications" class="btn">Our Publications</a>
     </div>
   </div>
   <div class="slider-dots">
@@ -444,7 +445,7 @@
 
     <!-- NEWS — loaded from data/news.json -->
     <div style="margin-bottom:36px">
-      <div class="section-title">Recent News</div>
+      <div class="section-title" id="news">Recent News</div>
       <div class="tabs">
         <button class="tab-btn active" onclick="switchTab(this,'tab-all')">All News</button>
         <button class="tab-btn" onclick="switchTab(this,'tab-awards')">Awards</button>
@@ -453,16 +454,29 @@
       <div id="tab-all"       class="tab-content active"></div>
       <div id="tab-awards"    class="tab-content"></div>
       <div id="tab-positions" class="tab-content"></div>
+      <p style="margin-top:14px"><a class="read-more" href="news.html">View all news »</a></p>
     </div>
 
-    <!-- PUBLICATIONS — fetched live from BibSonomy -->
+    <!-- PUBLICATIONS — saved from BibSonomy -->
     <div style="margin-bottom:36px">
-      <div class="section-title">Recent Publications</div>
+      <div class="section-title" id="publications">Recent Publications</div>
 
-      <div id="pub-loading"><div class="spinner"></div> Loading from BibSonomy…</div>
-      <div id="pub-list"></div>
+      <!-- PUBLICATIONS SNAPSHOT START -->
+<div id="pub-list"><div class="pub-year-group"><div class="pub-year-header">2025</div>
+<div class="pub-item"><div><span class="pub-year-badge">2025</span> <span class="pub-title"><a href="https://www.bibsonomy.org/bibtex/30e4e48de6886baf9107c571e285ce63/mensxmachina" target="_blank" rel="noopener">ETIA: Towards an Automated Causal Discovery Pipeline</a></span></div><div class="pub-meta">Biza, Konstantina, Ntroumpogiannis, Antonios, Triantafillou, Sofia, Tsamardinos, Ioannis — <em>Discovery Science</em></div><div class="pub-links"><a href="https://www.bibsonomy.org/bibtex/30e4e48de6886baf9107c571e285ce63/mensxmachina" target="_blank" rel="noopener">BibSonomy</a></div></div>
+<div class="pub-item"><div><span class="pub-year-badge">2025</span> <span class="pub-title"><a href="https://www.bibsonomy.org/bibtex/4c1527e6774c79ced02c55968cffd514/mensxmachina" target="_blank" rel="noopener">Protocol for assessing distances in pathway space for classifier feature sets from machine learning methods</a></span></div><div class="pub-meta">Tercan, Bahar, Apolonio, Victor H, Chagas, Vinicius S, Wong, Christopher K, Lee, Jordan A, Yau, Christina, Benz, Christopher C, Stuart, Joshua M, Karlberg, Brian J, Ellrott, Kyle, others — <em>STAR protocols</em></div><div class="pub-links"><a href="https://www.bibsonomy.org/bibtex/4c1527e6774c79ced02c55968cffd514/mensxmachina" target="_blank" rel="noopener">BibSonomy</a></div></div>
+</div>
+<div class="pub-year-group"><div class="pub-year-header">2024</div>
+<div class="pub-item"><div><span class="pub-year-badge">2024</span> <span class="pub-title"><a href="https://www.bibsonomy.org/bibtex/a249601b9254b3c8e52cf16924431317/mensxmachina" target="_blank" rel="noopener">AutoML for Explainable Anomaly Detection (XAD)</a></span></div><div class="pub-meta">Myrtakis, Nikolaos, Tsamardinos, Ioannis, Christophides, Vassilis — <em>The Provenance of Elegance in Computation-Essays Dedicated to Val Tannen (2024)</em></div><div class="pub-links"><a href="https://www.bibsonomy.org/bibtex/a249601b9254b3c8e52cf16924431317/mensxmachina" target="_blank" rel="noopener">BibSonomy</a></div></div>
+<div class="pub-item"><div><span class="pub-year-badge">2024</span> <span class="pub-title"><a href="https://www.bibsonomy.org/bibtex/cd6399e0d54da716f12191d31c3a6867/mensxmachina" target="_blank" rel="noopener">Leveraging compact feature sets for TCGA-based molecular subtype classification on new samples</a></span></div><div class="pub-meta">Ellrott, Kyle, Wong, Chris K, Yau, Christina, Castro, Mauro A, Lee, Jordan, Karlberg, Brian, Grewal, Jasleen K, Lagani, Vincenzo, Tercan, Bahar, Friedl, Verena, others — <em>Cancer Research</em></div><div class="pub-links"><a href="https://www.bibsonomy.org/bibtex/cd6399e0d54da716f12191d31c3a6867/mensxmachina" target="_blank" rel="noopener">BibSonomy</a></div></div>
+<div class="pub-item"><div><span class="pub-year-badge">2024</span> <span class="pub-title"><a href="https://www.bibsonomy.org/bibtex/542f0fc28716f6e581eb890222e285ce/mensxmachina" target="_blank" rel="noopener">Improving Lung Cancer Screening Selection: The HUNT Lung Cancer Risk Model for Ever-Smokers Versus the NELSON and 2021 United States Preventive Services Task Force Criteria in the Cohort of Norway: A Population-Based Prospective Study</a></span></div><div class="pub-meta">Nguyen, Olav Toai Duc, Fotopoulos, Ioannis, Markaki, Maria, Tsamardinos, Ioannis, Lagani, Vincenzo, R{\o}e, Oluf Dimitri — <em>JTO clinical and research reports</em></div><div class="pub-links"><a href="https://www.bibsonomy.org/bibtex/542f0fc28716f6e581eb890222e285ce/mensxmachina" target="_blank" rel="noopener">BibSonomy</a></div></div>
+<div class="pub-item"><div><span class="pub-year-badge">2024</span> <span class="pub-title"><a href="https://www.bibsonomy.org/bibtex/41e3a406db9793d9fdc4dc13c90d9d2d/mensxmachina" target="_blank" rel="noopener">Do we really need imputation in AutoML predictive modeling?</a></span></div><div class="pub-meta">Paterakis, George, Fafalios, Stefanos, Charonyktakis, Paulos, Christophides, Vassilis, Tsamardinos, Ioannis — <em>ACM Transactions on Knowledge Discovery from Data</em></div><div class="pub-links"><a href="https://www.bibsonomy.org/bibtex/41e3a406db9793d9fdc4dc13c90d9d2d/mensxmachina" target="_blank" rel="noopener">BibSonomy</a></div></div>
+<div class="pub-item"><div><span class="pub-year-badge">2024</span> <span class="pub-title"><a href="https://www.bibsonomy.org/bibtex/3663fb33e2a2b52fe890228abbf1ae5e/mensxmachina" target="_blank" rel="noopener">Effect of novel polygenetic variant of HUNT lung cancer model on lung cancer risk assessment over clinical model among light smokers (average&lt; 9 pack-years).</a></span></div><div class="pub-meta">Nguyen, Olav Toai Duc, Fotopoulos, Yannis, N{\o}st, Therese Haugdahl, Markaki, Maria, Lagani, Vincenzo, Tsamardinos, Ioannis, R{\o}e, Oluf Dimitri D — <em>American Society of Clinical Oncology</em></div><div class="pub-links"><a href="https://www.bibsonomy.org/bibtex/3663fb33e2a2b52fe890228abbf1ae5e/mensxmachina" target="_blank" rel="noopener">BibSonomy</a></div></div>
+<div class="pub-item"><div><span class="pub-year-badge">2024</span> <span class="pub-title"><a href="https://www.bibsonomy.org/bibtex/69afedd7c5dd34c7a9591ed56a0fea57/mensxmachina" target="_blank" rel="noopener">AI-Based Suicide Risk Assessment</a></span></div><div class="pub-meta">Charonyktakis, Pavlos, Antoniou, Grigoris, Adamou, Marios, Doyle, Michael, Batsakis, Sotiris, Tsamardinos, Ioannis — <em>2024 15th International Conference on Information, Intelligence, Systems \&amp; Applications (IISA)</em></div><div class="pub-links"><a href="https://www.bibsonomy.org/bibtex/69afedd7c5dd34c7a9591ed56a0fea57/mensxmachina" target="_blank" rel="noopener">BibSonomy</a></div></div>
+</div></div>
+<!-- PUBLICATIONS SNAPSHOT END -->
       <div style="text-align:right;margin-top:12px">
-        <a id="pub-more-link" href="#" class="more-link">View All Publications »</a>
+        <a id="pub-more-link" href="https://www.bibsonomy.org/user/mensxmachina" target="_blank" rel="noopener" class="more-link">View All Publications »</a>
       </div>
     </div>
 
@@ -477,7 +491,7 @@
       </div>
       <div class="team-grid" id="team-grid"></div>
       <div style="text-align:right;margin-top:16px">
-        <a href="#" class="more-link">View Full Team »</a>
+        <a href="team.html" class="more-link">View Full Team »</a>
       </div>
     </div>
 
@@ -489,26 +503,21 @@
       <div class="sidebar-title">Our Software</div>
       <div class="sidebar-body">
         <ul class="software-list">
-          <li><div><a href="#">JADBio</a><small>AutoML platform for biomedical data</small></div></li>
-          <li><div><a href="#">ETIA</a><small>Automated causal discovery pipeline</small></div></li>
-          <li><div><a href="#">AutoCD</a><small>Causal discovery from large datasets</small></div></li>
-          <li><div><a href="#">BioDataome</a><small>7,345 uniformly preprocessed genomic datasets</small></div></li>
-          <li><div><a href="#">DIADEx</a><small>Predictive explanation of data anomalies</small></div></li>
-          <li><div><a href="#">MRPC</a><small>Causal graph learning with FDR control</small></div></li>
+          <li><div><a href="http://scenery.csd.uoc.gr/main.php" target="_blank" rel="noopener noreferrer">SCENERY</a><small>Network reconstruction and analysis of single-cell cytometry data</small></div></li>
+          <li><div><a href="http://dataome.mensxmachina.org/" target="_blank" rel="noopener noreferrer">BioDataome</a><small>Uniformly preprocessed genomic and epigenomic datasets</small></div></li>
+          <li><div><a href="projects/cancer_biomarker_hunt.html">HUNT</a><small>Biomarker discovery for early detection of lung cancer and mesothelioma</small></div></li>
         </ul>
+        <a class="btn see-more" href="software.html">See more →</a>
       </div>
     </div>
     <div class="sidebar-widget">
       <div class="sidebar-title">Quick Links</div>
       <div class="sidebar-body">
         <ul class="quick-links">
-          <li><a href="#">Computer Science Dept., UoC</a></li>
-          <li><a href="#">FORTH — IACM</a></li>
-          <li><a href="#">JADBio Platform</a></li>
-          <li><a href="#">GitHub Repositories</a></li>
-          <li><a href="#">BibSonomy Profile</a></li>
-          <li><a href="#">Google Scholar</a></li>
-          <li><a href="#">Join Our Team</a></li>
+          <li><a href="https://www.csd.uoc.gr/" target="_blank" rel="noopener noreferrer">Computer Science Dept., UoC</a></li>
+          <li><a href="https://jadbio.com" target="_blank" rel="noopener noreferrer">JADBio Platform</a></li>
+          <li><a href="https://github.com/mensxmachina" target="_blank" rel="noopener noreferrer">GitHub Repositories</a></li>
+          <li><a href="https://www.bibsonomy.org/user/mensxmachina" target="_blank" rel="noopener noreferrer">BibSonomy Profile</a></li>
         </ul>
       </div>
     </div>
@@ -517,7 +526,6 @@
       <div class="sidebar-body">
         <div class="affil-logos">
           <div class="affil-logo-box">University of Crete<span>Department of Computer Science</span></div>
-          <div class="affil-logo-box">FORTH<span>Institute of Applied &amp; Computational Mathematics</span></div>
           <div class="affil-logo-box">European Research Council<span>ERC Grant Holder</span></div>
         </div>
       </div>
@@ -529,7 +537,6 @@
           <p><strong>Prof. Ioannis Tsamardinos</strong></p>
           <p>Department of Computer Science<br>University of Crete<br>Heraklion, Crete, Greece</p>
           <p>📧 <a href="mailto:tsamard.it@gmail.com">tsamard.it@gmail.com</a></p>
-          <p style="margin-top:10px;font-size:11px;color:#9aadbe">Also affiliated with IACM, FORTH, Heraklion</p>
         </div>
       </div>
     </div>
@@ -539,10 +546,9 @@
 <!-- STATS -->
 <div id="stats">
   <div class="inner">
-    <div><div class="stat-num" data-target="350">0</div><div class="stat-label">Publications</div></div>
-    <div><div class="stat-num" data-target="20">0</div><div class="stat-label">Team Members</div></div>
-    <div><div class="stat-num" data-target="30">0</div><div class="stat-label">Research Projects</div></div>
-    <div><div class="stat-num" data-target="15">0</div><div class="stat-label">Software Tools</div></div>
+    <div><div class="stat-num" data-stat="pubs" data-target="192">0</div><div class="stat-label">Publications</div></div>
+    <div><div class="stat-num" data-stat="projects" data-target="13">0</div><div class="stat-label">Research Projects</div></div>
+    <div><div class="stat-num" data-stat="software" data-target="14">0</div><div class="stat-label">Software Tools</div></div>
   </div>
 </div>
 
@@ -551,15 +557,15 @@
   <div class="inner">
     <div>
       <h4>About mens X machina</h4>
-      <p>An internationally known academic research group at the Computer Science Department of the University of Crete, also affiliated with the Institute of Applied and Computational Mathematics of FORTH.</p>
+      <p>An internationally known academic research group at the Computer Science Department of the University of Crete.</p>
       <p style="margin-top:10px">Research focuses on machine learning, causal discovery, bioinformatics, and AI — with a strong emphasis on biomedical applications.</p>
     </div>
     <div>
       <h4>Navigation</h4>
       <ul>
-        <li><a href="#">Home</a></li><li><a href="#">Research</a></li><li><a href="#">People</a></li>
-        <li><a href="#">Publications</a></li><li><a href="#">Software</a></li>
-        <li><a href="#">Projects</a></li><li><a href="#">News</a></li><li><a href="#">Contact</a></li>
+        <li><a href="#">Home</a></li><li><a href="#">Research</a></li><li><a href="team.html">People</a></li>
+        <li><a href="#">Publications</a></li><li><a href="software.html">Software</a></li>
+        <li><a href="projects.html">Projects</a></li><li><a href="news.html">News</a></li><li><a href="#">Contact</a></li>
       </ul>
     </div>
     <div>
@@ -574,7 +580,7 @@
   </div>
   <div class="footer-bottom">
     <div class="footer-logo">mens <span>X</span> machina</div>
-    <div>© 2024 MensXMachina Research Group — University of Crete &amp; FORTH</div>
+    <div>© 2024 MensXMachina Research Group — University of Crete</div>
   </div>
 </footer>
 
@@ -582,9 +588,6 @@
 /* ═══════════════════════════════════════════════
    CONFIGURATION
    ═══════════════════════════════════════════════ */
-const BIBSONOMY_USER = 'mensxmachina';   // ← your BibSonomy username
-const BIBSONOMY_APIKEY = 'b76c7b4cc60e51e3043db596fd9f7708';             // ← paste your API key here (Settings → API key)
-const PUB_LIMIT      = 8;
 
 /* ═══════════════════════════════════════════════
    HERO SLIDER
@@ -629,14 +632,14 @@ const sliderState = {
 function projectCardHTML(p) {
   const tags = (p.tags || []).map(t => `<span class="proj-tag">${t}</span>`).join('');
   const link = p.url && p.url !== '#'
-    ? `<a class="proj-link" href="${p.url}" target="_blank">View Project →</a>` : '';
+    ? `<a class="proj-link" href="${p.url}"${/^https?:/.test(p.url) ? ' target="_blank" rel="noopener noreferrer"' : ''}>View Project →</a>` : '';
   return `
     <div class="project-card">
       <h4>${p.title}</h4>
       <div class="proj-subtitle">${p.subtitle}</div>
       <div class="proj-meta">
-        <span class="proj-period">${p.period}</span>
-        <span class="proj-funder">${p.funder}</span>
+        ${p.period ? `<span class="proj-period">${p.period}</span>` : ''}
+        ${p.funder ? `<span class="proj-funder">${p.funder}</span>` : ''}
       </div>
       <p>${p.description}</p>
       ${tags ? `<div class="proj-tags">${tags}</div>` : ''}
@@ -662,7 +665,9 @@ function initSlider(key, items) {
 
   // Figure out how many "pages" (groups of 2)
   const cards = track.querySelectorAll('.project-card');
+  state.perPage = window.matchMedia('(max-width: 600px)').matches ? 1 : 2;
   state.total = Math.ceil(cards.length / state.perPage);
+  state.index = Math.min(state.index, state.total - 1);
 
   // Build dots
   dotsEl.innerHTML = '';
@@ -735,7 +740,23 @@ async function loadProjects() {
 // Recalculate slider position on resize
 window.addEventListener('resize', () => {
   ['current','past'].forEach(key => {
-    if (sliderState[key].total > 0) updateSlider(key);
+    if (sliderState[key].total > 0) {
+      const track = document.getElementById(`track-${key}`);
+      const state = sliderState[key];
+      state.perPage = window.matchMedia('(max-width: 600px)').matches ? 1 : 2;
+      state.total = Math.ceil(track.children.length / state.perPage);
+      state.index = Math.min(state.index, state.total - 1);
+      const dots = document.getElementById(`dots-${key}`);
+      dots.innerHTML = '';
+      for (let i = 0; i < state.total; i++) {
+        const d = document.createElement('button');
+        d.className = 'proj-dot';
+        d.setAttribute('aria-label', `Page ${i + 1}`);
+        d.onclick = () => goToPage(key, i);
+        dots.appendChild(d);
+      }
+      updateSlider(key);
+    }
   });
 });
 
@@ -744,24 +765,27 @@ window.addEventListener('resize', () => {
    ═══════════════════════════════════════════════ */
 const MONTHS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
 
+function newsDateHTML(str) {
+  if (!str) return '';
+  const m = String(str).match(/^(\d{4})(?:-(\d{2}))?(?:-(\d{2}))?$/);
+  if (!m) return '';
+  const mon = m[2] ? MONTHS[+m[2] - 1] : '';
+  if (m[3]) return `<span class="day">${m[3]}</span><span class="month-year">${mon} ${m[1]}</span>`;
+  return `<span class="month-year">${mon} ${m[1]}</span>`;
+}
+
 function newsItemHTML(item) {
-  const d   = new Date(item.date);
-  const day = d.getDate();
-  const mon = MONTHS[d.getMonth()];
-  const yr  = d.getFullYear();
   const cat = item.category || 'general';
   const catLabel = { awards:'Awards', positions:'Positions', general:'News' }[cat] || cat;
+  const url = `news/${item.id}.html`;
   return `
     <div class="news-item">
-      <div class="news-date">
-        <span class="day">${String(day).padStart(2,'0')}</span>
-        <span class="month-year">${mon} ${yr}</span>
-      </div>
+      <div class="news-date">${newsDateHTML(item.date)}</div>
       <div class="news-body">
         <span class="news-cat-badge cat-${cat}">${catLabel}</span>
-        <h3><a href="${item.link || '#'}">${item.title}</a></h3>
+        <h3><a href="${url}">${item.title}</a></h3>
         <p>${item.excerpt}</p>
-        <a class="read-more" href="${item.link || '#'}">Read More »</a>
+        <a class="read-more" href="${url}">Read More »</a>
       </div>
     </div>`;
 }
@@ -770,7 +794,10 @@ async function loadNews() {
   try {
     const r = await fetch('data/news.json');
     const items = await r.json();
-    items.sort((a,b) => new Date(b.date) - new Date(a.date));
+    const dated = items.filter(i => i.date && i.excerpt).sort((a,b) => b.date.localeCompare(a.date));
+    const undated = items.filter(i => !i.date && i.excerpt).sort((a,b) => (a.rank||0) - (b.rank||0));
+    items.length = 0;
+    items.push(...dated, ...undated);
 
     const all = document.getElementById('tab-all');
     const awd = document.getElementById('tab-awards');
@@ -778,11 +805,12 @@ async function loadNews() {
 
     if (!items.length) { all.innerHTML = '<p class="no-items">No news items yet.</p>'; return; }
 
+    const LIMIT = 6, shown = { all:0, awards:0, positions:0 };
     items.forEach(item => {
       const html = newsItemHTML(item);
-      all.innerHTML += html;
-      if (item.category === 'awards')    awd.innerHTML += html;
-      if (item.category === 'positions') pos.innerHTML += html;
+      if (shown.all++ < LIMIT) all.innerHTML += html;
+      if (item.category === 'awards' && shown.awards++ < LIMIT)       awd.innerHTML += html;
+      if (item.category === 'positions' && shown.positions++ < LIMIT) pos.innerHTML += html;
     });
 
     if (!awd.innerHTML) awd.innerHTML = '<p class="no-items">No award news yet.</p>';
@@ -811,7 +839,7 @@ function teamCardHTML(m) {
   const color2 = shiftColor(m.color || '#1a4a7a');
   return `
     <div class="team-card" data-group="${m.group}">
-      <a class="team-link" href="${m.url||'#'}" ${m.url&&m.url!=='#'?'target="_blank"':''}>
+      <a class="team-link" href="people/${encodeURIComponent(m.id)}.html">
         <div class="team-avatar-wrap">
           ${photoTag}
           <div class="team-avatar-fallback"
@@ -827,7 +855,7 @@ function teamCardHTML(m) {
 
 async function loadTeam() {
   try {
-    const r = await fetch('data/team.json');
+    const r = await fetch('data/team.json?v=20261015-2', { cache: 'no-store' });
     allMembers = await r.json();
     // update colors in team.json to blue tones on the fly
     allMembers = allMembers.map(m => ({
@@ -863,212 +891,40 @@ function filterTeam(btn, group) {
   renderTeam(group);
 }
 
-/* ═══════════════════════════════════════════════════════════════
-   PUBLICATIONS — BibSonomy REST API (Basic Auth via allorigins)
-
-   BibSonomy's website uses a bot-challenge (PoW) on every page/RSS
-   URL, so direct browser fetches and CORS proxies are blocked.
-
-   The REST API (/api/posts) does NOT use the bot challenge — it
-   uses HTTP Basic Auth (username + API key). We still need a CORS
-   proxy because the API doesn't send CORS headers, but the response
-   is clean JSON, not a challenge page.
-
-   How to get your API key:
-     bibsonomy.org → log in → top-right menu → Settings → tab "Settings"
-     → copy the "API key" string → paste into BIBSONOMY_APIKEY above.
-
-   API endpoint used:
-     GET https://www.bibsonomy.org/api/posts
-       ?resourcetype=bibtex   (publications only, not bookmarks)
-       &user=USERNAME
-       &items=100
-       &start=0
-     Authorization: Basic base64(username:apikey)
-     Accept: application/json
-   ═══════════════════════════════════════════════════════════════ */
-async function loadPublications() {
-  const loading   = document.getElementById('pub-loading');
-  const list      = document.getElementById('pub-list');
-  const moreLink  = document.getElementById('pub-more-link');
-  const profileUrl = `https://www.bibsonomy.org/user/${BIBSONOMY_USER}`;
-  moreLink.href   = profileUrl;
-  moreLink.target = '_blank';
-
-  // ── No API key yet → show friendly setup notice ──────────────
-  if (!BIBSONOMY_APIKEY) {
-    loading.style.display = 'none';
-    list.innerHTML = `
-      <div style="background:var(--blue3);border:1px solid #c5d9ef;padding:16px 18px;
-                  font-size:13px;color:#1a3a5c;line-height:1.9;border-radius:2px">
-        <strong>📋 One-time setup needed to load publications automatically:</strong><br>
-        <ol style="margin:10px 0 10px 18px;line-height:2">
-          <li>Go to <a href="https://www.bibsonomy.org" target="_blank">bibsonomy.org</a>
-              and log in</li>
-          <li>Click your username (top right) → <strong>Settings</strong> → tab
-              <strong>"Settings"</strong></li>
-          <li>Copy the <strong>API key</strong> string shown there</li>
-          <li>Open <code>index.html</code> and paste it into:<br>
-              <code style="background:rgba(0,0,0,.07);padding:2px 6px;display:inline-block;margin-top:4px">
-                const BIBSONOMY_APIKEY = 'paste-your-key-here';
-              </code></li>
-          <li>Save and refresh — publications will load automatically from then on</li>
-        </ol>
-        In the meantime, browse them directly:
-        <a href="${profileUrl}" target="_blank" style="font-weight:600">
-          bibsonomy.org/user/${BIBSONOMY_USER}
-        </a>
-      </div>`;
-    return;
-  }
-
-  // ── Build the API request ─────────────────────────────────────
-  // Basic Auth header: base64(username:apikey)
-  const credentials = btoa(`${BIBSONOMY_USER}:${BIBSONOMY_APIKEY}`);
-
-  // The real BibSonomy API URL
-  const apiUrl = `https://www.bibsonomy.org/api/posts`
-    + `?resourcetype=bibtex&user=${BIBSONOMY_USER}&items=100&start=0`;
-
-  // Route through allorigins — it forwards headers and returns
-  // { contents: "<response body>", status: { http_code: N } }
-  // We pass the Authorization header via the proxy's requestHeaders param
-  const proxyUrl = `https://api.allorigins.win/get?url=${encodeURIComponent(apiUrl)}`
-    + `&headers=${encodeURIComponent(JSON.stringify({
-        'Authorization': `Basic ${credentials}`,
-        'Accept': 'application/json'
-      }))}`;
-
-  // Fallback proxy (corsproxy.io supports forwarding headers too)
-  const proxy2Url = `https://corsproxy.io/?${encodeURIComponent(apiUrl)}`;
-
-  let data = null;
-
-  // ── Try allorigins first ──────────────────────────────────────
-  try {
-    const resp = await fetch(proxyUrl, { signal: AbortSignal.timeout(10000) });
-    if (resp.ok) {
-      const json = await resp.json();
-      const body = json.contents;
-      if (body && !body.includes('pow-challenge') && !body.includes('Verifying')) {
-        data = JSON.parse(body);
-      }
-    }
-  } catch(e) { /* fall through */ }
-
-  // ── Try corsproxy with Authorization header directly ──────────
-  if (!data) {
-    try {
-      const resp = await fetch(proxy2Url, {
-        headers: {
-          'Authorization': `Basic ${credentials}`,
-          'Accept': 'application/json'
-        },
-        signal: AbortSignal.timeout(10000)
-      });
-      if (resp.ok) data = await resp.json();
-    } catch(e) { /* fall through */ }
-  }
-
-  // ── Both failed ───────────────────────────────────────────────
-  if (!data) {
-    loading.style.display = 'none';
-    list.innerHTML = `
-      <div style="background:var(--blue3);border:1px solid #c5d9ef;padding:16px;
-                  font-size:13px;color:#1a3a5c;line-height:1.7">
-        <strong>⚠️ Could not reach BibSonomy right now.</strong><br>
-        The CORS proxies may be temporarily down. Try refreshing in a moment.<br><br>
-        Direct link:
-        <a href="${profileUrl}" target="_blank" style="font-weight:600">
-          bibsonomy.org/user/${BIBSONOMY_USER}
-        </a>
-      </div>`;
-    return;
-  }
-
-  // ── Parse BibSonomy JSON response ────────────────────────────
-  // Response shape: { posts: { post: [ { bibtex: {...}, ... }, ... ] } }
-  const posts = data?.posts?.post ?? [];
-
-  if (!posts.length) {
-    loading.style.display = 'none';
-    list.innerHTML = `<p class="no-items">No publications found. Check that your API key is correct.</p>`;
-    return;
-  }
-
-  const pubs = posts.map(post => {
-    const bib     = post.bibtex || {};
-    const title   = bib.title   || post.resource?.title || 'Untitled';
-    const authors = bib.author  || '';
-    const year    = parseInt(bib.year) || 0;
-    const venue   = bib.journal || bib.booktitle || bib.publisher || '';
-    const interhash = bib.interhash || '';
-    const link    = interhash
-      ? `https://www.bibsonomy.org/bibtex/${interhash}/${BIBSONOMY_USER}`
-      : profileUrl;
-    return { title, authors, year, venue, link };
-  });
-
-  // Sort newest first, limit
-  pubs.sort((a,b) => b.year - a.year);
-  const shown  = pubs.slice(0, PUB_LIMIT);
-
-  // Group by year
-  const byYear = {};
-  shown.forEach(p => {
-    const y = p.year || 'n.d.';
-    if (!byYear[y]) byYear[y] = [];
-    byYear[y].push(p);
-  });
-
-  loading.style.display = 'none';
-
-  let html = '';
-  Object.keys(byYear).sort((a,b) => Number(b) - Number(a)).forEach(yr => {
-    html += `<div class="pub-year-group"><div class="pub-year-header">${yr}</div>`;
-    byYear[yr].forEach(p => {
-      // Clean up author list: "Lastname, F. and Lastname2, F2." → readable
-      const authClean = p.authors.replace(/ and /gi, ', ');
-      html += `
-        <div class="pub-item">
-          <div>
-            <span class="pub-year-badge">${yr}</span>
-            <span class="pub-title">
-              <a href="${p.link}" target="_blank"
-                 style="color:inherit;text-decoration:none"
-                 onmouseover="this.style.color='var(--blue)'"
-                 onmouseout="this.style.color='inherit'">${p.title}</a>
-            </span>
-          </div>
-          ${authClean ? `<div class="pub-meta">${authClean}${p.venue ? ' — <em>' + p.venue + '</em>' : ''}</div>` : ''}
-          <div class="pub-links">
-            <a href="${p.link}" target="_blank">BibSonomy</a>
-          </div>
-        </div>`;
-    });
-    html += '</div>';
-  });
-
-  list.innerHTML = html;
-}
-
 /* ═══════════════════════════════════════════════
    STATS COUNTER
    ═══════════════════════════════════════════════ */
+async function loadStats() {
+  // Counts come from the same files that drive the site; the values in the HTML are only a fallback.
+  const count = async (url, fn) => { try { return fn(await fetch(url).then(r => r.json())); } catch (e) { return null; } };
+  const set = (key, v) => { const el = document.querySelector(`.stat-num[data-stat="${key}"]`); if (el && v) el.dataset.target = v; };
+  const [pubs, projects, software] = await Promise.all([
+    count('data/publications.json', d => d.length),
+        count('data/projects.json', d => d.length),
+    (async () => { try {
+      const html = await fetch('software.html').then(r => r.text());
+      const doc = new DOMParser().parseFromString(html, 'text/html');
+      return doc.querySelectorAll('#software .project-card').length;
+    } catch (e) { return null; } })()
+  ]);
+  set('pubs', pubs); set('projects', projects); set('software', software);
+}
+const statsReady = loadStats();
+
 function animateCounters() {
   document.querySelectorAll('.stat-num[data-target]').forEach(el => {
     const target = parseInt(el.dataset.target);
     let c = 0;
-    const step = Math.ceil(target / 50);
+    const step = Math.max(1, Math.ceil(target / 50));
     const t = setInterval(() => {
       c = Math.min(c + step, target);
-      el.textContent = c;
+      el.textContent = c + '+';
       if (c >= target) clearInterval(t);
     }, 30);
   });
 }
 const statsObs = new IntersectionObserver(entries => {
-  if (entries[0].isIntersecting) { animateCounters(); statsObs.disconnect(); }
+  if (entries[0].isIntersecting) { statsReady.then(animateCounters); statsObs.disconnect(); }
 }, { threshold: 0.3 });
 statsObs.observe(document.getElementById('stats'));
 
@@ -1076,7 +932,7 @@ statsObs.observe(document.getElementById('stats'));
 loadProjects();
 loadNews();
 loadTeam();
-loadPublications();
+
 </script>
 </body>
 </html>

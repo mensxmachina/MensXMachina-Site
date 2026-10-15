@@ -1,47 +1,63 @@
 [
   {
-    "id": "proj-001",
-    "title": "CAUSALPATH",
-    "subtitle": "ERC Grant — Causal Discovery from Biological Pathways",
+    "id": "proj-015",
+    "title": "ETIA",
+    "subtitle": "Causal AI for Data-Driven Insights and Optimal Decision Making",
     "status": "current",
-    "period": "2022 – 2026",
-    "funder": "European Research Council (ERC)",
-    "description": "Development of next-generation causal analysis methods inspired by the induction of biological pathways from cytometry data. The project aims to bridge causal discovery and biological pathway analysis.",
-    "url": "#",
-    "tags": ["Causal Discovery", "Bioinformatics", "ERC"]
-  },
-  {
-    "id": "proj-002",
-    "title": "JADBio AutoML Platform",
-    "subtitle": "Automated Machine Learning for Biomedical Data",
-    "status": "current",
-    "period": "2020 – ongoing",
-    "funder": "Industry / Spin-off",
-    "description": "A fully automated machine learning platform designed for biomedical researchers with no programming background. Supports classification, regression, and survival analysis on omics and clinical data.",
-    "url": "https://jadbio.com",
-    "tags": ["AutoML", "Biomedical", "Software"]
+    "period": "2026 – 2029",
+    "funder": "European Innovation Council (EIC) / Horizon Europe",
+    "description": "Development of ETIA, an automated causal discovery software platform embedded within a Causal AI Agent. Given a user's data, ETIA automatically discovers, explains and visualizes the plausible causal relationships, optimizes decisions and performs root-cause analysis, and can converse with the user in natural language.",
+    "url": "https://etiaproject.com",
+    "tags": [
+      "Causal Discovery",
+      "Causal AI",
+      "EIC"
+    ]
   },
   {
     "id": "proj-003",
     "title": "ML4Microbiome",
     "subtitle": "Machine Learning for Human Microbiome Studies",
-    "status": "current",
+    "status": "past",
     "period": "2021 – 2025",
     "funder": "COST Action",
     "description": "A COST Action network focusing on the application of machine learning methods to human microbiome research, covering feature selection, biomarker identification, disease prediction, and treatment.",
     "url": "#",
-    "tags": ["Machine Learning", "Microbiome", "COST Action"]
+    "tags": [
+      "Machine Learning",
+      "Microbiome",
+      "COST Action"
+    ]
   },
   {
     "id": "proj-004",
-    "title": "Lung & Mesothelioma Cancer Screening",
-    "subtitle": "Blood test for early detection in high-risk individuals",
-    "status": "current",
-    "period": "2020 – 2025",
-    "funder": "National / EU Funding",
-    "description": "Development of a blood test for screening of smokers and asbestos-exposed individuals to detect lung cancer and mesothelioma at an early, curable stage using liquid biopsy and AutoML.",
-    "url": "#",
-    "tags": ["Cancer", "Liquid Biopsy", "Biomarkers"]
+    "title": "Cancer-Biomarkers in HUNT",
+    "subtitle": "Early Detection of Lung Cancer and Mesothelioma",
+    "status": "past",
+    "period": "",
+    "funder": "",
+    "description": "An international discovery study seeking the earliest molecular signals of lung cancer and mesothelioma in blood serum. The consortium brings together five universities in five countries, aiming to develop a blood test for screening smokers and people exposed to asbestos.",
+    "url": "projects/cancer_biomarker_hunt.html",
+    "tags": [
+      "Cancer",
+      "Early Detection",
+      "Biomarkers"
+    ]
+  },
+  {
+    "id": "proj-001",
+    "title": "CAUSALPATH",
+    "subtitle": "ERC Consolidator Grant — Next Generation Causal Analysis",
+    "status": "past",
+    "period": "2015 – 2019",
+    "funder": "European Research Council (ERC) / FP7",
+    "description": "Advancing causal discovery theory, methods, and tools for robust analysis of real-world data. The project studies how to infer quantitative models of biological pathways from cytometry, other omics data, and prior knowledge, with a focus on human T-cell differentiation.",
+    "url": "projects/causalpath.html",
+    "tags": [
+      "Causal Discovery",
+      "Bioinformatics",
+      "ERC"
+    ]
   },
   {
     "id": "proj-005",
@@ -52,18 +68,11 @@
     "funder": "FORTH / University of Crete",
     "description": "Creation of a large database of uniformly preprocessed and disease-annotated genomic and epigenomic data. Currently includes 7,345 datasets spanning 847 diseases, enabling large-scale meta-analysis.",
     "url": "http://dataome.mensxmachina.org/",
-    "tags": ["Bioinformatics", "Database", "Genomics"]
-  },
-  {
-    "id": "proj-006",
-    "title": "ETIA — End-to-end Causal Analysis",
-    "subtitle": "Automated causal discovery pipeline",
-    "status": "past",
-    "period": "2018 – 2022",
-    "funder": "University of Crete",
-    "description": "Development of ETIA, a comprehensive automated causal discovery pipeline that handles preprocessing, causal graph learning, and causal effect estimation in an end-to-end fashion.",
-    "url": "#",
-    "tags": ["Causal Discovery", "AutoML", "Software"]
+    "tags": [
+      "Bioinformatics",
+      "Database",
+      "Genomics"
+    ]
   },
   {
     "id": "proj-007",
@@ -71,10 +80,14 @@
     "subtitle": "Predictive Explanation of Data Anomalies",
     "status": "past",
     "period": "2019 – 2022",
-    "funder": "Huawei / FORTH",
+    "funder": "FORTH",
     "description": "Research and development of methods for predictive explanation of data anomalies, resulting in a best paper award at BDA 2021. Produced the DIADEx software tool.",
     "url": "#",
-    "tags": ["Anomaly Detection", "Explainability", "Industry"]
+    "tags": [
+      "Anomaly Detection",
+      "Explainability",
+      "Industry"
+    ]
   },
   {
     "id": "proj-008",
@@ -85,6 +98,96 @@
     "funder": "Clinical Collaboration",
     "description": "Application of AutoML to identify circulating cell-free DNA methylation signatures for accurate diagnosis and monitoring of Type 2 Diabetes Mellitus, achieving AUC of 0.927.",
     "url": "#",
-    "tags": ["Diabetes", "Liquid Biopsy", "AutoML"]
+    "tags": [
+      "Diabetes",
+      "Liquid Biopsy",
+      "AutoML"
+    ]
+  },
+  {
+    "id": "proj-009",
+    "title": "EPILOGEAS",
+    "subtitle": "Causal-Based Variable Selection for Omics Data",
+    "status": "past",
+    "period": "",
+    "funder": "ARISTEIA II / European Social Fund & National Resources",
+    "description": "Research on causal-based variable selection for omics data at the Institute of Computer Science, FORTH. Supported through ARISTEIA II under the Education and Lifelong Learning programme, with co-financing from the European Social Fund and national resources.",
+    "url": "projects/epilogeas.html",
+    "tags": [
+      "Causal Discovery",
+      "Feature Selection",
+      "Omics"
+    ]
+  },
+  {
+    "id": "proj-010",
+    "title": "InnovCrete",
+    "subtitle": "Multidisciplinary Structural Biology Research in Crete",
+    "status": "past",
+    "period": "2012 – 2016",
+    "funder": "European Commission / FP7",
+    "description": "Strengthening the capacity for multidisciplinary research driven by structural biology in Crete. Coordinated by FORTH, the project supports research excellence and innovation.",
+    "url": "https://cordis.europa.eu/project/id/316223",
+    "tags": [
+      "Structural Biology",
+      "Research Infrastructure",
+      "FP7"
+    ]
+  },
+  {
+    "id": "proj-011",
+    "title": "IdeaGarden",
+    "subtitle": "An Interactive Learning Environment for Creativity",
+    "status": "past",
+    "period": "2012 – 2015",
+    "funder": "European Commission / FP7",
+    "description": "Developing an interactive learning environment that supports creative problem solving. The project explores visual information mash-ups and collaborative tools for creative work and learning.",
+    "url": "https://cordis.europa.eu/project/id/318552",
+    "tags": [
+      "Creativity",
+      "Collaborative Learning",
+      "FP7"
+    ]
+  },
+  {
+    "id": "proj-012",
+    "title": "CoRLAB",
+    "subtitle": "Modeling and Analysis of Spectrum Markets",
+    "status": "past",
+    "period": "2012 – 2015",
+    "funder": "ARISTEIA / Research Excellence",
+    "description": "Developing models and simulation tools to study wireless access and spectrum markets. The research examines network services and user experience from the perspectives of providers, customers, and regulators.",
+    "url": "https://projects.ics.forth.gr/mobile/",
+    "tags": [
+      "Wireless Networks",
+      "Spectrum Markets",
+      "Modeling"
+    ]
+  },
+  {
+    "id": "proj-013",
+    "title": "THALIS 20332",
+    "subtitle": "Collaborative Research Project",
+    "status": "past",
+    "period": "",
+    "funder": "",
+    "description": "A research project in which members of the mens X machina group participated.",
+    "url": "",
+    "tags": []
+  },
+  {
+    "id": "proj-014",
+    "title": "REACTION",
+    "subtitle": "Remote Diabetes Management and Therapy",
+    "status": "past",
+    "period": "2010 – 2014",
+    "funder": "European Commission / FP7",
+    "description": "Developing an integrated platform for diabetes monitoring, management, and therapy across healthcare settings. The project combines glucose monitoring, clinical decision support, and tools for patient self-management.",
+    "url": "https://cordis.europa.eu/project/id/248590",
+    "tags": [
+      "Digital Health",
+      "Diabetes",
+      "Decision Support"
+    ]
   }
 ]

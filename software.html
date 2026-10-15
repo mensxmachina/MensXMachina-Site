@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Software — mens X machina</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Raleway:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --blue:   #1a4a7a;   /* primary accent — dark blue */
+      --blue2:  #1d5491;   /* slightly lighter for hover states */
+      --blue3:  #e8f0f9;   /* very light blue tint for backgrounds */
+      --dark:   #1a2433;   /* near-black with blue tint */
+      --mid:    #4a5568;
+      --light:  #7a8899;
+      --border: #dce6f0;
+      --bg:     #f0f5fb;   /* light blue-tinted background */
+      --white:  #fff;
+      --accent: #1a6eb5;
+    }
+    body { font-family: 'Open Sans', sans-serif; font-size: 14px; color: var(--dark); background: var(--white); line-height: 1.6; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; color: var(--blue); }
+
+    /* TOP BAR */
+    #topbar { background: var(--dark); color: #9aadbe; font-size: 12px; padding: 6px 0; }
+    #topbar .inner { max-width: 1100px; margin: 0 auto; padding: 0 20px; display: flex; justify-content: flex-end; gap: 16px; }
+    #topbar a { color: #9aadbe; } #topbar a:hover { color: #fff; text-decoration: none; }
+
+    /* HEADER */
+    #header { background: var(--white); border-bottom: 3px solid var(--blue); padding: 18px 0; }
+    #header .inner { max-width: 1100px; margin: 0 auto; padding: 0 20px; display: flex; align-items: center; justify-content: space-between; }
+    #logo .name { font-family: 'Raleway', sans-serif; font-weight: 800; font-size: 32px; color: var(--dark); letter-spacing: -1px; }
+    #logo .name span { color: var(--blue); }
+    #logo .tagline { font-size: 11px; color: var(--light); letter-spacing: 2px; text-transform: uppercase; margin-top: 2px; }
+    #header-logos { display: flex; align-items: center; gap: 20px; }
+    .inst-badge { text-align: center; font-size: 11px; color: #888; line-height: 1.3; }
+    .inst-badge strong { display: block; font-size: 13px; color: #444; }
+    .inst-divider { width: 1px; height: 40px; background: #ddd; }
+
+    /* NAV */
+    #nav { background: var(--dark); }
+    #nav .inner { max-width: 1100px; margin: 0 auto; padding: 0 20px; display: flex; }
+    #nav ul { list-style: none; display: flex; }
+    #nav ul li { position: relative; }
+    #nav ul li > a { display: block; color: #b0c4d8; padding: 14px 18px; font-size: 13px; font-weight: 600; letter-spacing: 0.5px; text-transform: uppercase; transition: background .2s, color .2s; }
+    #nav ul li > a:hover, #nav ul li.active > a { background: var(--blue); color: #fff; text-decoration: none; }
+    #nav ul li ul { display: none; position: absolute; top: 100%; left: 0; background: #243447; min-width: 200px; z-index: 100; flex-direction: column; }
+    #nav ul li:hover ul { display: flex; }
+    #nav ul li ul li a { padding: 10px 16px; font-size: 12px; text-transform: none; font-weight: 400; color: #b0c4d8; white-space: nowrap; border-bottom: 1px solid #344d63; }
+    #nav ul li ul li a:hover { background: var(--blue); color: #fff; }
+
+    /* HERO */
+    #hero { position: relative; height: 420px; overflow: hidden; background: #0d1f33; }
+    .slide { position: absolute; inset: 0; display: flex; align-items: center; opacity: 0; transition: opacity .8s; }
+    .slide:nth-child(1) { background: linear-gradient(135deg,#0d1f33,#1a4a7a); }
+    .slide:nth-child(2) { background: linear-gradient(135deg,#0d2137,#1d5491); }
+    .slide:nth-child(3) { background: linear-gradient(135deg,#0a1628,#153d6b); }
+    .slide.active { opacity: 1; }
+    .slide-overlay { position: absolute; inset: 0; background: linear-gradient(135deg,rgba(0,0,0,.6) 0%,rgba(0,0,0,.2) 100%); }
+    .slide-deco { position: absolute; right: 80px; top: 50%; transform: translateY(-50%); opacity: .12; z-index: 1; }
+    .slide-content { position: relative; z-index: 2; max-width: 1100px; margin: 0 auto; padding: 0 20px; color: #fff; }
+    .slide-content h2 { font-family: 'Raleway', sans-serif; font-size: 38px; font-weight: 700; line-height: 1.2; margin-bottom: 14px; text-shadow: 0 2px 8px rgba(0,0,0,.5); max-width: 600px; }
+    .slide-content p { font-size: 15px; line-height: 1.7; max-width: 520px; color: rgba(255,255,255,.85); margin-bottom: 20px; }
+    .btn { display: inline-block; background: var(--blue); color: #fff; padding: 10px 24px; font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; transition: background .2s; }
+    .btn:hover { background: var(--blue2); text-decoration: none; color: #fff; }
+    .slider-dots { position: absolute; bottom: 18px; left: 50%; transform: translateX(-50%); display: flex; gap: 8px; z-index: 10; }
+    .dot { width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,.35); cursor: pointer; transition: background .3s; }
+    .dot.active { background: var(--blue2); }
+
+    /* BREADCRUMB */
+    #breadcrumb { background: var(--bg); border-bottom: 1px solid var(--border); padding: 8px 0; font-size: 12px; color: var(--light); }
+    #breadcrumb .inner { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+    #breadcrumb a { color: var(--mid); } #breadcrumb span { color: var(--blue); }
+
+    /* LAYOUT */
+    #main { max-width: 1100px; margin: 36px auto; padding: 0 20px; display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 36px; }
+
+    /* Allow the carousel to shrink inside its grid column. */
+    #main > * { min-width: 0; }
+    .project-card { min-width: 0; overflow-wrap: anywhere; }
+
+    /* SECTION TITLES */
+    .section-title { font-family: 'Raleway', sans-serif; font-size: 20px; font-weight: 700; color: var(--dark); border-bottom: 3px solid var(--blue); padding-bottom: 10px; margin-bottom: 24px; text-transform: uppercase; letter-spacing: .5px; }
+
+    /* TABS */
+    .tabs { display: flex; border-bottom: 2px solid var(--border); margin-bottom: 20px; }
+    .tab-btn { padding: 10px 20px; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .5px; color: var(--mid); background: none; border: none; cursor: pointer; border-bottom: 2px solid transparent; margin-bottom: -2px; transition: color .2s; }
+    .tab-btn.active { color: var(--blue); border-bottom-color: var(--blue); }
+    .tab-content { display: none; } .tab-content.active { display: block; }
+
+    /* PROJECTS SLIDER */
+    .proj-slider-wrap {
+      position: relative;
+      margin-bottom: 32px;
+    }
+    .proj-slider-label {
+      font-family: 'Raleway', sans-serif;
+      font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px;
+      color: var(--white);
+      padding: 6px 14px;
+      display: inline-block;
+      margin-bottom: 12px;
+    }
+    .label-current { background: var(--blue); }
+    .label-past    { background: #5a6e84; }
+
+    .proj-viewport { overflow: hidden; }
+    .proj-track {
+      display: flex;
+      gap: 16px;
+      transition: transform .4s cubic-bezier(.25,.46,.45,.94);
+      will-change: transform;
+    }
+    .project-card {
+      flex: 0 0 calc(50% - 8px);   /* 2 cards visible */
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-top: 3px solid var(--blue);
+      padding: 20px 18px 16px;
+      position: relative;
+      box-shadow: 0 2px 8px rgba(26,74,122,.06);
+      transition: box-shadow .2s;
+    }
+    .proj-slider-wrap.past .project-card { border-top-color: #8a9daf; }
+    .project-card:hover { box-shadow: 0 6px 22px rgba(26,74,122,.14); }
+    .project-card h4 {
+      font-family: 'Raleway', sans-serif; font-size: 14px; font-weight: 700;
+      color: var(--dark); margin-bottom: 3px; padding-right: 52px; line-height: 1.3;
+    }
+    .project-card .proj-subtitle { font-size: 12px; color: var(--blue); font-weight: 600; margin-bottom: 10px; }
+    .proj-slider-wrap.past .project-card .proj-subtitle { color: #5a6e84; }
+    .project-card p { font-size: 12px; color: var(--mid); line-height: 1.6; margin-bottom: 10px; }
+    .proj-meta { display: flex; flex-wrap: wrap; gap: 10px; font-size: 11px; color: var(--light); margin-bottom: 8px; }
+    .proj-period::before { content: '📅 '; }
+    .proj-funder::before { content: '🏛 '; }
+    .proj-tags { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 8px; }
+    .proj-tag {
+      background: var(--blue3); color: var(--blue); font-size: 10px; font-weight: 700;
+      padding: 2px 8px; text-transform: uppercase; letter-spacing: .5px; border: 1px solid #c5d9ef;
+    }
+    .proj-slider-wrap.past .proj-tag { background: #eef0f3; color: #5a6e84; border-color: #d0d8e0; }
+    .proj-link { font-size: 12px; color: var(--blue); font-weight: 600; display: inline-block; margin-top: 8px; }
+    .proj-link:hover { color: var(--dark); }
+
+    /* nav arrows + dots */
+    .proj-nav {
+      display: flex; align-items: center; justify-content: space-between;
+      margin-top: 14px;
+    }
+    .proj-dots { display: flex; gap: 6px; }
+    .proj-dot {
+      width: 8px; height: 8px; border-radius: 50%;
+      background: var(--border); cursor: pointer; transition: background .25s;
+      border: none; padding: 0;
+    }
+    .proj-dot.active { background: var(--blue); }
+    .proj-slider-wrap.past .proj-dot.active { background: #5a6e84; }
+    .proj-arrows { display: flex; gap: 6px; }
+    .proj-arrow {
+      width: 32px; height: 32px; border-radius: 50%;
+      background: var(--bg); border: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: center;
+      cursor: pointer; font-size: 14px; color: var(--mid);
+      transition: background .2s, color .2s; line-height: 1;
+      user-select: none;
+    }
+    .proj-arrow:hover { background: var(--blue); color: #fff; border-color: var(--blue); }
+    .proj-slider-wrap.past .proj-arrow:hover { background: #5a6e84; border-color: #5a6e84; }
+    .proj-arrow:disabled { opacity: .35; cursor: default; pointer-events: none; }
+    .proj-counter { font-size: 11px; color: var(--light); font-weight: 600; }
+
+    .no-items { color: var(--light); font-size: 13px; font-style: italic; padding: 16px 0; }
+
+    /* NEWS */
+    .news-item { border-bottom: 1px solid var(--border); padding: 18px 0; display: flex; gap: 16px; }
+    .news-date { min-width: 70px; text-align: center; }
+    .news-date .day { display: block; font-size: 28px; font-weight: 700; color: var(--blue); line-height: 1; font-family: 'Raleway', sans-serif; }
+    .news-date .month-year { display: block; font-size: 11px; color: var(--light); text-transform: uppercase; letter-spacing: 1px; }
+    .news-body h3 { font-size: 14px; font-weight: 600; color: var(--dark); margin-bottom: 6px; line-height: 1.4; }
+    .news-body h3 a { color: var(--dark); } .news-body h3 a:hover { color: var(--blue); }
+    .news-body p { font-size: 13px; color: var(--mid); line-height: 1.6; }
+    .read-more { display: inline-block; margin-top: 6px; font-size: 12px; color: var(--blue); font-weight: 600; text-transform: uppercase; letter-spacing: .5px; }
+    .read-more:hover { text-decoration: none; color: var(--dark); }
+    .news-cat-badge { display: inline-block; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; padding: 2px 7px; margin-bottom: 6px; }
+    .cat-awards    { background: #d0eaff; color: #0d4a7a; }
+    .cat-positions { background: #d1f5e4; color: #0c5440; }
+    .cat-general   { background: #e2e8f0; color: #383d41; }
+
+    /* PUBLICATIONS */
+    .pub-item { padding: 12px 0; border-bottom: 1px solid var(--border); font-size: 13px; line-height: 1.6; }
+    .pub-year-badge { display: inline-block; background: var(--blue); color: #fff; font-size: 11px; padding: 1px 7px; font-weight: 700; margin-right: 6px; vertical-align: middle; }
+    .pub-title { font-weight: 600; color: var(--dark); }
+    .pub-meta { color: var(--light); font-size: 12px; margin-top: 3px; }
+    .pub-links { margin-top: 4px; }
+    .pub-links a { font-size: 11px; background: var(--bg); border: 1px solid var(--border); padding: 2px 8px; margin-right: 4px; color: var(--mid); font-weight: 600; display: inline-block; }
+    .pub-links a:hover { background: var(--blue); color: #fff; text-decoration: none; border-color: var(--blue); }
+    .pub-year-group { margin-top: 20px; }
+    .pub-year-header { font-family: 'Raleway', sans-serif; font-size: 16px; font-weight: 700; color: var(--blue); border-bottom: 1px solid var(--border); padding-bottom: 6px; margin-bottom: 4px; }
+    #pub-loading { color: var(--light); font-size: 13px; font-style: italic; padding: 12px 0; display: flex; align-items: center; gap: 8px; }
+    .spinner { width: 16px; height: 16px; border: 2px solid var(--border); border-top-color: var(--blue); border-radius: 50%; animation: spin .7s linear infinite; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    #pub-config { background: var(--blue3); border: 1px solid #c5d9ef; padding: 12px 16px; margin-bottom: 16px; font-size: 12px; color: #1a3a5c; border-radius: 2px; }
+    #pub-config code { background: rgba(26,74,122,.1); padding: 1px 5px; font-family: monospace; }
+
+    /* TEAM */
+    .team-filter { display: flex; gap: 8px; margin-bottom: 20px; flex-wrap: wrap; }
+    .filter-btn { padding: 5px 14px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .5px; color: var(--mid); background: var(--bg); border: 1px solid var(--border); cursor: pointer; transition: all .2s; }
+    .filter-btn.active, .filter-btn:hover { background: var(--blue); color: #fff; border-color: var(--blue); }
+    .team-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 18px; }
+    .team-card { text-align: center; transition: transform .2s; }
+    .team-card:hover { transform: translateY(-2px); }
+    .team-avatar-wrap { width: 90px; height: 90px; border-radius: 50%; margin: 0 auto 10px; overflow: hidden; border: 3px solid var(--border); transition: border-color .2s; position: relative; }
+    .team-card:hover .team-avatar-wrap { border-color: var(--blue); }
+    .team-avatar-wrap img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .team-avatar-fallback { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; font-size: 26px; color: #fff; font-weight: 700; font-family: 'Raleway', sans-serif; }
+    .team-card h4 { font-size: 12px; font-weight: 600; color: var(--dark); margin-bottom: 2px; line-height: 1.3; }
+    .team-card .role { font-size: 11px; color: var(--light); }
+    .team-card a.team-link { color: var(--dark); text-decoration: none; }
+    .team-card a.team-link:hover h4 { color: var(--blue); }
+
+    /* STATS */
+    #stats { background: var(--dark); padding: 30px 0; }
+    #stats .inner { max-width: 1100px; margin: 0 auto; padding: 0 20px; display: grid; grid-template-columns: repeat(4,1fr); gap: 20px; text-align: center; }
+    .stat-num { font-family: 'Raleway', sans-serif; font-size: 42px; font-weight: 800; color: #5ba3e0; line-height: 1; }
+    .stat-label { font-size: 12px; color: #7a9ab5; text-transform: uppercase; letter-spacing: 2px; margin-top: 6px; }
+
+    /* SIDEBAR */
+    .sidebar-widget { margin-bottom: 32px; }
+    .sidebar-title { font-family: 'Raleway', sans-serif; font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--white); background: var(--blue); padding: 10px 14px; }
+    .sidebar-body { background: var(--bg); padding: 16px 14px; border: 1px solid var(--border); border-top: none; }
+    .software-list { list-style: none; }
+    .software-list li { padding: 10px 0; border-bottom: 1px solid var(--border); display: flex; align-items: flex-start; gap: 8px; }
+    .software-list li::before { content: '▶'; color: var(--blue); font-size: 10px; margin-top: 4px; flex-shrink: 0; }
+    .software-list li a { font-weight: 600; font-size: 13px; color: var(--dark); }
+    .software-list li a:hover { color: var(--blue); }
+    .software-list small { display: block; color: var(--light); font-size: 11px; margin-top: 2px; }
+    .quick-links { list-style: none; }
+    .quick-links li { border-bottom: 1px solid var(--border); }
+    .quick-links li:last-child { border-bottom: none; }
+    .quick-links li a { display: flex; align-items: center; gap: 8px; padding: 9px 0; font-size: 13px; color: var(--dark); }
+    .quick-links li a::before { content: '›'; color: var(--blue); font-size: 18px; font-weight: 700; line-height: 1; }
+    .quick-links li a:hover { color: var(--blue); text-decoration: none; }
+    .affil-logos { display: flex; flex-direction: column; gap: 10px; }
+    .affil-logo-box { background: #fff; border: 1px solid var(--border); padding: 10px 14px; text-align: center; font-size: 12px; color: var(--mid); font-weight: 600; }
+    .affil-logo-box span { display: block; font-size: 10px; color: var(--light); font-weight: 400; margin-top: 2px; }
+    .contact-info p { font-size: 12px; color: var(--mid); line-height: 1.8; margin-bottom: 6px; }
+    .contact-info strong { color: var(--dark); }
+
+    /* FOOTER */
+    #footer { background: #111c27; color: #7a9ab5; padding: 40px 0 20px; }
+    #footer .inner { max-width: 1100px; margin: 0 auto; padding: 0 20px; display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px; }
+    #footer h4 { color: var(--white); font-family: 'Raleway', sans-serif; font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 1px solid #243447; }
+    #footer p, #footer li { font-size: 12px; line-height: 1.8; color: #6a8aa5; }
+    #footer ul { list-style: none; }
+    #footer ul li::before { content: '› '; color: #5ba3e0; }
+    #footer ul li a { color: #6a8aa5; } #footer ul li a:hover { color: #fff; text-decoration: none; }
+    .footer-bottom { max-width: 1100px; margin: 30px auto 0; padding: 16px 20px 0; border-top: 1px solid #243447; display: flex; justify-content: space-between; align-items: center; font-size: 11px; color: #3d5a73; }
+    .footer-logo { font-family: 'Raleway', sans-serif; font-size: 18px; font-weight: 800; color: #3d5a73; }
+    .footer-logo span { color: #5ba3e0; }
+
+    /* more link */
+    .more-link { font-size: 12px; color: var(--blue); font-weight: 600; text-transform: uppercase; letter-spacing: .5px; }
+    .more-link:hover { color: var(--dark); }
+
+    /* RESPONSIVE */
+    @media (max-width: 900px) {
+      #main { grid-template-columns: 1fr; }
+      .team-grid { grid-template-columns: repeat(3,1fr); }
+      .projects-grid { grid-template-columns: 1fr; }
+      #stats .inner { grid-template-columns: repeat(2,1fr); }
+      #footer .inner { grid-template-columns: 1fr; gap: 24px; }
+    }
+    @media (max-width: 600px) {
+      .team-grid { grid-template-columns: repeat(2,1fr); }
+      .project-card { flex-basis: 100%; }
+      #nav ul { flex-wrap: wrap; }
+      #nav ul li > a { padding: 10px; }
+      #header .inner { flex-wrap: wrap; gap: 16px; }
+      #logo .tagline { letter-spacing: 1px; }
+      .slide-content h2 { font-size: 24px; }
+    }
+  
+    .featured-projects { display:grid; gap:16px; }
+    .featured-projects h3, .directory-grid h3 { font-family:'Raleway',sans-serif; font-size:17px; line-height:1.4; margin-bottom:10px; color:var(--blue); }
+    .see-more { margin-top:20px; }
+    .directory-main { max-width:1100px; margin:36px auto; padding:0 20px; }
+    .directory-main h1 { font-family:'Raleway',sans-serif; font-size:32px; margin-bottom:12px; }
+    .directory-main section { margin:36px 0; scroll-margin-top:20px; }
+    .directory-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:20px; }
+    .directory-nav { display:flex; flex-wrap:wrap; gap:12px; margin-top:24px; }
+    .directory-nav a { padding:8px 16px; background:var(--blue3); font-weight:600; }
+    .directory-note { color:var(--mid); margin-bottom:20px; }
+    @media(max-width:600px) { .directory-grid { grid-template-columns:minmax(0,1fr); } }
+  </style>
+<link rel="stylesheet" href="navigation.css">
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div id="topbar">
+  <div class="inner">
+    <a href="index.html#contact">Contact</a>
+    <a href="#">Greek</a>
+    <a href="#">English</a>
+  </div>
+</div>
+
+<!-- HEADER -->
+<div id="header">
+  <div class="inner">
+    <div id="logo">
+      <div class="name">mens <span>X</span> machina</div>
+      <div class="tagline">AI Research Group &nbsp;·&nbsp; University of Crete</div>
+    </div>
+    <div id="header-logos">
+      <div class="inst-badge"><strong>University<br>of Crete</strong></div>
+    </div>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav id="nav" aria-label="Main navigation"><div class="inner"><ul>
+<li data-page="home"><a href="index.html">Home</a></li>
+<li data-page="about"><a href="about.html">About</a></li>
+<li data-page="people"><a href="team.html">People ▾</a><ul>
+<li><a href="team.html">Full Team</a></li>
+<li><a href="team.html#faculty">Faculty</a></li>
+<li><a href="team.html#phd">PhD Students</a></li>
+<li><a href="team.html#staff">Staff</a></li>
+<li><a href="team.html#alumni">Alumni</a></li></ul></li>
+<li><a href="index.html#publications">Publications ▾</a><ul>
+<li><a href="index.html#publications">Recent Publications</a></li>
+<li><a href="https://www.bibsonomy.org/user/mensxmachina" target="_blank" rel="noopener">All Publications</a></li></ul></li>
+<li data-page="software" class="active"><a href="software.html">Software</a></li>
+<li data-page="projects"><a href="projects.html">Projects ▾</a><ul>
+<li><a href="projects.html#current-projects">Current Projects</a></li>
+<li><a href="projects.html#past-projects">Past Projects</a></li></ul></li>
+<li data-page="news"><a href="news.html">News</a></li>
+<li><a href="index.html#contact">Contact</a></li>
+</ul></div></nav>
+
+<main class="directory-main"><p><a href="index.html">Home</a> / Software</p><h1>Software</h1><p>Software tools, research code, and featured resources from mens X machina.</p><section id="software"><h2 class="section-title">Software &amp; Research Code</h2><p class="directory-note">Tools and code releases listed on the group’s September 2024 software page. Links point to their original destinations; version numbers reflect that listing.</p><div class="directory-grid"><article class="project-card"><h3>Causal Explorer 1.5</h3><p>MATLAB library for computational causal discovery and variable selection.</p><a class="proj-link" href="https://github.com/mensxmachina/CausalExplorer_1.5" target="_blank" rel="noopener noreferrer">View software →</a></article><article class="project-card"><h3>SCENERY</h3><p>A web application for network reconstruction, statistical analysis, and visualization of cytometry (single-cell) data.</p><a class="proj-link" href="http://scenery.csd.uoc.gr/main.php" target="_blank" rel="noopener noreferrer">View software →</a></article><article class="project-card"><h3>Gene–gene interaction reconstruction</h3><p>Code for “A comparative evaluation of data-merging and meta-analysis methods for reconstructing gene-gene interactions”.</p><a class="proj-link" href="https://osf.io/fw4vu/" target="_blank" rel="noopener noreferrer">View software →</a></article><article class="project-card"><h3>omicsNPC</h3><p>Code for applying the Non-Parametric Combination methodology to integrative analysis of heterogeneous omics data.</p><a class="proj-link" href="https://osf.io/kjgsb/" target="_blank" rel="noopener noreferrer">View software →</a></article><article class="project-card"><h3>Bayesian Networks with Informative, Causal and Associative Priors</h3><p>MATLAB implementation for “Scoring and Searching over Bayesian Networks with Informative, Causal and Associative Priors”.</p><a class="proj-link" href="http://mensxmachina.org/wp-content/uploads/files/software/UAI_2013_Code_1.0.zip" target="_blank" rel="noopener noreferrer">Download ZIP →</a></article><article class="project-card"><h3>MXM package 1.4.2</h3><p>R package for feature selection, statistically equivalent predictive subsets, Bayesian networks, and conditional independence testing.</p><a class="proj-link" href="http://mensxmachina.org/software/mxm-package/" target="_blank" rel="noopener noreferrer">View software →</a></article><article class="project-card"><h3>Causally Interpreting Directed Edges in Maximal Ancestral Graphs</h3><p>MATLAB experimental code for “Tools and Algorithms for Causally Interpreting Directed Edges in Maximal Ancestral Graphs”.</p><a class="proj-link" href="http://mensxmachina.org/wp-content/uploads/files/software/pgm_2012_source_code_1.0.zip" target="_blank" rel="noopener noreferrer">Download ZIP →</a></article><article class="project-card"><h3>Causal Prior Knowledge as Path-Constraints</h3><p>MATLAB experimental code for “Incorporating Causal Prior Knowledge as Path-Constraints in Bayesian Networks and Maximal Ancestral Graphs”.</p><a class="proj-link" href="http://mensxmachina.org/wp-content/uploads/files/software/icml_2012_source_code_1.0.zip" target="_blank" rel="noopener noreferrer">Download ZIP →</a></article><article class="project-card"><h3>Integrative Causal Analysis of Heterogeneous Datasets and Studies</h3><p>MATLAB experimental code for “Towards Integrative Causal Analysis of Heterogeneous Datasets and Studies”.</p><a class="proj-link" href="http://mensxmachina.org/wp-content/uploads/files/software/TsamardinosJMLR2012a.zip" target="_blank" rel="noopener noreferrer">Download ZIP →</a></article><article class="project-card"><h3>Learning Causal Structure From Overlapping Variable Sets</h3><p>MATLAB experimental code accompanying the AISTATS 2010 publication.</p><a class="proj-link" href="http://mensxmachina.org/wp-content/uploads/files/software/csat.zip" target="_blank" rel="noopener noreferrer">Download ZIP →</a></article><article class="project-card"><h3>GEMS — Gene Expression Model Selector</h3><p>Automated cancer diagnosis and biomarker discovery from microarray gene expression data, developed at Vanderbilt University in collaboration with Ioannis Tsamardinos.</p><a class="proj-link" href="http://www.gems-system.org/" target="_blank" rel="noopener noreferrer">View software →</a></article><article class="project-card"><h3>Structure-based Variable Selection for Survival Data</h3><p>MATLAB and R experimental code accompanying the survival-data variable selection paper.</p><a class="proj-link" href="http://mensxmachina.org/wp-content/uploads/files/software/SMMPC_code.zip" target="_blank" rel="noopener noreferrer">Download ZIP →</a></article><article class="project-card"><h3>Mens X Machina Commons Toolbox</h3><p>Common MATLAB functions used by other toolboxes from the Mens X Machina group.</p><a class="proj-link" href="http://mensxmachina.org/software/common-toolbox/" target="_blank" rel="noopener noreferrer">View software →</a></article><article class="project-card"><h3>Mens X Machina Probabilistic Graphical Model Toolbox</h3><p>MATLAB tools for Bayesian networks and probabilistic graphical models, including local and skeleton learning using MMPC.</p><a class="proj-link" href="http://mensxmachina.org/software/probabilistic-graphical-model-toolbox/" target="_blank" rel="noopener noreferrer">View software →</a></article></div></section><section id="resources"><h2 class="section-title">Featured Resources</h2><div class="directory-grid"><article class="project-card"><h3>BioDataome</h3><p>Creation of a large database of uniformly preprocessed and disease-annotated genomic and epigenomic data. Currently includes 7,345 datasets spanning 847 diseases, enabling large-scale meta-analysis.</p><a class="proj-link" href="http://dataome.mensxmachina.org/" target="_blank" rel="noopener noreferrer">View resource →</a></article><article class="project-card"><h3>HUNT — Cancer-Biomarkers in HUNT</h3><p>An international discovery study seeking the earliest molecular signals of lung cancer and mesothelioma in blood serum. The consortium brings together five universities in five countries, aiming to develop a blood test for screening smokers and people exposed to asbestos.</p><a class="proj-link" href="projects/cancer_biomarker_hunt.html">View resource →</a></article></div></section><a class="btn" href="index.html">← Back to home</a></main><footer id="footer"><div class="footer-bottom"><span class="footer-logo">mens <span>X</span> machina</span><p>University of Crete</p></div></footer></body></html>

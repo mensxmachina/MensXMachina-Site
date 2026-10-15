@@ -1,34 +1,658 @@
 [
   {
     "id": "news-001",
+    "rank": 1,
     "date": "2024-06-25",
     "title": "The Excellence Award \"Professor Zoe Dimitriadis Prize\" to Konstantina Biza",
     "excerpt": "The University of Crete announces the awarding of the \"Professor Zoe Dimitriadis Prize for Excellence\" for the academic year 2022–2023, granted to postgraduate member of our laboratory Konstantina Biza.",
     "category": "awards",
-    "link": "#"
+    "body": "University of Crete award for Konstantina Biza and Emmanuel Nikoloudakis. Biza’s doctoral work develops out-of-sample selection among causal discovery algorithms.",
+    "source_url": "https://web.archive.org/web/20250123000456/http://mensxmachina.org/en/%CF%87%CE%BF%CF%81%CE%AE%CE%B3%CE%B7%CF%83%CE%B7-%CE%B2%CF%81%CE%B1%CE%B2%CE%B5%CE%AF%CE%BF%CF%85-%CE%B1%CF%81%CE%B9%CF%83%CF%84%CE%B5%CE%AF%CE%B1%CF%82-%CE%AD%CF%80%CE%B1%CE%B8%CE%BB%CE%BF/"
   },
   {
     "id": "news-002",
+    "rank": 2,
     "date": "2022-06-22",
     "title": "Prof. Tsamardinos awarded the European Research Council Proof of Concept grant 2021",
     "excerpt": "The European Research Council Proof of Concept was awarded to Professor Tsamardinos in 2021, recognizing outstanding work in causal machine learning.",
     "category": "awards",
-    "link": "#"
+    "source_url": "https://web.archive.org/web/20250123000456/http://mensxmachina.org/en/prof-tsamardinos-was-awarded-with-the-european-research-council-proof-of-concept-grant-award-in-2021/"
   },
   {
     "id": "news-003",
+    "rank": 3,
     "date": "2022-06-22",
     "title": "Best paper award from the 37th BDA 2021 conference — \"On Predictive Explanation of Data Anomalies\"",
     "excerpt": "Best paper award from the 37th BDA 2021 conference in the National French conference on Data Management. Authors: Myrtakis N., Tsamardinos I., Christophides V.",
     "category": "awards",
-    "link": "#"
+    "source_url": "https://web.archive.org/web/20250123000456/http://mensxmachina.org/en/best-paper-award-from-the-37th-bda-2021-conference-in-the-national-french-conference-on-data-management-for-the-article-on-predictive-explanation-of-data-anomalies-myrtakis-n-tsamardinos-i/"
   },
   {
     "id": "news-004",
+    "rank": 4,
     "date": "2019-07-18",
     "title": "Open positions available — Calls for Expression of Interest",
     "excerpt": "Several contractual positions are open at the MensXMachina research group. Our group is highly multi-disciplinary focusing on data analysis and machine learning with an emphasis on biomedical data.",
     "category": "positions",
-    "link": "#"
+    "source_url": "https://web.archive.org/web/20250123000456/http://mensxmachina.org/en/open-positions-available-calls-for-expression-of-interest-3/"
+  },
+  {
+    "id": "news-005",
+    "rank": 5,
+    "title": "ASCO Annual Meeting",
+    "excerpt": "Tsamardinos was scheduled at the May–June 2019 ASCO meeting in Chicago, presenting collaborative work with Oluf D. Røe.",
+    "category": "general",
+    "source_url": "https://web.archive.org/web/20250123000456/http://mensxmachina.org/en/asco-annual-meeting/"
+  },
+  {
+    "id": "news-006",
+    "rank": 6,
+    "title": "Cancer Development and Complexity",
+    "excerpt": "Invited research presentation at the May 2019 Lake Como Cancer Development and Complexity event, on AutoML applications in biomedicine.",
+    "category": "general",
+    "source_url": "https://web.archive.org/web/20250123000456/http://mensxmachina.org/en/cancer-development-and-complexity/"
+  },
+  {
+    "id": "news-007",
+    "rank": 7,
+    "title": "Automated Machine Learning for Bioinformatics and Computational Biology",
+    "excerpt": "Tutorial on automated machine learning for bioinformatics given by Tsamardinos and Lagani at AIAI 2019 in Heraklion.",
+    "category": "general",
+    "source_url": "https://web.archive.org/web/20250123000456/http://mensxmachina.org/en/automated-machine-learning-for-bioinformatics-and-computational-biology/"
+  },
+  {
+    "id": "news-008",
+    "rank": 8,
+    "title": "Pint of Science in Heraklion!",
+    "excerpt": "Public science talk on AI by Tsamardinos at Pagopoieio in Heraklion on May 21.",
+    "category": "general",
+    "source_url": "https://web.archive.org/web/20250123000456/http://mensxmachina.org/en/pint-of-science-in-heraklion/"
+  },
+  {
+    "id": "news-009",
+    "rank": 9,
+    "title": "Ομιλία του Ι. Τσαμαρδίνου στο 3ο Συμπόσιο Φαρμακοεπιδημιολογίας",
+    "excerpt": "Greek-language announcement of Tsamardinos speaking at a pharmacoepidemiology symposium in Alexandroupoli, April 2019, on automated biomedical analysis.",
+    "category": "general",
+    "source_url": "https://web.archive.org/web/20250123000456/http://mensxmachina.org/en/%CE%BF%CE%BC%CE%B9%CE%BB%CE%AF%CE%B1-%CF%84%CE%BF%CF%85-%CE%B9-%CF%84%CF%83%CE%B1%CE%BC%CE%B1%CF%81%CE%B4%CE%AF%CE%BD%CE%BF%CF%85-%CF%83%CF%84%CE%BF-3%CE%BF-%CF%83%CF%85%CE%BC%CF%80%CF%8C%CF%83%CE%B9/"
+  },
+  {
+    "id": "news-010",
+    "rank": 10,
+    "title": "Prof. Tsamardinos invited talk in Inria Sophia- Antipolis MOMI2019 workshop",
+    "excerpt": "Invited February 2019 talk at Inria Sophia Antipolis on automated machine learning for biomedicine.",
+    "category": "general",
+    "source_url": "https://web.archive.org/web/20250123000456/http://mensxmachina.org/en/prof-tsamardinos-invited-talk-in-inria-sophia-antipolis-momi2019-workshop/"
+  },
+  {
+    "id": "news-011",
+    "rank": 11,
+    "title": "Le Monde des Mathématiques Industrielles (MOMI2019): Call for participation and posters",
+    "excerpt": "Call for attendance and posters for the MOMI2019 applied mathematics workshop on big data and machine learning in Sophia Antipolis.",
+    "category": "general",
+    "source_url": "https://web.archive.org/web/20250123000456/http://mensxmachina.org/en/le-monde-des-mathematiques-industrielles-momi2019-call-for-participation-and-posters/"
+  },
+  {
+    "id": "news-012",
+    "rank": 12,
+    "title": "Prof. Ioannis Tsamardinos on [CDAC 2019] Cancer Development and Complexity, Lake Como, Italy, May 28-31, 2019",
+    "excerpt": "Longer program description of a 2019 Lake Como workshop and school on cancer, biological systems, and computational modeling, with Tsamardinos among invited speakers.",
+    "category": "general",
+    "source_url": "https://web.archive.org/web/20250123000456/http://mensxmachina.org/en/prof-ioannis-tsamardinos-on-cdac-2019-cancer-development-and-complexity-lake-como-italy-may-28-31-2019/"
+  },
+  {
+    "id": "news-013",
+    "rank": 13,
+    "title": "HUNT Calculator on Norwegian Broadcasting media",
+    "excerpt": "Post links to a Norwegian broadcaster segment about the HUNT Calculator; the text provides the video source rather than an article narrative.",
+    "category": "general",
+    "source_url": "https://web.archive.org/web/20250123000456/http://mensxmachina.org/en/hunt-calculator-on-norwegian-broadcasting-media/"
+  },
+  {
+    "id": "news-014",
+    "rank": 14,
+    "title": "CAUSALPATH on the Eur13 digital magazine",
+    "excerpt": "Announcement that the CAUSALPATH research project was featured in issue of Eur13 digital magazine, directing readers to page 17.",
+    "category": "general",
+    "source_url": "https://web.archive.org/web/20250123000456/http://mensxmachina.org/en/causalpath-on-the-eur13-digital-magazine/"
+  },
+  {
+    "id": "news-015",
+    "rank": 15,
+    "title": "Open positions available – CALLS FOR EXPRESSION OF INTEREST",
+    "excerpt": "ERC CAUSALPATH project recruited postdoctoral, doctoral and web development personnel; the project focused on learning signaling pathways from cytometry data.",
+    "category": "positions",
+    "source_url": "https://web.archive.org/web/20250123000456/http://mensxmachina.org/en/open-positions-available-calls-for-expression-of-interest/"
+  },
+  {
+    "id": "news-016",
+    "rank": 16,
+    "title": "Two new scientific works To be presented at The 2017 ACM SIGKDD Workshop on Causal Discovery, Halifax, Nova Scotia, Canada, Aug 14, 2017 – Aug 14, 2017",
+    "excerpt": "",
+    "category": "general"
+  },
+  {
+    "id": "news-017",
+    "rank": 17,
+    "title": "Prof. Tsamardinos’s invited talk at the 2nd international congress “Evolution and Cancer”",
+    "excerpt": "",
+    "category": "general"
+  },
+  {
+    "id": "news-018",
+    "rank": 18,
+    "title": "Dr. Tsagris invited talk at the 2017 Annual Meeting of the Statistical Society of Canada",
+    "excerpt": "Invited talk by Dr. Tsagris at Statistical Society of Canada 2017 describing regression for compositional outcomes containing zeros.",
+    "category": "general",
+    "source_url": "https://web.archive.org/web/20250123000456/http://mensxmachina.org/en/dr-tsagris-invited-talk-at-the-2017-annual-meeting-of-the-statistical-society-of-canada/"
+  },
+  {
+    "id": "news-019",
+    "rank": 19,
+    "title": "New publication on Scientific Report!",
+    "excerpt": "Scientific Reports paper involving Markaki and Tsamardinos used the JADBio pipeline to build MatureP, a classifier of secreted proteins.",
+    "category": "general",
+    "source_url": "https://web.archive.org/web/20250123000456/http://mensxmachina.org/en/new-publication-on-scientific-report/"
+  },
+  {
+    "id": "news-020",
+    "rank": 20,
+    "title": "Prof. Tsamardinos invited talk at the 2017 ACM SIGKDD Workshop on Causal Discovery",
+    "excerpt": "Tsamardinos invited to the August 2017 KDD workshop on causal discovery to discuss theory and scalable causal feature selection.",
+    "category": "general",
+    "source_url": "https://web.archive.org/web/20250123000456/http://mensxmachina.org/en/prof-tsamardinos-invited-talk-at-the-2017-acm-sigkdd-workshop-on-causal-discovery/"
+  },
+  {
+    "id": "news-021",
+    "rank": 21,
+    "title": "Job announcements in Gnosis Data Analysis",
+    "excerpt": "Gnosis Data Analysis advertised scientific programmer, data analyst and AI developer openings.",
+    "category": "positions",
+    "source_url": "https://web.archive.org/web/20250123000456/http://mensxmachina.org/en/job-announcements-in-gnosis-data-analysis/"
+  },
+  {
+    "id": "news-022",
+    "rank": 22,
+    "title": "New CAUSALPATH publication on SCENERY tool",
+    "excerpt": "SCENERY causal network reconstruction service applied to flow and mass cytometry, reported in Nucleic Acids Research.",
+    "category": "general",
+    "source_url": "https://web.archive.org/web/20250123000456/http://mensxmachina.org/en/new-causalpath-publication-on-scenery-tool/"
+  },
+  {
+    "id": "news-023",
+    "rank": 23,
+    "title": "MASSCAUSAL Workshop, 2017",
+    "excerpt": "Invitation-only 2017 single-cell data computational methods workshop jointly organized by University of Crete, Karolinska Institutet and University of Amsterdam.",
+    "category": "general",
+    "source_url": "https://web.archive.org/web/20250123000456/http://mensxmachina.org/en/masscausal-workshop-2017/"
+  },
+  {
+    "id": "news-024",
+    "rank": 24,
+    "title": "Dr. Arabatzis talk on Bayesian Uncertainty Quantification and Applications in Pharmacodynamics",
+    "excerpt": "ETH Zurich researcher George Arabatzis gave a May 12 talk on Bayesian uncertainty quantification in pharmacodynamics and molecular dynamics.",
+    "category": "general",
+    "source_url": "https://web.archive.org/web/20250123000456/http://mensxmachina.org/en/dr-arabatzis-talk-on-bayesian-uncertainty-quantification-and-applications-in-pharmacodynamics/"
+  },
+  {
+    "id": "news-025",
+    "rank": 25,
+    "title": "Invited talk to the 2nd international congress “Evolution and Cancer: Cancer across life”. Thessaloniki 29/6-1/7/2017",
+    "excerpt": "Tsamardinos invited to a June–July 2017 Thessaloniki congress to discuss artificial intelligence and cancer research.",
+    "category": "general",
+    "source_url": "https://web.archive.org/web/20250123000456/http://mensxmachina.org/en/invited-talk-to-the-2nd-international-congress-evolution-and-cancer-cancer-across-life-thessaloniki-296-172017/"
+  },
+  {
+    "id": "news-026",
+    "rank": 26,
+    "title": "Invited talk to DALI 2017- by Prof. Ioannis Tsamardinos",
+    "excerpt": "At DALI 2017 in Tenerife, Tsamardinos presented causal inference from single-cell mass cytometry data; discussed graphical models, differential equations, confounding and feedback.",
+    "category": "general",
+    "source_url": "https://web.archive.org/web/20250123000456/http://mensxmachina.org/en/invited-talk-to-dali-2017-by-prof-ioannis-tsamardinos/"
+  },
+  {
+    "id": "news-027",
+    "rank": 27,
+    "title": "Data from pilot experiment getting closer!",
+    "excerpt": "SciLife in Stockholm processed CyTOF samples for investigating effects of TGFB1 and TGFB3 on CD4+ immune cells using CAUSALPATH.",
+    "category": "general",
+    "source_url": "https://web.archive.org/web/20250123000456/http://mensxmachina.org/en/data-from-pilot-experiment-getting-closer/"
+  },
+  {
+    "id": "news-028",
+    "rank": 28,
+    "title": "Invited talk on Stochastic Dynamics at the Free University of Berlin",
+    "excerpt": "Yannis Pantazis spoke at Free University of Berlin workshop on information-theoretic uncertainty and sensitivity for stochastic dynamics.",
+    "category": "general",
+    "source_url": "https://web.archive.org/web/20250123000456/http://mensxmachina.org/en/invited-talk-on-stochastic-dynamics-at-the-free-university-of-berlin/"
+  },
+  {
+    "id": "news-029",
+    "rank": 29,
+    "title": "New paper on predicting causal relationships from mass-cytometry data posted on bioRxiv",
+    "excerpt": "BioRxiv preprint applied two causal discovery methods to CyTOF data with findings replicated across two independent studies.",
+    "category": "general",
+    "source_url": "https://web.archive.org/web/20250123000456/http://mensxmachina.org/en/new-paper-on-predicting-causal-relationships-from-mass-cytometry-data-posted-on-biorxiv/"
+  },
+  {
+    "id": "news-030",
+    "rank": 30,
+    "title": "“Cutting” the cake 2017",
+    "excerpt": "",
+    "category": "general"
+  },
+  {
+    "id": "news-031",
+    "rank": 31,
+    "title": "Participation at NIPS 2016, Barcelona",
+    "excerpt": "Tsamardinos participated in NIPS 2016 in Barcelona (December 5–10).",
+    "category": "general",
+    "source_url": "https://web.archive.org/web/20250123000456/http://mensxmachina.org/en/participation-at-nips-2016-barcelona/"
+  },
+  {
+    "id": "news-032",
+    "rank": 32,
+    "title": "Prof. Tsamardinos’s invited talks in Athens",
+    "excerpt": "",
+    "category": "general"
+  },
+  {
+    "id": "news-033",
+    "rank": 33,
+    "title": "Pilot experiments on their way !",
+    "excerpt": "",
+    "category": "general"
+  },
+  {
+    "id": "news-034",
+    "rank": 34,
+    "title": "We are hiring !",
+    "excerpt": "",
+    "category": "positions"
+  },
+  {
+    "id": "news-035",
+    "rank": 35,
+    "title": "Prof. Tsamardinos’s Distinguished Lecture at University of Pittsburgh",
+    "excerpt": "",
+    "category": "general"
+  },
+  {
+    "id": "news-036",
+    "rank": 36,
+    "title": "Novel Logic-based Integrative Causal Discovery Lecture",
+    "excerpt": "",
+    "category": "general"
+  },
+  {
+    "id": "news-037",
+    "rank": 37,
+    "title": "MXM gives tutorial on integrative causal discovery in UAI 2016!",
+    "excerpt": "",
+    "category": "general"
+  },
+  {
+    "id": "news-038",
+    "rank": 38,
+    "title": "Logic-Based Integrative Causal Discovery with Business Applications",
+    "excerpt": "",
+    "category": "general"
+  },
+  {
+    "id": "news-039",
+    "rank": 39,
+    "title": "MXM participation on the 10th PACBB conference",
+    "excerpt": "",
+    "category": "general"
+  },
+  {
+    "id": "news-040",
+    "rank": 40,
+    "title": "Integrative Causal Analysis paper accepted at KDD2016",
+    "excerpt": "",
+    "category": "general"
+  },
+  {
+    "id": "news-041",
+    "rank": 41,
+    "title": "Prof. Tsamardinos’s talk at the 9th Hellenic Conference on Artificial Intelligence 18-20 May 2016",
+    "excerpt": "",
+    "category": "general"
+  },
+  {
+    "id": "news-042",
+    "rank": 42,
+    "title": "Project “Cancer Biomarkers in HUNT” receives 300.000$ additional funds from the ALCF-IASLC Joint International Fellowship Award for The Early Detection of Lung Cancer",
+    "excerpt": "",
+    "category": "general"
+  },
+  {
+    "id": "news-043",
+    "rank": 43,
+    "title": "MXM participates in the 1st International NTNU Symposium on Current and Future Clinical Biomarkers of Cancer",
+    "excerpt": "",
+    "category": "general"
+  },
+  {
+    "id": "news-044",
+    "rank": 44,
+    "title": "Introducing Logic-based Integrative Causal Discovery",
+    "excerpt": "",
+    "category": "general"
+  },
+  {
+    "id": "news-045",
+    "rank": 45,
+    "title": "MXM invited talk at ELIXIR meeting",
+    "excerpt": "",
+    "category": "general"
+  },
+  {
+    "id": "news-046",
+    "rank": 46,
+    "title": "New MXM website is up!",
+    "excerpt": "",
+    "category": "general"
+  },
+  {
+    "id": "news-047",
+    "rank": 47,
+    "title": "Talk announcement of Prof Jan Lemeire February 16th room A113 CSD at 10:00",
+    "excerpt": "",
+    "category": "general"
+  },
+  {
+    "id": "news-048",
+    "rank": 48,
+    "title": "Invited speech by Yannis Pantazis",
+    "excerpt": "",
+    "category": "general"
+  },
+  {
+    "id": "news-049",
+    "rank": 49,
+    "title": "MXM participation to 13th Hellenic Congress of Clinical Chemistry",
+    "excerpt": "",
+    "category": "general"
+  },
+  {
+    "id": "news-050",
+    "rank": 50,
+    "title": "End of the STATegra project",
+    "excerpt": "",
+    "category": "general"
+  },
+  {
+    "id": "news-051",
+    "rank": 51,
+    "title": "STATegra Summer School 2015",
+    "excerpt": "",
+    "category": "general"
+  },
+  {
+    "id": "news-052",
+    "rank": 52,
+    "title": "MXM participation to SMODIA 2015",
+    "excerpt": "",
+    "category": "general"
+  },
+  {
+    "id": "news-053",
+    "rank": 53,
+    "title": "Lecture by Karen Sachs, 3 September",
+    "excerpt": "",
+    "category": "general"
+  },
+  {
+    "id": "news-054",
+    "rank": 54,
+    "title": "From July 1st to July 3rd, Yannis Pantazis attended the workshop “Mathematical Trends in Reaction Network Theory”",
+    "excerpt": "",
+    "category": "general"
+  },
+  {
+    "id": "news-055",
+    "rank": 55,
+    "title": "LECTURE ANNOUNCEMENT:Alessio Farcomeni, 30 April",
+    "excerpt": "",
+    "category": "general"
+  },
+  {
+    "id": "news-056",
+    "rank": 56,
+    "title": "Best Poster of the Year Award",
+    "excerpt": "",
+    "category": "awards"
+  },
+  {
+    "id": "news-057",
+    "rank": 57,
+    "title": "End of an Era for the Bioinformatics Laboratory",
+    "excerpt": "",
+    "category": "general"
+  },
+  {
+    "id": "news-058",
+    "rank": 58,
+    "title": "Smodia2014 Workshop",
+    "excerpt": "",
+    "category": "general"
+  },
+  {
+    "id": "news-059",
+    "rank": 59,
+    "title": "Lecture by Eleni Sgouritsa: “Identifying confounders and telling cause from effect using latent variable models”",
+    "excerpt": "",
+    "category": "general"
+  },
+  {
+    "id": "news-060",
+    "rank": 60,
+    "title": "Talk at MPI for Intelligent Systems in Tuebingen",
+    "excerpt": "",
+    "category": "general"
+  },
+  {
+    "id": "news-061",
+    "rank": 61,
+    "title": "Lecture by Dr. Andreas Damianou: “Modelling and consolidating complex data with Gaussian process models”",
+    "excerpt": "",
+    "category": "general"
+  },
+  {
+    "id": "news-062",
+    "rank": 62,
+    "title": "’MXM’ package (v. 0.1): We have just released the first version of our R package",
+    "excerpt": "",
+    "category": "general"
+  },
+  {
+    "id": "news-063",
+    "rank": 63,
+    "title": "Workshop “Statistical Methods for Omics Data Integration and Analysis”",
+    "excerpt": "",
+    "category": "general"
+  },
+  {
+    "id": "news-064",
+    "rank": 64,
+    "title": "Paramet Summer School – Computational Sciences in Drug Discovery",
+    "excerpt": "",
+    "category": "general"
+  },
+  {
+    "id": "news-065",
+    "rank": 65,
+    "title": "Our proposal to the ERC Consolidator grant has been approved",
+    "excerpt": "",
+    "category": "general"
+  },
+  {
+    "id": "news-066",
+    "rank": 66,
+    "title": "A new GSRT grant titled “EPILOGEAS” in the recent ARISTEIA II call has been approved",
+    "excerpt": "",
+    "category": "general"
+  },
+  {
+    "id": "news-067",
+    "rank": 67,
+    "title": "R course for beginners",
+    "excerpt": "",
+    "category": "general"
+  },
+  {
+    "id": "news-068",
+    "rank": 68,
+    "title": "Invited Talk in Causal Discovery from Mass Cytometry Data",
+    "excerpt": "",
+    "category": "general"
+  },
+  {
+    "id": "news-069",
+    "rank": 69,
+    "title": "First Year STATegra Project Meeting",
+    "excerpt": "",
+    "category": "general"
+  },
+  {
+    "id": "news-070",
+    "rank": 70,
+    "title": "New papers in Cell Metabolism and Nucleic Acids Research",
+    "excerpt": "",
+    "category": "general"
+  },
+  {
+    "id": "news-071",
+    "rank": 71,
+    "title": "Research Staff Positions and Graduate Fellowships",
+    "excerpt": "",
+    "category": "positions"
+  },
+  {
+    "id": "news-072",
+    "rank": 72,
+    "title": "New institutional project on Systems Biology",
+    "excerpt": "",
+    "category": "general"
+  },
+  {
+    "id": "news-073",
+    "rank": 73,
+    "title": "Introduction to Causality Tutorial at the High-Throughput Omics and Data Integration Workshop",
+    "excerpt": "",
+    "category": "general"
+  },
+  {
+    "id": "news-074",
+    "rank": 74,
+    "title": "Best Poster Award at HSCBB 2012",
+    "excerpt": "",
+    "category": "awards"
+  },
+  {
+    "id": "news-075",
+    "rank": 75,
+    "title": "New positions available – Job Announcements",
+    "excerpt": "",
+    "category": "positions"
+  },
+  {
+    "id": "news-076",
+    "rank": 76,
+    "title": "New versions of our toolboxes",
+    "excerpt": "",
+    "category": "general"
+  },
+  {
+    "id": "news-077",
+    "rank": 77,
+    "title": "Incorporating Prior Causal Knowledge when learning Causal Models in ICML 2012",
+    "excerpt": "",
+    "category": "general"
+  },
+  {
+    "id": "news-078",
+    "rank": 78,
+    "title": "Ground-breaking paper on Integrative Causal Analysis published in JMLR",
+    "excerpt": "",
+    "category": "general"
+  },
+  {
+    "id": "news-079",
+    "rank": 79,
+    "title": "STATegra project is accepted for funding",
+    "excerpt": "",
+    "category": "general"
+  },
+  {
+    "id": "news-080",
+    "rank": 80,
+    "title": "ECML Tutorial on causal discovery",
+    "excerpt": "",
+    "category": "general"
+  },
+  {
+    "id": "news-081",
+    "rank": 81,
+    "title": "Bioinformatics Laboratory is founded in ICS-FORTH",
+    "excerpt": "",
+    "category": "general"
+  },
+  {
+    "id": "news-082",
+    "rank": 82,
+    "title": "New MATLAB toolboxes versions 0.9.2",
+    "excerpt": "",
+    "category": "general"
+  },
+  {
+    "id": "news-083",
+    "rank": 83,
+    "title": "New MATLAB toolboxes versions 0.9.1",
+    "excerpt": "",
+    "category": "general"
+  },
+  {
+    "id": "news-084",
+    "rank": 84,
+    "title": "The MMPC algorithm adapted for survival data",
+    "excerpt": "",
+    "category": "general"
+  },
+  {
+    "id": "news-085",
+    "rank": 85,
+    "title": "New toolboxes available for MATLAB",
+    "excerpt": "",
+    "category": "general"
+  },
+  {
+    "id": "news-086",
+    "rank": 86,
+    "title": "New paper in JMLR, Special Topic on Causality",
+    "excerpt": "",
+    "category": "general"
+  },
+  {
+    "id": "news-087",
+    "rank": 87,
+    "title": "Upcoming AI & Statistics 2010 paper",
+    "excerpt": "",
+    "category": "general"
+  },
+  {
+    "id": "news-088",
+    "rank": 88,
+    "title": "Upcoming tutorial on Causal Discovery at SETN 2010",
+    "excerpt": "",
+    "category": "general"
+  },
+  {
+    "id": "news-089",
+    "rank": 89,
+    "title": "Mens X Machina website launched",
+    "excerpt": "",
+    "category": "general"
   }
 ]

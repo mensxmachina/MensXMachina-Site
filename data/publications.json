@@ -1,0 +1,1346 @@
+[
+  {
+    "title": "ETIA: Towards an Automated Causal Discovery Pipeline",
+    "authors": "Biza, Konstantina and Ntroumpogiannis, Antonios and Triantafillou, Sofia and Tsamardinos, Ioannis",
+    "year": 2025,
+    "venue": "Discovery Science",
+    "link": "https://www.bibsonomy.org/bibtex/30e4e48de6886baf9107c571e285ce63/mensxmachina"
+  },
+  {
+    "title": "Protocol for assessing distances in pathway space for classifier feature sets from machine learning methods",
+    "authors": "Tercan, Bahar and Apolonio, Victor H and Chagas, Vinicius S and Wong, Christopher K and Lee, Jordan A and Yau, Christina and Benz, Christopher C and Stuart, Joshua M and Karlberg, Brian J and Ellrott, Kyle and others",
+    "year": 2025,
+    "venue": "STAR protocols",
+    "link": "https://www.bibsonomy.org/bibtex/4c1527e6774c79ced02c55968cffd514/mensxmachina"
+  },
+  {
+    "title": "AutoML for Explainable Anomaly Detection (XAD)",
+    "authors": "Myrtakis, Nikolaos and Tsamardinos, Ioannis and Christophides, Vassilis",
+    "year": 2024,
+    "venue": "The Provenance of Elegance in Computation-Essays Dedicated to Val Tannen (2024)",
+    "link": "https://www.bibsonomy.org/bibtex/a249601b9254b3c8e52cf16924431317/mensxmachina"
+  },
+  {
+    "title": "Leveraging compact feature sets for TCGA-based molecular subtype classification on new samples",
+    "authors": "Ellrott, Kyle and Wong, Chris K and Yau, Christina and Castro, Mauro A and Lee, Jordan and Karlberg, Brian and Grewal, Jasleen K and Lagani, Vincenzo and Tercan, Bahar and Friedl, Verena and others",
+    "year": 2024,
+    "venue": "Cancer Research",
+    "link": "https://www.bibsonomy.org/bibtex/cd6399e0d54da716f12191d31c3a6867/mensxmachina"
+  },
+  {
+    "title": "Improving Lung Cancer Screening Selection: The HUNT Lung Cancer Risk Model for Ever-Smokers Versus the NELSON and 2021 United States Preventive Services Task Force Criteria in the Cohort of Norway: A Population-Based Prospective Study",
+    "authors": "Nguyen, Olav Toai Duc and Fotopoulos, Ioannis and Markaki, Maria and Tsamardinos, Ioannis and Lagani, Vincenzo and R{\\o}e, Oluf Dimitri",
+    "year": 2024,
+    "venue": "JTO clinical and research reports",
+    "link": "https://www.bibsonomy.org/bibtex/542f0fc28716f6e581eb890222e285ce/mensxmachina"
+  },
+  {
+    "title": "Do we really need imputation in AutoML predictive modeling?",
+    "authors": "Paterakis, George and Fafalios, Stefanos and Charonyktakis, Paulos and Christophides, Vassilis and Tsamardinos, Ioannis",
+    "year": 2024,
+    "venue": "ACM Transactions on Knowledge Discovery from Data",
+    "link": "https://www.bibsonomy.org/bibtex/41e3a406db9793d9fdc4dc13c90d9d2d/mensxmachina"
+  },
+  {
+    "title": "Effect of novel polygenetic variant of HUNT lung cancer model on lung cancer risk assessment over clinical model among light smokers (average< 9 pack-years).",
+    "authors": "Nguyen, Olav Toai Duc and Fotopoulos, Yannis and N{\\o}st, Therese Haugdahl and Markaki, Maria and Lagani, Vincenzo and Tsamardinos, Ioannis and R{\\o}e, Oluf Dimitri D",
+    "year": 2024,
+    "venue": "American Society of Clinical Oncology",
+    "link": "https://www.bibsonomy.org/bibtex/3663fb33e2a2b52fe890228abbf1ae5e/mensxmachina"
+  },
+  {
+    "title": "AI-Based Suicide Risk Assessment",
+    "authors": "Charonyktakis, Pavlos and Antoniou, Grigoris and Adamou, Marios and Doyle, Michael and Batsakis, Sotiris and Tsamardinos, Ioannis",
+    "year": 2024,
+    "venue": "2024 15th International Conference on Information, Intelligence, Systems \\& Applications (IISA)",
+    "link": "https://www.bibsonomy.org/bibtex/69afedd7c5dd34c7a9591ed56a0fea57/mensxmachina"
+  },
+  {
+    "title": "Promising microRNAs in pre-diagnostic serum associated with lung cancer up to eight years before diagnosis: a HUNT study",
+    "authors": "Fotopoulos, Ioannis and Nguyen, Olav Toai Duc and N{\\o}st, Therese Haugdahl and Markaki, Maria and Lagani, Vincenzo and Mjelle, Robin and Sandanger, Torkjel Manning and S{\\ae}trom, P{\\aa}l and Tsamardinos, Ioannis and R{\\o}e, Oluf Dimitri",
+    "year": 2024,
+    "venue": "Journal of cancer research and clinical oncology",
+    "link": "https://www.bibsonomy.org/bibtex/2333b17ed187cd99278e4d897c47b09d/mensxmachina"
+  },
+  {
+    "title": "The HUNT lung-SNP model: genetic variants plus clinical variables improve lung cancer risk assessment over clinical models",
+    "authors": "Nguyen, Olav Toai Duc and Fotopoulos, Ioannis and N{\\o}st, Therese Haugdahl and Markaki, Maria and Lagani, Vincenzo and Tsamardinos, Ioannis and R{\\o}e, Oluf Dimitri",
+    "year": 2024,
+    "venue": "Journal of cancer research and clinical oncology",
+    "link": "https://www.bibsonomy.org/bibtex/a1536e55590a703c96db99cbad0cf211/mensxmachina"
+  },
+  {
+    "title": "CLBO: Conditional Local Bayesian Optimization for Automated Machine Learning",
+    "authors": "Paterakis, George and Borboudakis, Giorgos and Paraschakis, Konstantinos and Charonyktakis, Pavlos and Tsamardinos, Ioannis",
+    "year": 2024,
+    "venue": "Proceedings of the 13th Hellenic Conference on Artificial Intelligence",
+    "link": "https://www.bibsonomy.org/bibtex/d268b9e3ed008af4dce6fb0f2053c23c/mensxmachina"
+  },
+  {
+    "title": "BRCA1 {\\&} BRCA2 methylation as a prognostic and predictive biomarker in cancer: Implementation in liquid biopsy in the era of precision medicine",
+    "authors": "Panagopoulou, Maria and Panou, Theodoros and Gkountakos, Anastasios and Tarapatzi, Gesthimani and Karaglani, Makrina and Tsamardinos, Ioannis and Chatzaki, Ekaterini",
+    "year": 2024,
+    "venue": "Clinical Epigenetics",
+    "link": "https://www.bibsonomy.org/bibtex/2c35e24bdf5638d88cd18730dea4310b/mensxmachina"
+  },
+  {
+    "title": "ChronoEpilogi: Scalable Time-Series Variable Selection with Multiple Solutions",
+    "authors": "Vareille, Etienne and Linardi, Michele and Tsamardinos, Ioannis and Christophides, Vassilis",
+    "year": 2024,
+    "venue": "",
+    "link": "https://www.bibsonomy.org/bibtex/9b0b5663f7995fb05ae736cad592bfe3/mensxmachina"
+  },
+  {
+    "title": "Prediction of 6-year risk of bladder cancer using the HUNT Lung Cancer Risk Model in ever-smokers: A HUNT study.",
+    "authors": "R{\\o}e, Oluf D and Nguyen, Olav Toai Duc and Fotopoulos, Yannis and Lagani, Vincenzo and Tsamardinos, Ioannis",
+    "year": 2023,
+    "venue": "American Society of Clinical Oncology",
+    "link": "https://www.bibsonomy.org/bibtex/ec5434f2f2458d443702d383b007647a/mensxmachina"
+  },
+  {
+    "title": "Corrigendum to A characteristic cerebellar biosignature for bipolar disorder, identified with fully automatic machine learning[IBRO Neurosci Rep. 15 (2023) 77--89]",
+    "authors": "Thomaidis, Georgios V and Papadimitriou, Konstantinos and Michos, Sotirios and Chartampilas, Evangelos and Tsamardinos, Ioannis",
+    "year": 2023,
+    "venue": "IBRO Neuroscience Reports",
+    "link": "https://www.bibsonomy.org/bibtex/e5bc49166c1dd7b7201d285f1fe37f2f/mensxmachina"
+  },
+  {
+    "title": "Learning biologically-interpretable latent representations for gene expression data: pathway activity score learning algorithm",
+    "authors": "Karagiannaki, Ioulia and Gourlia, Krystallia and Lagani, Vincenzo and Pantazis, Yannis and Tsamardinos, Ioannis",
+    "year": 2023,
+    "venue": "Machine Learning",
+    "link": "https://www.bibsonomy.org/bibtex/05b047ab74005d4425047352f351164b/mensxmachina"
+  },
+  {
+    "title": "A characteristic cerebellar biosignature for bipolar disorder, identified with fully automatic machine learning",
+    "authors": "Thomaidis, Georgios V and Papadimitriou, Konstantinos and Michos, Sotirios and Chartampilas, Evangelos and Tsamardinos, Ioannis",
+    "year": 2023,
+    "venue": "IBRO Neuroscience Reports",
+    "link": "https://www.bibsonomy.org/bibtex/2ee9f5a69658b8c5487b907902126d01/mensxmachina"
+  },
+  {
+    "title": "A Meta-level Analysis of Online Anomaly Detectors",
+    "authors": "Ntroumpogiannis, Antonios and Giannoulis, Michail and Myrtakis, Nikolaos and Christophides, Vassilis and Simon, Eric and Tsamardinos, Ioannis",
+    "year": 2023,
+    "venue": "The VLDB Journal",
+    "link": "https://www.bibsonomy.org/bibtex/b686003d5f8fd9819551157d5e3123b2/mensxmachina"
+  },
+  {
+    "title": "Identifying Bipolar patients from controls, using post-mortem cerebellum gene expression data and fully Automated Machine Learning",
+    "authors": "Thomaidis, Georgios V and Michos, Sotirios and Papadimitriou, Konstantinos and Chartampilas, Evangelos and Tsamardinos, Ioannis",
+    "year": 2022,
+    "venue": "medRxiv",
+    "link": "https://www.bibsonomy.org/bibtex/ace1b33044aa1c1a6ce4d195a45ef0a4/mensxmachina"
+  },
+  {
+    "title": "Liquid biopsy in type 2 diabetes mellitus management: building specific biosignatures via machine learning",
+    "authors": "Karaglani, Makrina and Panagopoulou, Maria and Cheimonidi, Christina and Tsamardinos, Ioannis and Maltezos, Efstratios and Papanas, Nikolaos and Papazoglou, Dimitrios and Mastorakos, George and Chatzaki, Ekaterini",
+    "year": 2022,
+    "venue": "Journal of Clinical Medicine",
+    "link": "https://www.bibsonomy.org/bibtex/f3820dbe8f6b53a53f1671c62d64dfaf/mensxmachina"
+  },
+  {
+    "title": "Tissue-specific methylation biosignatures for monitoring diseases: an in silico approach",
+    "authors": "Karaglani, Makrina and Panagopoulou, Maria and Baltsavia, Ismini and Apalaki, Paraskevi and Theodosiou, Theodosis and Iliopoulos, Ioannis and Tsamardinos, Ioannis and Chatzaki, Ekaterini",
+    "year": 2022,
+    "venue": "International Journal of Molecular Sciences",
+    "link": "https://www.bibsonomy.org/bibtex/d3f8dc97c3335aebd6b982f66fe4cf92/mensxmachina"
+  },
+  {
+    "title": "The essentials of multiomics",
+    "authors": "Marshall, John L and Peshkin, Beth N and Yoshino, Takayuki and Vowinckel, Jakob and Danielsen, H{\\aa}vard E and Melino, Gerry and Tsamardinos, Ioannis and Haudenschild, Christian and Kerr, David J and Sampaio, Carlos and others",
+    "year": 2022,
+    "venue": "The Oncologist",
+    "link": "https://www.bibsonomy.org/bibtex/cadcc1cd4f644f3d875f56eb69e87afe/mensxmachina"
+  },
+  {
+    "title": "Just Add Data: automated predictive modeling for knowledge discovery and feature selection",
+    "authors": "Tsamardinos, Ioannis and Charonyktakis, Paulos and Papoutsoglou, Georgios and Borboudakis, Giorgos and Lakiotaki, Kleanthi and Zenklusen, Jean Claude and Juhl, Hartmut and Chatzaki, Ekaterini and Lagani, Vincenzo",
+    "year": 2022,
+    "venue": "NPJ precision oncology",
+    "link": "https://www.bibsonomy.org/bibtex/68ae1b3602fbc8d66d8a27b3edd1b037/mensxmachina"
+  },
+  {
+    "title": "Out-of-sample tuning for causal discovery",
+    "authors": "Biza, Konstantina and Tsamardinos, Ioannis and Triantafillou, Sofia",
+    "year": 2022,
+    "venue": "IEEE Transactions on Neural Networks and Learning Systems",
+    "link": "https://www.bibsonomy.org/bibtex/cf4c3b1c28acffe6e2d5b17d2105040e/mensxmachina"
+  },
+  {
+    "title": "Common MicroRNAs in Pre-diagnostic Serum Associated with Lung Cancer in Two Cohorts up to Eight Years Before Diagnosis: A HUNT Study",
+    "authors": "Roe, OD and Fotopoulos, I and Nguyen, OTD and Nost, TH and Markaki, M and Lagani, Vincenzo and Mjelle, R and Sandanger, TM and Saetrom, P and Tsamardinos, I",
+    "year": 2022,
+    "venue": "Elsevier BV",
+    "link": "https://www.bibsonomy.org/bibtex/bf49a759aa200a27cf29eb52c391e257/mensxmachina"
+  },
+  {
+    "title": "A machine learning approach utilizing DNA methylation as an accurate classifier of COVID-19 disease severity",
+    "authors": "Bowler, Scott and Papoutsoglou, Georgios and Karanikas, Aristides and Tsamardinos, Ioannis and Corley, Michael J and Ndhlovu, Lishomwa C",
+    "year": 2022,
+    "venue": "Scientific Reports",
+    "link": "https://www.bibsonomy.org/bibtex/c95ccd60f041a590226ac5efad7c573c/mensxmachina"
+  },
+  {
+    "title": "Don't lose samples to estimation",
+    "authors": "Tsamardinos, Ioannis",
+    "year": 2022,
+    "venue": "Patterns",
+    "link": "https://www.bibsonomy.org/bibtex/454653a476fe0c3e3d8fd62cd5b5dd91/mensxmachina"
+  },
+  {
+    "title": "Credit card fraud detection with automated machine learning systems",
+    "authors": "Plakandaras, Vasilios and Gogas, Periklis and Papadimitriou, Theophilos and Tsamardinos, Ioannis",
+    "year": 2022,
+    "venue": "Applied Artificial Intelligence",
+    "link": "https://www.bibsonomy.org/bibtex/8771d87d68b44f993e215a517d0daf44/mensxmachina"
+  },
+  {
+    "title": "A machine learning approach utilizing DNA methylation as an accurate classifier of COVID-19 disease severity",
+    "authors": "Bowler, Scott and Papoutsoglou, Georgios and Karanikas, Aristides and Tsamardinos, Ioannis and Corley, Michael J. and Ndhlovu, Lishomwa C.",
+    "year": 2022,
+    "venue": "Scientific Reports",
+    "link": "https://www.bibsonomy.org/bibtex/c95ccd60f041a590226ac5efad7c573c/mensxmachina"
+  },
+  {
+    "title": "Liquid Biopsy in Type 2 Diabetes Mellitus Management: Building Specific Biosignatures via Machine Learning",
+    "authors": "Karaglani, Makrina and Panagopoulou, Maria and Cheimonidi, Christina and Tsamardinos, Ioannis and Maltezos, Efstratios and Papanas, Nikolaos and Papazoglou, Dimitrios and Mastorakos, George and Chatzaki, Ekaterini",
+    "year": 2022,
+    "venue": "Journal of Clinical Medicine",
+    "link": "https://www.bibsonomy.org/bibtex/f3820dbe8f6b53a53f1671c62d64dfaf/mensxmachina"
+  },
+  {
+    "title": "{The Essentials of Multiomics}",
+    "authors": "Marshall, John L and Peshkin, Beth N and Yoshino, Takayuki and Vowinckel, Jakob and Danielsen, Håvard E and Melino, Gerry and Tsamardinos, Ioannis and Haudenschild, Christian and Kerr, David J and Sampaio, Carlos and Rha, Sun Young and FitzGerald, Kevin T and Holland, Eric C and Gallagher, David and Garcia-Foncillas, Jesus and Juhl, Hartmut",
+    "year": 2022,
+    "venue": "The Oncologist",
+    "link": "https://www.bibsonomy.org/bibtex/f0ee8d8b0e2acf63c050b1f6f58be762/mensxmachina"
+  },
+  {
+    "title": "Applications of machine learning in human microbiome studies: a review on feature selection, biomarker identification, disease prediction and treatment",
+    "authors": "Marcos-Zambrano, Laura Judith and Karaduzovic-Hadziabdic, Kanita and Loncar Turukalo, Tatjana and Przymus, Piotr and Trajkovik, Vladimir and Aasmets, Oliver and Berland, Magali and Gruca, Aleksandra and Hasic, Jasminka and Hron, Karel and others",
+    "year": 2021,
+    "venue": "Frontiers in microbiology",
+    "link": "https://www.bibsonomy.org/bibtex/221a1fb034ef089668d294adbb36ed41/mensxmachina"
+  },
+  {
+    "title": "STATegra: Multi-Omics data integration--a conceptual scheme with a bioinformatics pipeline",
+    "authors": "Planell, Nuria and Lagani, Vincenzo and Sebastian-Leon, Patricia and van der Kloet, Frans and Ewing, Ewoud and Karathanasis, Nestoras and Urdangarin, Arantxa and Arozarena, Imanol and Jagodic, Maja and Tsamardinos, Ioannis and others",
+    "year": 2021,
+    "venue": "Frontiers in genetics",
+    "link": "https://www.bibsonomy.org/bibtex/b9920397f6e3cb3bb3f85c4f9693c091/mensxmachina"
+  },
+  {
+    "title": "Deciphering the methylation landscape in breast cancer: diagnostic and prognostic biosignatures through automated machine learning",
+    "authors": "Panagopoulou, Maria and Karaglani, Makrina and Manolopoulos, Vangelis G and Iliopoulos, Ioannis and Tsamardinos, Ioannis and Chatzaki, Ekaterini",
+    "year": 2021,
+    "venue": "Cancers",
+    "link": "https://www.bibsonomy.org/bibtex/9a46961bf0583786199d3b4d978bcb01/mensxmachina"
+  },
+  {
+    "title": "Proteus: Predictive explanation of anomalies",
+    "authors": "Myrtakis, Nikolaos and Tsamardinos, Ioannis and Christophides, Vassilis",
+    "year": 2021,
+    "venue": "2021 IEEE 37th International Conference on Data Engineering (ICDE)",
+    "link": "https://www.bibsonomy.org/bibtex/1be3182c1d6928ec21142b5f18a6ea20/mensxmachina"
+  },
+  {
+    "title": "Prediction of outcome in patients with non-small cell lung cancer treated with second line PD-1/PDL-1 inhibitors based on clinical parameters: Results from a prospective, single institution study",
+    "authors": "Rounis, Konstantinos and Makrakis, Dimitrios and Papadaki, Chara and Monastirioti, Alexia and Vamvakas, Lambros and Kalbakis, Konstantinos and Gourlia, Krystallia and Xanthopoulos, Iordanis and Tsamardinos, Ioannis and Mavroudis, Dimitrios and others",
+    "year": 2021,
+    "venue": "PloS one",
+    "link": "https://www.bibsonomy.org/bibtex/a0eef9b07b2b90a22dc252665cc48103/mensxmachina"
+  },
+  {
+    "title": "Extending greedy feature selection algorithms to multiple solutions",
+    "authors": "Borboudakis, Giorgos and Tsamardinos, Ioannis",
+    "year": 2021,
+    "venue": "Data Mining and Knowledge Discovery",
+    "link": "https://www.bibsonomy.org/bibtex/2111a54b383124f93dad8b9ebd26afb5/mensxmachina"
+  },
+  {
+    "title": "Automated machine learning optimizes and accelerates predictive modeling from COVID-19 high throughput datasets",
+    "authors": "Papoutsoglou, Georgios and Karaglani, Makrina and Lagani, Vincenzo and Thomson, Naomi and R{\\o}e, Oluf Dimitri and Tsamardinos, Ioannis and Chatzaki, Ekaterini",
+    "year": 2021,
+    "venue": "Scientific Reports",
+    "link": "https://www.bibsonomy.org/bibtex/072fa3fd8adfb85998e241259968cb09/mensxmachina"
+  },
+  {
+    "title": "On Predictive Explanation of Data Anomalies",
+    "authors": "Myrtakis, Nikolaos and Tsamardinos, Ioannis and Christophides, Vassilis",
+    "year": 2021,
+    "venue": "arXiv preprint arXiv:2110.09467",
+    "link": "https://www.bibsonomy.org/bibtex/3ac6709625d256d146c1721217c4ac0b/mensxmachina"
+  },
+  {
+    "title": "Heart rate classification using ECG signal processing and machine learning methods",
+    "authors": "Papadogiorgaki, Maria and Venianaki, Maria and Charonyktakis, Paulos and Antonakakis, Marios and Tsamardinos, Ioannis and Zervakis, Michalis E and Sakkalis, Vangelis",
+    "year": 2021,
+    "venue": "2021 IEEE 21st International Conference on Bioinformatics and Bioengineering (BIBE)",
+    "link": "https://www.bibsonomy.org/bibtex/2eb66ce826c06fda1d9831644de642b5/mensxmachina"
+  },
+  {
+    "title": "Applications of Machine Learning in Human Microbiome Studies: A Review on Feature Selection, Biomarker Identification, Disease Prediction and Treatment",
+    "authors": "Marcos-Zambrano, Laura Judith and Karaduzovic-Hadziabdic, Kanita and Loncar Turukalo, Tatjana and Przymus, Piotr and Trajkovik, Vladimir and Aasmets, Oliver and Berland, Magali and Gruca, Aleksandra and Hasic, Jasminka and Hron, Karel and Klammsteiner, Thomas and Kolev, Mikhail and Lahti, Leo and Lopes, Marta B. and Moreno, Victor and Naskinova, Irina and Org, Elin and Paciência, Inês and Papoutsoglou, Georgios and Shigdel, Rajesh and Stres, Blaz and Vilne, Baiba and Yousef, Malik and Zdravevski, Eftim and Tsamardinos, Ioannis and Carrillo de Santa Pau, Enrique and Claesson, Marcus J. and Moreno-Indias, Isabel and Truu, Jaak",
+    "year": 2021,
+    "venue": "Frontiers in Microbiology",
+    "link": "https://www.bibsonomy.org/bibtex/9365312756fb3fb9714d2f38a30626eb/mensxmachina"
+  },
+  {
+    "title": "Automated machine learning optimizes and accelerates predictive modeling from COVID-19 high throughput datasets",
+    "authors": "Papoutsoglou, Georgios and Karaglani, Makrina and Lagani, Vincenzo and Thomson, Naomi and Røe, Oluf and Tsamardinos, Ioannis and Chatzaki, Ekaterini",
+    "year": 2021,
+    "venue": "Scientific Reports",
+    "link": "https://www.bibsonomy.org/bibtex/29657a11a3631c2933d03c8939af5f29/mensxmachina"
+  },
+  {
+    "title": "Heart Rate Classification Using ECG Signal Processing and Machine Learning Methods",
+    "authors": "Papadogiorgaki, Maria and Venianaki, Maria and Charonyktakis, Paulos and Antonakakis, Marios and Tsamardinos, Ioannis and Zervakis, Michalis E. and Sakkalis, Vangelis",
+    "year": 2021,
+    "venue": "2021 IEEE 21st International Conference on Bioinformatics and Bioengineering (BIBE)",
+    "link": "https://www.bibsonomy.org/bibtex/2eb66ce826c06fda1d9831644de642b5/mensxmachina"
+  },
+  {
+    "title": "Prediction of outcome in patients with non-small cell lung cancer treated with second line PD-1/PDL-1 inhibitors based on clinical parameters: Results from a prospective, single institution study",
+    "authors": "Rounis, Konstantinos and Makrakis, Dimitrios and Papadaki, Chara and Monastirioti, Alexia and Vamvakas, Lambros and Kalbakis, Konstantinos and Gourlia, Krystallia and Xanthopoulos, Iordanis and Tsamardinos, Ioannis and Mavroudis, Dimitrios and Agelaki, Sofia",
+    "year": 2021,
+    "venue": "PLOS ONE",
+    "link": "https://www.bibsonomy.org/bibtex/c53c8616653bdaaa2984cde14d27d241/mensxmachina"
+  },
+  {
+    "title": "Extending greedy feature selection algorithms to multiple solutions",
+    "authors": "Borboudakis, Giorgos and Tsamardinos, Ioannis",
+    "year": 2021,
+    "venue": "Data Mining and Knowledge Discovery",
+    "link": "https://www.bibsonomy.org/bibtex/2111a54b383124f93dad8b9ebd26afb5/mensxmachina"
+  },
+  {
+    "title": "Deciphering the Methylation Landscape in Breast Cancer: Diagnostic and Prognostic Biosignatures through Automated Machine Learning",
+    "authors": "Panagopoulou, Maria and Karaglani, Makrina and Manolopoulos, Vangelis G. and Iliopoulos, Ioannis and Tsamardinos, Ioannis and Chatzaki, Ekaterini",
+    "year": 2021,
+    "venue": "Cancers",
+    "link": "https://www.bibsonomy.org/bibtex/9a46961bf0583786199d3b4d978bcb01/mensxmachina"
+  },
+  {
+    "title": "Extending Greedy Feature Selection Algorithms to Multiple Solutions",
+    "authors": "Borboudakis, G and Tsamardinos, I",
+    "year": 2021,
+    "venue": "Data Mining and Knowledge Discovery",
+    "link": "https://www.bibsonomy.org/bibtex/2111a54b383124f93dad8b9ebd26afb5/mensxmachina"
+  },
+  {
+    "title": "Applications of Machine Learning in Human Microbiome Studies: A Review on Feature Selection, Biomarker Identification, Disease Prediction and Treatment",
+    "authors": "Marcos-Zambrano, J and Karaduzovic-Hadziabdic, K and Turukalo, TL and Przymus, P and Trajkovik, V and Aasmets, O and Berland, M and Gruca, G and Hasic, J and Hron, K and Klammsteiner, T and Kolev, M and Lanthi, L and Lopez, M and Moreno, V and Naskinova, I and Org, E and Paciência, I and Papoutsoglou, G and Shigdel, R and Stres, B and Vilne, B and Yousef, M and Zdravevski, E and Tsamardinos, I and Carrillo de Santa Pau, E and Claesson, M and Moreno-Indias, I and Truu, J",
+    "year": 2021,
+    "venue": "Frontiers in Microbiology ",
+    "link": "https://www.bibsonomy.org/bibtex/4f472a04bb70097a1db5243fc5c2ba8d/mensxmachina"
+  },
+  {
+    "title": "\"PROTEUS: Predictive Explanation of Anomalies,\"",
+    "authors": "Myrtakis, N and Tsamardinos, I and Christophides, V",
+    "year": 2021,
+    "venue": "",
+    "link": "https://www.bibsonomy.org/bibtex/1be3182c1d6928ec21142b5f18a6ea20/mensxmachina"
+  },
+  {
+    "title": "Inference of Stochastic Dynamical Systems from Cross-Sectional Population\r\nData\r\n",
+    "authors": "Tsourtis, A and Pantazis, Y and Tsamardinos, I",
+    "year": 2020,
+    "venue": "arXiv:2012.05055v1 [cs.LG] 9 Dec 2020",
+    "link": "https://www.bibsonomy.org/bibtex/1dd0cba1cddecc67bc714ff55e2fa939/mensxmachina"
+  },
+  {
+    "title": "The γ-OMP algorithm for feature selection with application to gene expression data",
+    "authors": "Tsagris, Michail and Papadovasilakis, Zacharias and Lakiotaki, Kleanthi and Tsamardinos, Ioannis",
+    "year": 2020,
+    "venue": " IEEE/ACM Transactions on Computational Biology and Bioinformatics ",
+    "link": "https://www.bibsonomy.org/bibtex/9bef7f59658d9a4a2f82cba160e276e4/mensxmachina"
+  },
+  {
+    "title": "Latent Feature Representations for Human Gene Expression Data Improve Phenotypic Predictions",
+    "authors": "Pantazis, Yannis and Tselas, Christos and Lakiotaki, Kleanthi and Lagani, Vincenzo and Tsamardinos, ioannis",
+    "year": 2020,
+    "venue": "IEEE",
+    "link": "https://www.bibsonomy.org/bibtex/85456c0fc077102f3eca5cd7f7dfc749/mensxmachina"
+  },
+  {
+    "title": "STATegra: Multi-omics data integration - A conceptual scheme and a bioinformatics pipeline",
+    "authors": "Phanell, Nuria and Lagani, Vincenzo and Sebastian-Leon, Patricia and Van der Kloet, Frans and Ewing, Ewoud and Karathanasis, Nestoras and Urdangarin, Arantxa and Arozarena, Imanol and Jagodic, Maja and Tsamardinos, Ioannis and Tarazona, Sonia and Conesa, Ana and Tegner, Jesper and Gomez-Cabrero, David",
+    "year": 2020,
+    "venue": "Frontiers in Genetics ",
+    "link": "https://www.bibsonomy.org/bibtex/84dd53162ecf2659ffb75f1329f0aaad/mensxmachina"
+  },
+  {
+    "title": "Applicability of an Automated Model and Parameter Selection in the Prediction of Screening-Level PTSD in Danish Soldiers Following Deployment: Development Study of Transferable Predictive Models Using Automated Machine Learning",
+    "authors": "\"Karstoft, KI\" and \"Tsamardinos, I\" and \"Eskelund, K\" and \"Andersen.SB\" and \"Nissen, LR\"",
+    "year": 2020,
+    "venue": "JMIR Medical Informatics",
+    "link": "https://www.bibsonomy.org/bibtex/e4d28b268e9ea645b86d7488930824cc/mensxmachina"
+  },
+  {
+    "title": "Accurate Blood-Based Diagnostic Biosignatures for Alzheimer’s Disease via Automated Machine Learning",
+    "authors": "Karaglani, Makrina and Gourlia, Krystallia and Tsamardinos, Ioannis and Chatzaki, Ekaterini",
+    "year": 2020,
+    "venue": "Journal of Clinical  Medicine ",
+    "link": "https://www.bibsonomy.org/bibtex/9805a10159c6a371c134c15364c30b15/mensxmachina"
+  },
+  {
+    "title": "Tuning Causal Discovery Algorithms",
+    "authors": "Biza, K. and Tsamardinos, I. and Triantafillou, S.",
+    "year": 2020,
+    "venue": "Proceedings of the Tenth International Conference on Probabilistic Graphical Models, in PMLR",
+    "link": "https://www.bibsonomy.org/bibtex/8a79a42946abf9f62c4d45b8110b6a94/mensxmachina"
+  },
+  {
+    "title": "Pathway Activity Score Learning for Dimensionality Reduction of Gene Expression Data",
+    "authors": "Karagiannaki, Ioulia and Pantazis, Yannis and Chatzaki, Ekaterini and Tsamardinos, Ioannis",
+    "year": 2020,
+    "venue": "Discovery Science. DS 2020. Lecture Notes in Computer Science",
+    "link": "https://www.bibsonomy.org/bibtex/250e1c55d999f5493581587cf0627a28/mensxmachina"
+  },
+  {
+    "title": "An Automated Machine Learning architecture for the accelerated prediction of Metal-Organic Frameworks performance in energy and environmental applications",
+    "authors": "Tsamardinos, Ioannis and Fanourgakis, George and Greasidou, Elissavet and Klontzas, Emmanuel and Gkagkas, Konstantinos and Froudakis, George",
+    "year": 2020,
+    "venue": "Microporous and Mesoporos Materials ",
+    "link": "https://www.bibsonomy.org/bibtex/38928b1e64d735cbd81ebdb04cf9f6a0/mensxmachina"
+  },
+  {
+    "title": "Learning Pathway Dynamics from Single‐Cell Proteomic Data: A Comparative Study",
+    "authors": "Verrou, Klio-Maria and Tsamardinos, Ioannis and Papoutsoglou, Georgios",
+    "year": 2020,
+    "venue": "Cytometry part A, Special Issue: Machine Learning for Single Cell Data,",
+    "link": "https://www.bibsonomy.org/bibtex/cfaefe697d477e338b1b5b57bc0e7335/mensxmachina"
+  },
+  {
+    "title": "An AutoML application to forecasting bank failures",
+    "authors": "Agrapetidou, Anna and Charonyktakis, Paulos and Gogas, Periklis and Papadimitriou, Theofilos and Tsamardinos, Ioannis",
+    "year": 2020,
+    "venue": "Applied Economics Letters ",
+    "link": "https://www.bibsonomy.org/bibtex/681df752dae5354ddadb9b582760dccc/mensxmachina"
+  },
+  {
+    "title": "Putting the Human Back in the AutoML Loop.",
+    "authors": "Xanthopoulos, Iordanis and Tsamardinos, Ioannis and Christophides, Vassilis and Simon, Eric and Salinger, Alejandro",
+    "year": 2020,
+    "venue": "EDBT/ICDT Workshops",
+    "link": "https://www.bibsonomy.org/bibtex/80875b3bcb7ce5f7b780107cb86039fa/mensxmachina"
+  },
+  {
+    "title": "Translating vitamin D transcriptomics to clinical evidence: Analysis of data in asthma and chronic obstructive pulmonary disease, followed by clinical data meta-analysis",
+    "authors": "Malliaraki, Niki and Lakiotaki, Kleanthi and Vamvoukaki, Rodanthi and Notas, George and Tsamardinos, Ioannis and Kampa, Marilena and Castanas, Elias",
+    "year": 2020,
+    "venue": "The Journal of Steroid Biochemistry and Molecular Biology",
+    "link": "https://www.bibsonomy.org/bibtex/5288b5fd5d047654c87ff505dfaa1814/mensxmachina"
+  },
+  {
+    "title": "‘Reduced’ HUNT model outperforms NLST and NELSON study criteria in predicting lung cancer in the Danish screening trial ",
+    "authors": "Røe, Oluf Dimitri and Markaki, Maria and Tsamardinos, Ioannis and Lagani, Vincenzo and Nguyen, Olav Toai Duc and Pedersen, Jesper Holst and Saghir, Zaigham and Ashraf, Haseem Gary",
+    "year": 2019,
+    "venue": "BMJ Open Respiratory Research ",
+    "link": "https://www.bibsonomy.org/bibtex/d35f4774e9052e723730411fd1234172/mensxmachina"
+  },
+  {
+    "title": "Challenges in the Multivariate Analysis of Mass Cytometry Data: The Effect of Randomization",
+    "authors": "Papoutsoglou, Georgios and Lagani, Vincenzo and Schmidt, Angelika and Tsirlis, Konstantinos and Cabrero, David-Gomez and Tegner, Jesper and Tsamardinos, Ioannis",
+    "year": 2019,
+    "venue": "Cytometry Part A",
+    "link": "https://www.bibsonomy.org/bibtex/59ca510bf7d57dfbb97a59313975672e/mensxmachina"
+  },
+  {
+    "title": "{STATegra}, a comprehensive multi-omics dataset of B-cell differentiation in mouse",
+    "authors": "Gomez-Cabrero, David and Tarazona, Sonia and Ferreir{\\'{o}}s-Vidal, Isabel and Ramirez, Ricardo N. and Company, Carlos and Schmidt, Andreas and Reijmers, Theo and von Saint Paul, Veronica and Marabita, Francesco and Rodr{\\'{\\i}}guez-Ubreva, Javier and Garcia-Gomez, Antonio and Carroll, Thomas and Cooper, Lee and Liang, Ziwei and Dharmalingam, Gopuraja and van der Kloet, Frans and Harms, Amy C. and Balzano-Nogueira, Leandro and Lagani, Vincenzo and Tsamardinos, Ioannis and Lappe, Michael and Maier, Dieter and Westerhuis, Johan A. and Hankemeier, Thomas and Imhof, Axel and Ballestar, Esteban and Mortazavi, Ali and Merkenschlager, Matthias and Tegner, Jesper and Conesa, Ana",
+    "year": 2019,
+    "venue": "Scientific Data",
+    "link": "https://www.bibsonomy.org/bibtex/1b1997f9cf4a39e4886fd0fb6384ac41/mensxmachina"
+  },
+  {
+    "title": "A data driven approach reveals disease similarity\r\non a molecular level",
+    "authors": "Lakiotaki, Kleanthi and Georgakopoulos, George and Castanas, Elias and Røe, Oluf Dimitri and Borboudakis, Giorgos and Tsamardinos, Ioannis",
+    "year": 2019,
+    "venue": "npj Systems Biology and Applications ",
+    "link": "https://www.bibsonomy.org/bibtex/e48ead7f0f6f503fe7647117214a3059/mensxmachina"
+  },
+  {
+    "title": "Feature selection with the R package MXM",
+    "authors": "Tsagris, M and Tsamardinos, I",
+    "year": 2019,
+    "venue": "F1000Research",
+    "link": "https://www.bibsonomy.org/bibtex/eecad4526b5bcd1e6f1ea321c636118f/mensxmachina"
+  },
+  {
+    "title": "Scanning of Genetic Variants and Genetic Mapping of Phenotypic Traits in Gilthead Sea Bream Through ddRAD Sequencing",
+    "authors": "Kyriakis, Dimitrios and Kanterakis, Alexandros and Manousaki, Tereza and Tsakogiannis, Alexandros and Tsagris, Michalis and Tsamardinos, Ioannis and Papaharisis, Leonidas and Chatziplis, Dimitris and Potamias, George and Tsigenopoulos, Costas",
+    "year": 2019,
+    "venue": "Frontiers in Genetics     ",
+    "link": "https://www.bibsonomy.org/bibtex/09fd2ec870d7a4ee7ebcaf4a3d934a96/mensxmachina"
+  },
+  {
+    "title": "Non-parametric combination analysis of multiple data types enables detection of novel regulatory mechanisms in T cells of multiple sclerosis patients",
+    "authors": "Fernandes Sunja, Jude and Morikawa, Hiromasa and Ewing, Ewoud and Ruhrmann, Sabrina and Joshi Rubin, Narayan and Lagani, Vincenzo and Karathanasis, Nestoras and Khademi, Mohsen and Planell, Nuria and Schmidt, Angelika and Tsamardinos, Ioannis and Olsson, Tomas and Piehl, Fredrik and Kockum, Ingrid and Jagodic, Maja and Tegnér, Jesper and Gomez-Cabrero, David",
+    "year": 2019,
+    "venue": "Nature Scientific Reports",
+    "link": "https://www.bibsonomy.org/bibtex/da7a8c5930f294e6881f967fca95fe53/mensxmachina"
+  },
+  {
+    "title": "Combining evidence from four immune cell types identifies {DNA} methylation patterns that implicate functionally distinct pathways during Multiple Sclerosis progression",
+    "authors": "Ewing, Ewoud and Kular, Lara and Fernandes, Sunjay J. and Karathanasis, Nestoras and Lagani, Vincenzo and Ruhrmann, Sabrina and Tsamardinos, Ioannis and Tegner, Jesper and Piehl, Fredrik and Gomez-Cabrero, David and Jagodic, Maja",
+    "year": 2019,
+    "venue": "{EBioMedicine}",
+    "link": "https://www.bibsonomy.org/bibtex/d968457cbd123773e47fe5018137eaa2/mensxmachina"
+  },
+  {
+    "title": "Structural Basis of the Subcellular Topology Landscape of Escherichia coli",
+    "authors": "Loos, Maria S. and Ramakrishnan, Reshmi and Vranken, Wim and Tsirigotaki, Alexandra and Tsare, Evrydiki-Pandora and Zorzini, Valentina and Geyter, Jozefien De and Yuan, Biao and Tsamardinos, Ioannis and Klappa, Maria and Schymkowitz, Joost and Rousseau, Frederic and Karamanou, Spyridoula and Economou, Anastassios",
+    "year": 2019,
+    "venue": "Frontiers in Microbiology",
+    "link": "https://www.bibsonomy.org/bibtex/01b19ff85dd7e5afe5d2443997f749a5/mensxmachina"
+  },
+  {
+    "title": "Feedforward regulation of Myc coordinates lineage-specific with housekeeping gene expression during B cell progenitor cell differentiation",
+    "authors": "Ferreirós-Vidal, Isabel and Carroll, Thomas and Zhang, Tianyi and Lagani, Vincenzo and Ramirez, Ricardo N. and Ing-Simmons, Elizabeth and Garcia, Alicia and Cooper, Lee and Liang, Ziwei and Papoutsoglou, Georgios and Dharmalingam, Gopuraja and Guo, Ya and Tarazona, Sonia and Fernandes, Sunjay J. and Noori, Peri and Silberberg, Gilad and Fisher, Amanda G. and Tsamardinos, Ioannis and Mortazavi, Ali and Lenhard, Boris and Conesa, Ana and Tegner, Jesper and Merkenschlager, Matthias and Gomez-Cabrero, David",
+    "year": 2019,
+    "venue": "PLOS Biology",
+    "link": "https://www.bibsonomy.org/bibtex/47806e111971adfc2e5769052393b71e/mensxmachina"
+  },
+  {
+    "title": "A unified approach for sparse dynamical system inference from temporal measurements",
+    "authors": "Pantazis, Yannis and Tsamardinos, Ioannis",
+    "year": 2019,
+    "venue": "Bioinformatics",
+    "link": "https://www.bibsonomy.org/bibtex/da2952f9b07f650ea261d6ba83859a43/mensxmachina"
+  },
+  {
+    "title": "Forward-Backward Selection with Early Dropping",
+    "authors": "Borboudakis, Giorgos and Tsamardinos, Ioannis",
+    "year": 2019,
+    "venue": "Journal of Machine Learning Research",
+    "link": "https://www.bibsonomy.org/bibtex/af84c72c0490ecd3738da71550eaec18/mensxmachina"
+  },
+  {
+    "title": "Circulating cell free DNA in Breast cancer: size profiling, levels and methylation patterns lead to prognostic and predictive classifiers",
+    "authors": "Panagopoulou, Maria and Karaglani, Makrina and Balgkouranidou, Ioanna and Vasilakakis, Vassilis and Biziota, Eirini and Koukaki, Theodora and Karamitrousis, Emmanouil and Nena, Evangelia and Tsamardinos, Ioannis and Kolios, George and Lianidou, Evi and Kakolyris, Stylianos and Chatzaki, Ekaterini",
+    "year": 2019,
+    "venue": "Oncogene ",
+    "link": "https://www.bibsonomy.org/bibtex/a7720c39b927fe3d5b34641f3419e435/mensxmachina"
+  },
+  {
+    "title": "On scoring Maximal Ancestral Graphs with the Max{\\textendash}Min Hill Climbing algorithm",
+    "authors": "Tsirlis, Konstantinos and Lagani, Vincenzo and Triantafillou, Sofia and Tsamardinos, Ioannis",
+    "year": 2018,
+    "venue": "International Journal of Approximate Reasoning",
+    "link": "https://www.bibsonomy.org/bibtex/7f00d0fcad8c52b8cce71b771e7cb3e5/mensxmachina"
+  },
+  {
+    "title": "Bayesian Network Learning with the PC Algorithm: An Improved and Correct Variation",
+    "authors": "Tsagris, Michail",
+    "year": 2018,
+    "venue": "Applied Artificial Intelligence ",
+    "link": "https://www.bibsonomy.org/bibtex/6c22e7e09e9aa7a24536cef5b953528e/mensxmachina"
+  },
+  {
+    "title": "Bootstrapping the out-of-sample predictions for efficient and accurate cross-validation",
+    "authors": "Tsamardinos, Ioannis and Greasidou, Elissavet and Borboudakis, Giorgos",
+    "year": 2018,
+    "venue": "Machine Learning",
+    "link": "https://www.bibsonomy.org/bibtex/97a8dcbb7f6259a554fb36d14f44bc47/mensxmachina"
+  },
+  {
+    "title": "A greedy feature selection algorithm for Big Data of high dimensionality",
+    "authors": "Tsamardinos, Ioannis and Borboudakis, Giorgos and Katsogridakis, Pavlos and Pratikakis, Polyvios and Christophides, Vassilis",
+    "year": 2018,
+    "venue": "Machine Learning",
+    "link": "https://www.bibsonomy.org/bibtex/758062c5debf18afdf43d46ce6105a72/mensxmachina"
+  },
+  {
+    "title": "Toward Automatic Risk Assessment to Support Suicide Prevention",
+    "authors": "Adamou, Marios and Antoniou, Grigoris and Greasidou, Elissavet and Lagani, Vincenzo and Charonyktakis, Paulos and Tsamardinos, Ioannis and Doyle, Michael",
+    "year": 2018,
+    "venue": "Crisis",
+    "link": "https://www.bibsonomy.org/bibtex/aefe5230d12e9dad8b6e56b72f05cf9d/mensxmachina"
+  },
+  {
+    "title": "Constraint-based causal discovery with mixed data",
+    "authors": "Tsagris, Michail and Borboudakis, Giorgos and Lagani, Vincenzo and Tsamardinos, Ioannis",
+    "year": 2018,
+    "venue": "International Journal of Data Science and Analytics",
+    "link": "https://www.bibsonomy.org/bibtex/918ab366354b2932cdd4a92d4e7884e3/mensxmachina"
+  },
+  {
+    "title": "BioDataome: a collection of uniformly preprocessed and automatically annotated datasets for data-driven biology",
+    "authors": "Lakiotaki, Kleanthi and Vorniotakis, Nikolaos and Tsagris, Michail and Georgakopoulos, Georgios and Tsamardinos, Ioannis",
+    "year": 2018,
+    "venue": "Database",
+    "link": "https://www.bibsonomy.org/bibtex/e6cafd740574c1f9bcf3bb532e0dba46/mensxmachina"
+  },
+  {
+    "title": " Feature selection for high-dimensional temporal data",
+    "authors": "Tsagris, Michail and Lagani, Vincenzo and Tsamardinos, Ioannis",
+    "year": 2018,
+    "venue": "BMC Bioinformatics",
+    "link": "https://www.bibsonomy.org/bibtex/e57a8785d79c3782b45dd3953a7d7985/mensxmachina"
+  },
+  {
+    "title": "Mining Free-Text Medical Notes for Suicide Risk Assessment",
+    "authors": "Adamou, Marios and Antoniou, Grigoris and Greassidou, Elissavet and Lagani, Vincenzo and Charonyktakis, Paulos and Tsamardinos, Ioannis",
+    "year": 2018,
+    "venue": "SETN '18 Proceedings of the 10th Hellenic Conference on Artificial Intelligence",
+    "link": "https://www.bibsonomy.org/bibtex/0bb1d9382f6832a0e6034a1f4b9bce1a/mensxmachina"
+  },
+  {
+    "title": "A Validated Clinical Risk Prediction Model for Lung Cancer in Smokers of All Ages and Exposure Types: A HUNT Study.",
+    "authors": "Markaki, Maria and Tsamardinos, Ioannis and Langhammer, Arnulf and Lagani, Vincenzo and Hveem, Kristian and R{\\o}e, Oluf Dimitri",
+    "year": 2018,
+    "venue": "EBioMedicine",
+    "link": "https://www.bibsonomy.org/bibtex/1bce5eb7bd51017bf19c97cecf30d30e/mensxmachina"
+  },
+  {
+    "title": "Constraint-based Causal Discovery with Mixed Data",
+    "authors": "Tsagris, M and Borboudakis, G and Lagani, V and Tsamardinos, I",
+    "year": 2017,
+    "venue": "23rd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining, Workshop on Causal Discovery (KDD)",
+    "link": "https://www.bibsonomy.org/bibtex/87d6a33d891429260e644392ddcba508/mensxmachina"
+  },
+  {
+    "title": "On Scoring Maximal Ancestral Graphs with the Max-Min Hill\r\nClimbing Algorithm",
+    "authors": "Tsirlis, K and Lagani, V and Triantafillou, S and Tsamardinos, I",
+    "year": 2017,
+    "venue": "23rd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining, Workshop on Causal Discovery (KDD)",
+    "link": "https://www.bibsonomy.org/bibtex/4731b83fe8b2f1f60eed63d178912109/mensxmachina"
+  },
+  {
+    "title": "Chemically intuited, large-scale screening of MOFs by machine learning techniques",
+    "authors": "Borboudakis, Giorgos and Stergiannakos, Txiarchis and Frysali, Maria and Klontzas, Emmanuel and Tsamardinos, Ioannis and Froudakis, George E.",
+    "year": 2017,
+    "venue": "NPJ Computational Materials",
+    "link": "https://www.bibsonomy.org/bibtex/1bc83725a35ce15678399a739e9c76bf/mensxmachina"
+  },
+  {
+    "title": "Feature Selection with the R Package {MXM}: Discovering Statistically Equivalent Feature Subsets",
+    "authors": "Lagani, Vincenzo and Athineou, Giorgos and Farcomeni, Alessio and Tsagris, Michail and Tsamardinos, Ioannis",
+    "year": 2017,
+    "venue": "Journal of Statistical Software",
+    "link": "https://www.bibsonomy.org/bibtex/2d6c6cbe4da60ea0a19269dad768d0d4/mensxmachina"
+  },
+  {
+    "title": "MatureP: prediction of secreted proteins with exclusive information from their mature regions",
+    "authors": "Orfanoudaki, Georgia and Markaki, Maria and Chatzi, Katerina and Tsamardinos, Ioannis and Economou, Anastassios",
+    "year": 2017,
+    "venue": "Nature Scientific Reports",
+    "link": "https://www.bibsonomy.org/bibtex/45976adff24808a1e1f78e330732b5ff/mensxmachina"
+  },
+  {
+    "title": "SCENERY: a web application for (causal) network reconstruction from cytometry data",
+    "authors": "Papoutsoglou, Georgios and Athineou, Giorgos and Lagani, Vincenzo and Xanthopoulos, Iordanis and Schmidt, Angelika and Éliás, Szabolcs and Tegnér, Jesper and Tsamardinos, Ioannis",
+    "year": 2017,
+    "venue": "Nucleic Acids Research",
+    "link": "https://www.bibsonomy.org/bibtex/673f191749dcc1ae18b6e562a41d3176/mensxmachina"
+  },
+  {
+    "title": "Predicting Causal Relationships from Biological Data: Applying Automated Causal Discovery on Mass Cytometry Data of Human Immune Cells",
+    "authors": "Triantafillou, Sofia and Lagani, Vincenzo and Heinze-Deml, Christina and Schmidt, Angelika and Tegner, Jesper and Tsamardinos, Ioannis",
+    "year": 2017,
+    "venue": "Nature Scientific Reports",
+    "link": "https://www.bibsonomy.org/bibtex/4437d2e18e86d9d0e26274b32df00b99/mensxmachina"
+  },
+  {
+    "title": "Prothrombotic and Endothelial Inflammatory Markers in Greek Patients with Type 2 Diabetes Compared to Non-Diabetics",
+    "authors": "Siomos, Kyros and Papadaki, E and Tsamardinos, Ioannis and Kerkentzes, K and Koygioylis, M and Trakatelli, CM",
+    "year": 2017,
+    "venue": "Endocrinology {\\&} Metabolic Syndrome",
+    "link": "https://www.bibsonomy.org/bibtex/87caff8395d570d0403ceb638ebf3c2f/mensxmachina"
+  },
+  {
+    "title": "SCENERY: a Web-Based Application for Network Reconstruction and Visualization of Cytometry Data.",
+    "authors": "Athineou, G. and Papoutsoglou, G. and Triantafullou, S. and Basdekis, I and Lagani, V. and Tsamardinos, I.",
+    "year": 2016,
+    "venue": "Accepted for publication on the 10th International Conference on Practical Applications of Computational Biology {\\&} Bioinformatics (PACBB 2016).",
+    "link": "https://www.bibsonomy.org/bibtex/d61d9b74c61b20e751c441e8262a2062/mensxmachina"
+  },
+  {
+    "title": "On user-centric modular QoE prediction for voip based on machine-learning algorithms",
+    "authors": "Charonyktakis, Paulos and Plakia, Maria and Tsamardinos, Ioannis and Papadopouli, Maria",
+    "year": 2016,
+    "venue": "IEEE Transactions on Mobile Computing",
+    "link": "https://www.bibsonomy.org/bibtex/bea43df893103d16715be91067cd10ff/mensxmachina"
+  },
+  {
+    "title": "Meta-analysis of clinical metabolic profiling studies in cancer: challenges and opportunities",
+    "authors": "Goveia, Jermaine and Pircher, Andreas and Conradi, Lena-Christin and Kalucka, Joanna and Lagani, Vincenzo and Dewerchin, Mieke and Eelen, Guy and DeBerardinis, Ralph J and Wilson, Ian D and Carmeliet, Peter",
+    "year": 2016,
+    "venue": "EMBO Molecular Medicine",
+    "link": "https://www.bibsonomy.org/bibtex/964295a9d8bf4dbde8a7956da25a610a/mensxmachina"
+  },
+  {
+    "title": "omicsNPC: applying the NonParametric Combination methodology to the integrative analysis of heterogeneous omics data",
+    "authors": "Karathanasis, N and Tsamardinos, I and Lagani, V",
+    "year": 2016,
+    "venue": "PloS one",
+    "link": "https://www.bibsonomy.org/bibtex/2256403d4191925adb5c8dc54d046aa1/mensxmachina"
+  },
+  {
+    "title": "Probabilistic computational causal discovery for systems biology",
+    "authors": "Lagani, Vincenzo and Triantafillou, Sofia and Ball, Gordon and Tegner, Jesper and Tsamardinos, Ioannis",
+    "year": 2016,
+    "venue": "Uncertainty in Biology",
+    "link": "https://www.bibsonomy.org/bibtex/d76d8d1c0d2cda475e012f4ec71e28cc/mensxmachina"
+  },
+  {
+    "title": "Score based vs constraint based causal learning in the presence of confounders",
+    "authors": "Triantafillou, Sofia and Tsamardinos, Ioannis",
+    "year": 2016,
+    "venue": "",
+    "link": "https://www.bibsonomy.org/bibtex/5ec5119e2b38606d25e2412f1b8725ee/mensxmachina"
+  },
+  {
+    "title": "Towards Robust and Versatile Causal Discovery forBusiness Applications",
+    "authors": "Borboudakis, Giorgos and Tsamardinos, Ioannis",
+    "year": 2016,
+    "venue": "",
+    "link": "https://www.bibsonomy.org/bibtex/019ba4ae770df56fc07b50d031f8f627/mensxmachina"
+  },
+  {
+    "title": "Marginal causal consistency in constraint-based causal learning",
+    "authors": "Roumpelaki, Anna and Borboudakis, Giorgos and Triantafillou, Sofia and Tsamardinos, Ioannis",
+    "year": 2016,
+    "venue": "",
+    "link": "https://www.bibsonomy.org/bibtex/dceb33794f0e0261753e329c9dbb7daf/mensxmachina"
+  },
+  {
+    "title": "A comparative evaluation of data-merging and meta-analysis methods for reconstructing gene-gene interactions",
+    "authors": "Lagani, Vincenzo and Karozou, Argyro D. and Gomez-Cabrero, David and Silberberg, Gilad and Tsamardinos, Ioannis",
+    "year": 2016,
+    "venue": "BMC Bioinformatics",
+    "link": "https://www.bibsonomy.org/bibtex/e61c12b1a68f6e300b1e7d54651102b2/mensxmachina"
+  },
+  {
+    "title": "Serum microRNAs/enriched pathways in lung cancer 1-4 years before diagnosis: A pilot study from the HUNT Biobank, Norway.",
+    "authors": "Roe, D Oluf and Markaki, Maria and Mjelle, Robin and S{\\ae}trom, P{\\aa}l and Tsamardinos, Ioannis and Lagani, Vincenzo",
+    "year": 2016,
+    "venue": "",
+    "link": "https://www.bibsonomy.org/bibtex/10f817b55c9b442b534651768e3d6037/mensxmachina"
+  },
+  {
+    "title": "Excerpts from the 1st international NTNU symposium on current and future clinical biomarkers of cancer: innovation and implementation, June 16th and 17th 2016, Trondheim, Norway",
+    "authors": "Robles, Ana I and {Standahl Olsen}, Karina and Tsui, Dana WT and Georgoulias, Vassilis and Creaney, Jenette and Dobra, Katalin and Vyberg, Mogens and Minato, Nagahiro and Anders, Robert A and B{\\o}rresen‑Dale, Anne‑Lise and Zhou, Jianwei and Saetrom, P{\\aa}l and {Schnack Nielsen}, Boye and Kirschner, Michaela B and Krokan, Hans E and Papadimitrakopoulou, Vassiliki and Tsamardinos, Ioannis and R{\\o}e, Oluf D",
+    "year": 2016,
+    "venue": "Journal of Translational Medicine",
+    "link": "https://www.bibsonomy.org/bibtex/98cde881f3992117fba117404c966296/mensxmachina"
+  },
+  {
+    "title": "Constraint-based Causal Discovery from Multiple Interventions over Overlapping Variable Sets",
+    "authors": "Triantafillou, Sofia and Tsamardinos, Ioannis",
+    "year": 2015,
+    "venue": "Journal of Machine Learning Research",
+    "link": "https://www.bibsonomy.org/bibtex/2011d37473e2ce71596a56051c53e4a0/mensxmachina"
+  },
+  {
+    "title": "Feature selection for longitudinal data",
+    "authors": "Tsamardinos, Ioannis and Tsagris, Michail and Lagani, Vincenzo",
+    "year": 2015,
+    "venue": "Proceedings of the 10th conference of the Hellenic Society for Computational Biology {\\&} Bioinformatics (HSCBB15)",
+    "link": "https://www.bibsonomy.org/bibtex/23c07480aea897d3b63d37d2f003e443/mensxmachina"
+  },
+  {
+    "title": "Bayesian Network Learning with Discrete Case-Control Data.",
+    "authors": "Borboudakis, Giorgos and Tsamardinos, Ioannis",
+    "year": 2015,
+    "venue": "Uncertainty in Artificial Intelligence (UAI)",
+    "link": "https://www.bibsonomy.org/bibtex/456f2fd39d47f4dc5fd36f1ca5e44891/mensxmachina"
+  },
+  {
+    "title": "Addressing the data-association problem for multiple sound source localization using DOA data estimates",
+    "authors": "Alexandridis, Anastasios and Borboudakis, Giorgos and Mouchtaris, Athanasios",
+    "year": 2015,
+    "venue": "23rd European Signal Processing Conference (EUSIPCO)",
+    "link": "https://www.bibsonomy.org/bibtex/622eccd20d79a3c3256efa953df47acb/mensxmachina"
+  },
+  {
+    "title": "MiRduplexSVM: A high-Performing miRNA-duplex prediction and evaluation methodology",
+    "authors": "Karathanasis, N and Tsamardinos, I and Poirazi, P",
+    "year": 2015,
+    "venue": "PloS one",
+    "link": "https://www.bibsonomy.org/bibtex/b4aad6ef0fc292d1003c84450b4b4890/mensxmachina"
+  },
+  {
+    "title": "Development and validation of risk assessment models for diabetes-related complications based on the DCCT/EDIC data",
+    "authors": "Lagani, Vincenzo and Chiarugi, Franco and Thomson, Shona and Fursse, Jo and Lakasing, Edin and Jones, Russell W. and Tsamardinos, Ioannis",
+    "year": 2015,
+    "venue": "Journal of Diabetes and its Complications 2015.",
+    "link": "https://www.bibsonomy.org/bibtex/cd4b7f972f2fb491eda2ab18637147bf/mensxmachina"
+  },
+  {
+    "title": "Realization of a service for the long-term risk assessment of diabetes-related complications",
+    "authors": "Lagani, Vincenzo and Chiarugi, Franco and Manousos, Dimitris and Verma, Vivek and Fursse, Joanna and Kostas, Marias and Tsamardinos, Ioannis",
+    "year": 2015,
+    "venue": "Journal of Diabetes and its Complications",
+    "link": "https://www.bibsonomy.org/bibtex/2311aa7807ae268a224a81782d88bea7/mensxmachina"
+  },
+  {
+    "title": "Performance-estimation properties of cross-validation based protocols with simultaneous hyper-parameter optimization",
+    "authors": "Tsamardinos, Ioannis and Rakhshani, Amin and Lagani, Vincenzo",
+    "year": 2015,
+    "venue": "International Journal on Artificial Intelligence Tools",
+    "link": "https://www.bibsonomy.org/bibtex/c3ce54d5e5ba5b97cd10d3208de739b1/mensxmachina"
+  },
+  {
+    "title": "Discovering and Exploiting Entailment Relationships in Multi-Label Learning",
+    "authors": "Papagiannopoulou, Christina and Tsoumakas, Grigorios and Tsamardinos, Ioannis",
+    "year": 2014,
+    "venue": "ACM SIGKDD Conference on Knowledge Discovery and Data Mining 2015 (KDD)",
+    "link": "https://www.bibsonomy.org/bibtex/96b6e84d91b5af7efb602eaefe51e5cc/mensxmachina"
+  },
+  {
+    "title": "Don't use a cannon to kill the miRNA mosquito",
+    "authors": "Karathanasis, N and Tsamardinos, I and Poirazi, P",
+    "year": 2014,
+    "venue": "Bioinformatics",
+    "link": "https://www.bibsonomy.org/bibtex/12404079301a6c3eace29c13f703f65a/mensxmachina"
+  },
+  {
+    "title": "Hidden treasures in “ancient” microarrays: gene-expression portrays biology and potential resistance pathways of major lung cancer subtypes and normal",
+    "authors": "Kerkentzes, K and Lagani, V and Tsamardinos, I and Vyberg, M and R{\\o}e, OD",
+    "year": 2014,
+    "venue": "Frontiers 2014",
+    "link": "https://www.bibsonomy.org/bibtex/a7da10e8266fb325ebdaa923449dbe07/mensxmachina"
+  },
+  {
+    "title": "Learning Neighborhoods of High Confidence in Constraint-Based Causal Discovery.",
+    "authors": "Triantafilou, S and Tsamardinos, I and Roumpelaki, A",
+    "year": 2014,
+    "venue": "Springer 2014",
+    "link": "https://www.bibsonomy.org/bibtex/7c70b36fba1e7e1362e070bd8079a036/mensxmachina"
+  },
+  {
+    "title": "Performance-estimation properties of cross-validation-based protocols with simultaneous hyper-parameter optimization",
+    "authors": "Tsamardinos, I and Rakhshani, A and Lagani, V",
+    "year": 2014,
+    "venue": "8th Hellenic Conference on Artificial Intelligence (SETN 2014).",
+    "link": "https://www.bibsonomy.org/bibtex/0c654f88a674bea8c18a7e76c9cb8394/mensxmachina"
+  },
+  {
+    "title": "T-ReCS: stable selection of dynamically formed groups of features with application to prediction of clinical outcomes.",
+    "authors": "Huang, Grace T. and Tsamardinos, Ioannis and Raghu, Vineet and Kaminski, Naftali and Benos, Panayiotis V.",
+    "year": 2014,
+    "venue": "Pacific Symposium on Biocomputing (PSB)",
+    "link": "https://www.bibsonomy.org/bibtex/3c81e3c323e325c5d1e30d66ae6d2043/mensxmachina"
+  },
+  {
+    "title": "GATA-1 genome-wide occupancy associates with distinct epigenetic profiles in mouse fetal liver erythropoiesis",
+    "authors": "Papadopoulos, Giorgio L and Karkoulia, Elena and Tsamardinos, Ioannis and Porcher, Catherine and Ragoussis, Jiannis and Bungert, Jorg and Strouboulis, John",
+    "year": 2013,
+    "venue": "Nucl. Acids Res",
+    "link": "https://www.bibsonomy.org/bibtex/21e1c87c70d7a2e78cf318352a180cc7/mensxmachina"
+  },
+  {
+    "title": "A systematic review of predictive risk models for diabetes complications based on large scale clinical studies",
+    "authors": "Lagani, Vincenzo and Koumakis, Lefteris and Chiarugi, Franco and Lakasing, Edin and Tsamardinos, Ioannis",
+    "year": 2013,
+    "venue": "Journal of Diabetes and Its Complications",
+    "link": "https://www.bibsonomy.org/bibtex/0fee57926890bb1d3be0135165a62777/mensxmachina"
+  },
+  {
+    "title": "Biomarker signature identification in “omics” data with multi-class outcome",
+    "authors": "Lagani, V and Kortas, G and Tsamardinos, I",
+    "year": 2013,
+    "venue": "Computational and Structural Biotechnology Journal, 2013, 6(7)",
+    "link": "https://www.bibsonomy.org/bibtex/f59da4d0345cfb95eee8059bb0c48eec/mensxmachina"
+  },
+  {
+    "title": "A bioinformatics approach for investigating the determinants of Drosha processing",
+    "authors": "Karathanasis, N. and Tsamardinos, I. and Poirazi, P",
+    "year": 2013,
+    "venue": "13th IEEE International Conference on Bioinformatics and Bioengineering (IEEE BIBE 2013)",
+    "link": "https://www.bibsonomy.org/bibtex/881890a1743b798cd2094e07496ae07a/mensxmachina"
+  },
+  {
+    "title": "DNA damage triggers a chronic autoinflammatory response, leading to fat depletion in NER progeria",
+    "authors": "Karakasilioti, I and Kamileri, I and Chatzinikolaou, G. and Kosteas, T. and Vergadi, E. and Robinson, A. R. and Tsamardinos, I. and Rozgaja, T. A. and Siakouli, S. and Tsatsanis, C. and Niedernhofer, L. J. and Garinis, G. A.",
+    "year": 2013,
+    "venue": "Cell Metabolism",
+    "link": "https://www.bibsonomy.org/bibtex/92fd18e183e51fc4e4fccb96a3d031c1/mensxmachina"
+  },
+  {
+    "title": "A vision and strategy for the virtual physiological human: 2012 update",
+    "authors": "Hunter, P. and Chapman, T and Coveney, PV and de Bono, B and Diaz, V and Fenner, J and Frangi, AF and Harris, P and Hose, R and Kohl, P and Lawford, P and McCormack, K and Mendes, M and Omholt, S and Quarteroni, A and Shublaq, N and Sk{\\aa}r, J and Stroetmann, K and Tegner, J and Thomas, SR and Tollis, I and Tsamardinos, I and van Beek, JHGM and Viceconti, M.",
+    "year": 2013,
+    "venue": "Interface Focus",
+    "link": "https://www.bibsonomy.org/bibtex/fbdda298ac0cacb556e0d42fe4729adf/mensxmachina"
+  },
+  {
+    "title": "Towards integrative causal analysis of heterogeneous data sets and studies",
+    "authors": "Tsamardinos, Ioannis and Triantafillou, Sofia and Lagani, Vincenzo",
+    "year": 2012,
+    "venue": "Journal of Machine Learning Research",
+    "link": "https://www.bibsonomy.org/bibtex/c123d94724c777656772bfe6b41db534/mensxmachina"
+  },
+  {
+    "title": "Discovering multiple, equivalent biomarker signatures.",
+    "authors": "Tsamardinos, I. and Lagani, V. and Pappas, D.",
+    "year": 2012,
+    "venue": "proceedings of the 7th conference of the Hellenic Society for Computational Biology {\\&} Bioinformatics",
+    "link": "https://www.bibsonomy.org/bibtex/8e276a79a2ea9bec41b4faffb7f0aab6/mensxmachina"
+  },
+  {
+    "title": "Chemosensitivity Prediction of Tumours Based on Expression, miRNA, and Proteomics Data",
+    "authors": "Tsamardinos, I. and Borboudakis, G. and Christodoulou, E. and R{\\o}e, O. D.",
+    "year": 2012,
+    "venue": "International Journal of Systems Biology and Biomedical Technologies (IJSBBT)",
+    "link": "https://www.bibsonomy.org/bibtex/56c4dc9a65e082ce1b2fc8a292c4968a/mensxmachina"
+  },
+  {
+    "title": "Learning from Mixture of Experimental Data: A Constraint–Based Approach",
+    "authors": "Lagani, V and Tsamardinos, I and Triantafillou, S",
+    "year": 2012,
+    "venue": "Artificial Intelligence: Theories and Applications: 7th Hellenic Conference on AI",
+    "link": "https://www.bibsonomy.org/bibtex/def0841ccbf004f960ba0cd437cc754e/mensxmachina"
+  },
+  {
+    "title": "A Methodological Framework for Statistical Analysis of Social Text Streams",
+    "authors": "Kleisarchaki, S. and Kotzinos, D. and Tsamardinos, I and Christophides, V",
+    "year": 2012,
+    "venue": "International Workshop on Information Search, Integration and Personalization (ISIP 2012)",
+    "link": "https://www.bibsonomy.org/bibtex/1a17bd8bb2a9b29337e1490344df8953/mensxmachina"
+  },
+  {
+    "title": "UCP3 polymorphisms, hand grip performance and survival at old age: Association analysis in two Danish middle aged and elderly cohorts",
+    "authors": "Dato, S. and Soerensen, M. and Montesanto, A. and Lagani, V. and Passarino, G. and Christensen, K. and Christiansen, L.",
+    "year": 2012,
+    "venue": "Joint Meeting AGI-SIBV-SIGA",
+    "link": "https://www.bibsonomy.org/bibtex/ff37273e55424a104db0df30fc5467c9/mensxmachina"
+  },
+  {
+    "title": "Frailty phenotypes in the elderly based on cluster analysis: a longitudinal study of two Danish cohorts. Evidence for a genetic influence on frailty",
+    "authors": "Dato, S. and Montesanto, A. and Lagani, V. and Jeune, B. and Christensen, K. and Passarino, G.",
+    "year": 2012,
+    "venue": "Age",
+    "link": "https://www.bibsonomy.org/bibtex/4f24543f88583093f2344473005c0e13/mensxmachina"
+  },
+  {
+    "title": "To feature space and back: Identifying top-weighted features in polynomial support vector machine models",
+    "authors": "{Brown, L.E., Tsamardinos, I., {\\&} Hardin}, D",
+    "year": 2012,
+    "venue": "Intelligent Data Analysis",
+    "link": "https://www.bibsonomy.org/bibtex/a8a0066f9f31f2db39c69d0963ac51dd/mensxmachina"
+  },
+  {
+    "title": "Tools and algorithms for causally interpreting directed edges in maximal ancestral graphs",
+    "authors": "Borboudakis, G. and Triantafillou, S. and Tsamardinos, I.",
+    "year": 2012,
+    "venue": "Sixth European Workshop on Probabilistic Graphical Models, (PGM 2012)",
+    "link": "https://www.bibsonomy.org/bibtex/9a1631fcbd398a8d1143fddd3f5d898d/mensxmachina"
+  },
+  {
+    "title": "Scoring and searching over Bayesian networks with causal and associative priors",
+    "authors": "Borboudakis, G and Tsamardinos, I",
+    "year": 2012,
+    "venue": "Uncertainty in Artificial Intelligence (UAI)",
+    "link": "https://www.bibsonomy.org/bibtex/8e653b8d7bbcb82047254e12e2d94790/mensxmachina"
+  },
+  {
+    "title": "Incorporating causal prior knowledge as path-constraints in bayesian networks and maximal ancestral graphs",
+    "authors": "Borboudakis, G and Tsamardinos, I",
+    "year": 2012,
+    "venue": "Proceedings of the 29th International Conference on Machine Learning, ICML 2012",
+    "link": "https://www.bibsonomy.org/bibtex/33e06f0a90109e7d3dea3523a245cdf2/mensxmachina"
+  },
+  {
+    "title": "SVM-based miRNA: MiRNA∗ duplex prediction",
+    "authors": "Armen, A. P. and Tsamardinos, I. and Karathanasis, N. and Poirazi, P.",
+    "year": 2012,
+    "venue": "IEEE 12th International Conference on Bioinformatics and Bioengineering, BIBE 2012",
+    "link": "https://www.bibsonomy.org/bibtex/664f071dbf289def04ab900e7537aab0/mensxmachina"
+  },
+  {
+    "title": "Introducing Integrative Causal Analysis for Co-Analyzing Heterogeneous Studies with an Application to Methylation and Gene Expression Mesothelioma Cancer Data.",
+    "authors": "Tsamardinos, I. and Roe, O. D. and Lagani, V.",
+    "year": 2011,
+    "venue": "6th Conference of the Hellenic Society for Computational Biology and Bioinformatics (HSCBB11)",
+    "link": "https://www.bibsonomy.org/bibtex/b262f6fa1fa7efe0e0ce4ecc55110d69/mensxmachina"
+  },
+  {
+    "title": "A Genome-Wide Study of the Effect of Aging on Level-2 Gene-Ontology Categories in Mice Using Mixed Models",
+    "authors": "Lagani, Vincenzo and Tsamardinos, Ioannis and Grammatikou, Magda and Garinis, George",
+    "year": 2011,
+    "venue": "The 5th International Workshop on Data Mining in Functional Genomics and Proteomics: Current Trends and Future Directions, ECML PKDD 2011",
+    "link": "https://www.bibsonomy.org/bibtex/e627413201308c4b22ab36633ea412b4/mensxmachina"
+  },
+  {
+    "title": "Use of SMS for Tsunami Early Warnings at a Table Top Exercise",
+    "authors": "Lagani, V. and Kontogiannis, V. and Argyropaidas, P. and Chronaki, C.",
+    "year": 2011,
+    "venue": "4th ICST International Conference on eHealth (eHealth 2011)",
+    "link": "https://www.bibsonomy.org/bibtex/56a013f9384824f68f8c0a14039a43c3/mensxmachina"
+  },
+  {
+    "title": "Risk assessment models for diabetes complications: A survey of available online tools",
+    "authors": "Koumakis, L. and Chiarugi, F. and Lagani, V. and Tsamardinos, I",
+    "year": 2011,
+    "venue": "2nd International ICST Conference on Wireless Mobile Communication and Healthcare (MobiHealth 2011)",
+    "link": "https://www.bibsonomy.org/bibtex/e33ebdab81736a155879a7151903ca6e/mensxmachina"
+  },
+  {
+    "title": "Using constraint optimization for conflict resolution and detail control in activity recognition",
+    "authors": "Filippaki, C and Antoniou, G and Tsamardinos, I",
+    "year": 2011,
+    "venue": "Second International Joint Conference on Ambient Intelligence 2011",
+    "link": "https://www.bibsonomy.org/bibtex/f8ace0c5333598e01a21f644d29664f1/mensxmachina"
+  },
+  {
+    "title": "Information-Preserving Techniques Improve Chemosensitivity Prediction of Tumours Based on Expression Profiles",
+    "authors": "Christodoulou, E. G. and R{\\o}e, O. D. and Folarin, A. and Tsamardinos, I",
+    "year": 2011,
+    "venue": "12th Engineering Applications of Neural Networks (EANN) / 7th Artificial Intelligence Applications and Innovations (AIAI) joint conferences, Workshop on Computational Intelligence Applications in Bioinformatics (CIAB 2011)",
+    "link": "https://www.bibsonomy.org/bibtex/68325a50de33ed86d9b5149968d6d030/mensxmachina"
+  },
+  {
+    "title": "A constraint-based approach to incorporate prior knowledge in causal models.",
+    "authors": "Borboudakis, G and Triantafilou, S and Lagani, V and Tsamardinos, I",
+    "year": 2011,
+    "venue": "Proceedings of the European Symposium on Artificial Neural Networks, Computational Intelligence and Machine Learning (ESANN)",
+    "link": "https://www.bibsonomy.org/bibtex/efbe449feece1a5d284b3e6838c40ffd/mensxmachina"
+  },
+  {
+    "title": "A unified approach to estimation and control of the False Discovery Rate in Bayesian network skeleton identification.",
+    "authors": "Armen, AP and Tsamardinos, I",
+    "year": 2011,
+    "venue": "Proceedings of the European Symposium on Artificial Neural Networks, Computational Intelligence and Machine Learning (ESANN)",
+    "link": "https://www.bibsonomy.org/bibtex/4176056383b75831a27a549f3c9dd48d/mensxmachina"
+  },
+  {
+    "title": "Permutation testing improves Bayesian network learning",
+    "authors": "Tsamardinos, I and Borboudakis, G",
+    "year": 2010,
+    "venue": "Proceedings of the 2010 European Conference on Machine Learning and Knowledge Discovery in Databases: Part III",
+    "link": "https://www.bibsonomy.org/bibtex/80093dbd1ab14f50f6b127c66eb9cb89/mensxmachina"
+  },
+  {
+    "title": "Learning causal structure from overlapping variable sets",
+    "authors": "Triantafullou, S. and Tsamardinos, I. and Tollis, I.G.",
+    "year": 2010,
+    "venue": "Proceedings of The Thirteenth International Conference on Artificial Intelligence and Statistics (AISTATS)",
+    "link": "https://www.bibsonomy.org/bibtex/90635b251bb6a2d27e842678bb34300d/mensxmachina"
+  },
+  {
+    "title": "Structure-based variable selection for survival data",
+    "authors": "Lagani, V and Tsamardinos, I",
+    "year": 2010,
+    "venue": "Bioinformatics",
+    "link": "https://www.bibsonomy.org/bibtex/a5a43dfa45513e26eef4390e3c3a7fdf/mensxmachina"
+  },
+  {
+    "title": "A vision and strategy for the virtual physiological human in 2010 and beyond",
+    "authors": "Hunter, P. and Coveney, P.V. and de Bono, B. and Diaz, V. and Fenner, J. and Frangi, A.F. and Harris, P. and Hose, R. and Kohl, P. and Lawford, P. and McCormack, K. and Mendes, M. and Omholt, S. and Quarteroni, A. and Skar, J. and Tegner, J. and Randall, S.Th. and Tollis, I.G. and Tsamardinos, I. and van Beek, M.",
+    "year": 2010,
+    "venue": "Philosophical Transactions of the Royal Society A: Mathematical, Physical and Engineering Sciences",
+    "link": "https://www.bibsonomy.org/bibtex/4d441689fd11d0ee1ce557cd60887095/mensxmachina"
+  },
+  {
+    "title": "MatureBayes: a probabilistic algorithm for identifying the mature miRNA within novel precursors",
+    "authors": "Gkirtzou, K and Tsamardinos, I and Tsakalides, P and Poirazi, P",
+    "year": 2010,
+    "venue": "PloS one",
+    "link": "https://www.bibsonomy.org/bibtex/bb47ad98920dd3d727cc5ff9518b2777/mensxmachina"
+  },
+  {
+    "title": "The morphological classification of heartbeats as dominant and non-dominant in ECG signals",
+    "authors": "Chiarugi, F. and Emmanouilidou, D. and Tsamardinos, I.",
+    "year": 2010,
+    "venue": "Physiological Measurement",
+    "link": "https://www.bibsonomy.org/bibtex/9a2038aeebea069e0ab0a1fa49c0c170/mensxmachina"
+  },
+  {
+    "title": "Local causal and markov blanket induction for causal discovery and feature selection for classification part ii: Analysis and extensions",
+    "authors": "Aliferis, C.F. and Statnikov, A.R. and Tsamardinos, I. and Mani, S. and Koutsoukos, X.D.",
+    "year": 2010,
+    "venue": "The Journal of Machine Learning Research",
+    "link": "https://www.bibsonomy.org/bibtex/4567b233fe389f3e6694a3f39581f38f/mensxmachina"
+  },
+  {
+    "title": "Local causal and markov blanket induction for causal discovery and feature selection for classification part i: Analysis and extensions",
+    "authors": "Aliferis, C.F. and Statnikov, A.R. and Tsamardinos, I. and Mani, S. and Koutsoukos, X.D.",
+    "year": 2010,
+    "venue": "The Journal of Machine Learning Research",
+    "link": "https://www.bibsonomy.org/bibtex/270fda0f94b6b8bc193e9060c451497b/mensxmachina"
+  },
+  {
+    "title": "The possibility of integrative causal analysis: Learning from different datasets and studies",
+    "authors": "Tsamardinos, I and Triantafillou, S",
+    "year": 2009,
+    "venue": "Journal of Engineering Intelligent Systems",
+    "link": "https://www.bibsonomy.org/bibtex/c50da6faf4ad78fe6c02157d854d5b03/mensxmachina"
+  },
+  {
+    "title": "Multi-source causal analysis: Learning Bayesian networks from multiple datasets",
+    "authors": "Tsamardinos, I and Mariglis, AP",
+    "year": 2009,
+    "venue": "Artificial Intelligence Applications and Innovations III, Proceedings of the 5TH IFIP Conference on Artificial Intelligence Applications and Innovations",
+    "link": "https://www.bibsonomy.org/bibtex/2490abb54445eb9b9aa4025a866f730c/mensxmachina"
+  },
+  {
+    "title": "Factors influencing the statistical power of complex data analysis protocols for molecular signature development from microarray data",
+    "authors": "Aliferis, C.F. and Statnikov, A.R. and Tsamardinos, I. and Schildcrout, J.S. and Shepherd, B.E. and Harrell, Jr F.E.",
+    "year": 2009,
+    "venue": "PloS one",
+    "link": "https://www.bibsonomy.org/bibtex/64db6c934a5cfeb7b05ca9be15717cbf/mensxmachina"
+  },
+  {
+    "title": "Bounding the False Discovery Rate in Local Bayesian Network Learning.",
+    "authors": "Tsamardinos, I and Brown, LE",
+    "year": 2008,
+    "venue": "Proceedings of the Twenty-Third AAAI Conference on Artificial Intelligence",
+    "link": "https://www.bibsonomy.org/bibtex/c6e5526f4e147ee84ff98f7609703f9d/mensxmachina"
+  },
+  {
+    "title": "Morphological classification of heartbeats using similarity features and a two-phase decision tree",
+    "authors": "Chiarugi, F. and Emmanouilidou, D. and Tsamardinos, I. and Tollis, I.G",
+    "year": 2008,
+    "venue": "Computers in Cardiology",
+    "link": "https://www.bibsonomy.org/bibtex/12a0053de8b9cd6c1274cc23f5d38c5b/mensxmachina"
+  },
+  {
+    "title": "A Strategy for Making Predictions Under Manipulation.",
+    "authors": "Brown, LE and Tsamardinos, I",
+    "year": 2008,
+    "venue": "In JMLR: Workshop and Conference Proceedings",
+    "link": "https://www.bibsonomy.org/bibtex/5b99910433f1d593510f74a41d6a453d/mensxmachina"
+  },
+  {
+    "title": "The max-min hill-climbing Bayesian network structure learning algorithm",
+    "authors": "Tsamardinos, I and Brown, LE and Aliferis, CF",
+    "year": 2006,
+    "venue": "Machine learning",
+    "link": "https://www.bibsonomy.org/bibtex/e2c18d415541ed81713bdb0c9b85c554/mensxmachina"
+  },
+  {
+    "title": "Generating Realistic Large Bayesian Networks by Tiling.",
+    "authors": "Tsamardinos, I and Statnikov, AR and Brown, LE and Aliferis, CF",
+    "year": 2006,
+    "venue": "In The 19th International FLAIRS Conference",
+    "link": "https://www.bibsonomy.org/bibtex/5452fbf6ccb3501c61c0118b5e17bcfd/mensxmachina"
+  },
+  {
+    "title": "Challenges in the analysis of mass-throughput data: a technical commentary from the statistical machine learning perspective",
+    "authors": "Aliferis, CF and Statnikov, A and Tsamardinos, I",
+    "year": 2006,
+    "venue": "Cancer Informatics",
+    "link": "https://www.bibsonomy.org/bibtex/523b67504e61dad87adedcc4a7adbb75/mensxmachina"
+  },
+  {
+    "title": "GEMS: a system for automated cancer diagnosis and biomarker discovery from microarray gene expression data",
+    "authors": "Statnikov, A. and Tsamardinos, I. and Dosbayev, Y. and Aliferis, C. F",
+    "year": 2005,
+    "venue": "International journal of medical informatics",
+    "link": "https://www.bibsonomy.org/bibtex/fe2695ceba306c111171f04ab0510082/mensxmachina"
+  },
+  {
+    "title": "A comprehensive evaluation of multicategory classification methods for microarray gene expression cancer diagnosis",
+    "authors": "Statnikov, A. and Aliferis, C. F. and Tsamardinos, I. and Hardin, D. and Levy, S",
+    "year": 2005,
+    "venue": "Bioinformatics",
+    "link": "https://www.bibsonomy.org/bibtex/3808d2ca8ef5429ce10d7e308b2183c4/mensxmachina"
+  },
+  {
+    "title": "Efficiently dispatching plans encoded as simple temporal problems",
+    "authors": "Pollack, ME and Tsamardinos, I",
+    "year": 2005,
+    "venue": "Intelligent Techniques for Planning",
+    "link": "https://www.bibsonomy.org/bibtex/a78eae5f4415a9bad6787860ddcb9335/mensxmachina"
+  },
+  {
+    "title": "A comparison of novel and state-of-the-art polynomial Bayesian network learning algorithms",
+    "authors": "Brown, LE and Tsamardinos, I and Aliferis, CF",
+    "year": 2005,
+    "venue": "In Proceedings of the national conference on artificial intelligence",
+    "link": "https://www.bibsonomy.org/bibtex/37903cfa409c02acb244b780a0017ca2/mensxmachina"
+  },
+  {
+    "title": "Text categorization models for high-quality article retrieval in internal medicine",
+    "authors": "Aphinyanaphongs, Y. and Tsamardinos, I. and Statnikov, A. and Hardin, D. and Aliferis, C. F",
+    "year": 2005,
+    "venue": "Journal of the American Medical Informatics Association",
+    "link": "https://www.bibsonomy.org/bibtex/410e0ecdb1308708c13739d8b99cdda0/mensxmachina"
+  },
+  {
+    "title": "Methods for multi-category cancer diagnosis from gene expression data: a comprehensive evaluation to inform decision support system development",
+    "authors": "Statnikov, A and Aliferis, CF and Tsamardinos, I",
+    "year": 2004,
+    "venue": "in Proceedings of the 11th World Congress in Medical Informatics (MEDINFO '04)",
+    "link": "https://www.bibsonomy.org/bibtex/574104da3d2d801ecf0749d9aa173855/mensxmachina"
+  },
+  {
+    "title": "A theoretical characterization of linear SVM-based feature selection",
+    "authors": "Hardin, D and Tsamardinos, I and Aliferis, CF",
+    "year": 2004,
+    "venue": "The Twenty-First International Conference on Machine Learning (ICML 2004)",
+    "link": "https://www.bibsonomy.org/bibtex/fcd4d72209d7fead815d8b263ce1d4d1/mensxmachina"
+  },
+  {
+    "title": "A novel algorithm for scalable and accurate Bayesian network learning",
+    "authors": "Brown, LE and Tsamardinos, I and Aliferis, CF",
+    "year": 2004,
+    "venue": "in Proceedings of 11th World Congress in Medical Informatics (MEDINFO '04)",
+    "link": "https://www.bibsonomy.org/bibtex/56c42b78901dc469545733988fedf496/mensxmachina"
+  },
+  {
+    "title": "Towards Principled Feature Selection: Relevancy, Filters and Wrappers.",
+    "authors": "Tsamardinos, I and Aliferis, CF",
+    "year": 2003,
+    "venue": "",
+    "link": "https://www.bibsonomy.org/bibtex/94cf2d3b6cb9b532f858589cd9040028/mensxmachina"
+  },
+  {
+    "title": "Assessing the probability of legal execution of plans with temporal uncertainty",
+    "authors": "Tsamardinos, I. and Pollack, M. E. and Ramakrishnan, S.",
+    "year": 2003,
+    "venue": "ICAPS03 Workshop on Planning under Un-certainty and Incomplete Information",
+    "link": "https://www.bibsonomy.org/bibtex/11c0cfa3a8b471d19dd2e5fe238753c9/mensxmachina"
+  },
+  {
+    "title": "Efficient solution techniques for disjunctive temporal reasoning problems",
+    "authors": "Tsamardinos, I and Pollack, ME",
+    "year": 2003,
+    "venue": "Artificial Intelligence",
+    "link": "https://www.bibsonomy.org/bibtex/a3a0d51bb29071e61eb4a40d08cc1fd9/mensxmachina"
+  },
+  {
+    "title": "Time and sample efficient discovery of Markov blankets and direct causal relations",
+    "authors": "Tsamardinos, I and Aliferis, CF and Statnikov, A",
+    "year": 2003,
+    "venue": "The Ninth ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD 2003)",
+    "link": "https://www.bibsonomy.org/bibtex/0986575ecec243520deae406ff789aef/mensxmachina"
+  },
+  {
+    "title": "CTP: A new constraint-based formalism for conditional, temporal planning",
+    "authors": "Tsamardinos, I and Vidal, T and Pollack, ME",
+    "year": 2003,
+    "venue": "Special Issue on Planning of Constraints Journal",
+    "link": "https://www.bibsonomy.org/bibtex/0f6f8073f8cae23c8463af1d2d48f880/mensxmachina"
+  },
+  {
+    "title": "Algorithms for Large Scale Markov Blanket Discovery.",
+    "authors": "Tsamardinos, I and Aliferis, CF and Statnikov, AR and Statnikov, E",
+    "year": 2003,
+    "venue": "FLAIRS conference",
+    "link": "https://www.bibsonomy.org/bibtex/2ff0ea24c5e1d091e48113958abd042c/mensxmachina"
+  },
+  {
+    "title": "Autominder: An intelligent cognitive orthotic system for people with memory impairment",
+    "authors": "Pollack, M. E. and Brown, L. and Colbry, D. and McCarthy, C. E. and Orosz, C. and Peintner, B. and Ramakrishnan, S and Tsamardinos, I.",
+    "year": 2003,
+    "venue": "Robotics and Autonomous Systems",
+    "link": "https://www.bibsonomy.org/bibtex/da9f187c1d84768cfc034a91f02d7411/mensxmachina"
+  },
+  {
+    "title": "Identifying Markov blankets with decision tree induction",
+    "authors": "Frey, Lewis and Fisher, Douglas and Tsamardinos, Ioannis and Aliferis, Constantin F. and Statnikov, Alexander",
+    "year": 2003,
+    "venue": "The Third IEEE International Conference on Data Mining (ICDM'03)",
+    "link": "https://www.bibsonomy.org/bibtex/a9d439786ce9a8a6f8c7aefc314511b2/mensxmachina"
+  },
+  {
+    "title": "HITON: a novel Markov Blanket algorithm for optimal variable selection",
+    "authors": "Aliferis, Constantin F. and Tsamardinos, Ioannis and Statnikov, Alexander",
+    "year": 2003,
+    "venue": "the American Medical Informatics Association meeting 2003 (AMIA 2003)",
+    "link": "https://www.bibsonomy.org/bibtex/0ecc8424850ee972bad77af01b623696/mensxmachina"
+  },
+  {
+    "title": "Causal Explorer: A Causal Probabilistic Network Learning Toolkit for Biomedical Discovery.",
+    "authors": "Aliferis, CF and Tsamardinos, I and Statnikov, AR and Brown, LE",
+    "year": 2003,
+    "venue": "International Conference on Mathematics and Engineering Techniques in Medicine and Biolog-ical Sciences (METMBS '03)",
+    "link": "https://www.bibsonomy.org/bibtex/0b89ce976f3a19985af45d9a47915ebb/mensxmachina"
+  },
+  {
+    "title": "Why Classification Models Using Array Gene Expression Data Perform So Well: A Preliminary Investigation of Explanatory Factors.",
+    "authors": "Aliferis, C. F. and Tsamardinos, I. and Massion, P. and Statnikov, A. and Hardin, D.",
+    "year": 2003,
+    "venue": "International Conference on Mathematics and Engineering Techniques in Medicine and Biological Sciences (METMBS '03)",
+    "link": "https://www.bibsonomy.org/bibtex/a9cef44adcf3dc05363e0148ae991611/mensxmachina"
+  },
+  {
+    "title": "Execution-time plan management for a cognitive orthotic system",
+    "authors": "Pollack, Martha E. and McCarthy, Colleen E. and Ramakrishnan, Sailesh and Tsamardinos, Ioannis",
+    "year": 2002,
+    "venue": "Plan-Based Control of Robotic Agents",
+    "link": "https://www.bibsonomy.org/bibtex/a6b022b252d13ab185e7fcb3c4cdf3cd/mensxmachina"
+  },
+  {
+    "title": "A scheme for integrating e-services in establishing virtual enterprises",
+    "authors": "Berfield, Alan and Chrysanthis, Panos K. and Tsamardinos, Ioannis and Pollack, Martha E. and Banerjee, Sujata",
+    "year": 2002,
+    "venue": "12th International Workshop on Research Issues on Data Engineering (RIDE-02)",
+    "link": "https://www.bibsonomy.org/bibtex/643b74b1ea982a58569fd1eb48451aac/mensxmachina"
+  },
+  {
+    "title": "Autominder: A planning, monitoring, and reminding assistive agent",
+    "authors": "Pollack, M. E. and McCarthy, C. E . and Ramakrishnan, S. and Tsamardinos, I. and Brown, L. and Carrion, S. and Colbry, D. and Orosz, C. and Peintner, B.",
+    "year": 2002,
+    "venue": "Proceedings of the 7th International Conference on Intelligent Autonomous Systems (IAS)",
+    "link": "https://www.bibsonomy.org/bibtex/12687e5d1237733b7906110abba0df9c/mensxmachina"
+  },
+  {
+    "title": "Machine learning models for lung cancer classification using array comparative genomic hybridization.",
+    "authors": "Aliferis, Constantin F. and Tsamardinos, Ioannis and Mansion, Pierre and Statnikov, Alexander and Hardin, Douglas",
+    "year": 2002,
+    "venue": "16th International FLAIRS Conference",
+    "link": "https://www.bibsonomy.org/bibtex/46dd3fcd857ee0c1a2cf798ae33b79b8/mensxmachina"
+  },
+  {
+    "title": "A probabilistic approach to robust execution of temporal plans with uncertainty",
+    "authors": "Tsamardinos, I",
+    "year": 2002,
+    "venue": "Proceedings of the 2nd Greek National Conference on Artificial Intelligence",
+    "link": "https://www.bibsonomy.org/bibtex/7869bcab99f80ab91b1c342618623805/mensxmachina"
+  },
+  {
+    "title": "Flexible dispatch of disjunctive plans",
+    "authors": "Tsamardinos, I and Pollack, ME and Ganchev, P",
+    "year": 2001,
+    "venue": "Proceedings of Sixth European Conference on Planning 2001 (ECP-01)",
+    "link": "https://www.bibsonomy.org/bibtex/04a454d32f04f579fb9a47c1a8d505b2/mensxmachina"
+  },
+  {
+    "title": "Merging Plans with Quantitative Temporal Constraints, Temporally Extended Actions, and Conditional Branches.",
+    "authors": "Tsamardinos, I and Pollack, ME and Horty, JF",
+    "year": 2000,
+    "venue": "Proceedings of the 5th International Conference on AI Planning and Scheduling (AIPS 2000), Breckenridge, CO, April, 2000",
+    "link": "https://www.bibsonomy.org/bibtex/db61347457b16b9a9d506bbd0670ef7c/mensxmachina"
+  },
+  {
+    "title": "Adjustable autonomy for a plan management agent",
+    "authors": "Pollack, ME and Tsamardinos, I and Horty, JF",
+    "year": 1999,
+    "venue": "Proceedings of the 1999 AAAI Spring Symposium on Adjustable Autonomy",
+    "link": "https://www.bibsonomy.org/bibtex/75a957bcb58791d35f93d88dffce3ceb/mensxmachina"
+  },
+  {
+    "title": "Bicchieri-The\\_Potential\\_for\\_the\\_Evolution\\_of\\_Co-operatin.pdf",
+    "authors": "Bicchieri, C. and Pollack, M. and Rovelli, C. and Tsamardinos, I.",
+    "year": 1998,
+    "venue": "International Journal of Computer-Human Systems",
+    "link": "https://www.bibsonomy.org/bibtex/a41f3544fbae8ab5101e2eeab94bb7d5/mensxmachina"
+  },
+  {
+    "title": "Fast transformation of temporal plans for efficient execution",
+    "authors": "Tsamardinos, I and Muscettola, N and Morris, P",
+    "year": 1998,
+    "venue": "Proceedings of the 15th National Conference on Artificial Intelli-gence (AAAI'98)",
+    "link": "https://www.bibsonomy.org/bibtex/37dcee99a6de853d92a735d6228be384/mensxmachina"
+  },
+  {
+    "title": "Reformulating temporal plans for efficient execution",
+    "authors": "Muscettola, N and Morris, P and Tsamardinos, I",
+    "year": 1998,
+    "venue": "Proceedings of the 6th Conference Principles of Knowledge Represen-tation and Reasoning (KR)",
+    "link": "https://www.bibsonomy.org/bibtex/343763a35e2fb30b12932b15849799d2/mensxmachina"
+  },
+  {
+    "title": "Development of an Integrated Image Management and Communication System on Crete",
+    "authors": "Orphanoudakis, S. and Tsiknakis, M. and Chronaki, C. and Kostomanolakis, S. and Zikos, M. and Tsamardinos, I",
+    "year": 1995,
+    "venue": "Proceedings of Computed Aided Radiology '95",
+    "link": "https://www.bibsonomy.org/bibtex/d4e3d4d0d8cb672f3927064bac615341/mensxmachina"
+  }
+]

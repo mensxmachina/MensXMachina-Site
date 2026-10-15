@@ -36,42 +36,6 @@
     "color": "#8e44ad"
   },
   {
-    "id": "fotopoulos",
-    "name": "John Fotopoulos",
-    "role": "Technical Staff",
-    "group": "staff",
-    "photo": "photos/fotopoulos.jpg",
-    "email": "",
-    "url": "#",
-    "bio": "Technical staff, Department of Computer Science, University of Crete.",
-    "initials": "JF",
-    "color": "#27ae60"
-  },
-  {
-    "id": "myrtakis",
-    "name": "Nikos Myrtakis",
-    "role": "PhD Student",
-    "group": "phd",
-    "photo": "photos/myrtakis.jpg",
-    "email": "",
-    "url": "#",
-    "bio": "PhD student, Department of Computer Science, University of Crete. Research: anomaly detection, data management.",
-    "initials": "NM",
-    "color": "#e67e22"
-  },
-  {
-    "id": "papoutsoglou",
-    "name": "Georgios Papoutsoglou",
-    "role": "PhD Student",
-    "group": "phd",
-    "photo": "photos/papoutsoglou.jpg",
-    "email": "",
-    "url": "#",
-    "bio": "PhD student, Department of Computer Science, University of Crete. Research: bioinformatics, AutoML.",
-    "initials": "GP",
-    "color": "#1abc9c"
-  },
-  {
     "id": "biza",
     "name": "Konstantina Biza",
     "role": "PhD Student",

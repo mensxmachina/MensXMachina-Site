@@ -1,0 +1,35 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Konstantina Biza — mens X machina</title><style>*{box-sizing:border-box}body{margin:0;font:15px/1.7 Arial,sans-serif;color:#1a2433;background:#f0f5fb}a{color:#1a4a7a}header{background:#1a2433;color:white;padding:24px}header div,main{max-width:1100px;margin:auto}header a{color:white;text-decoration:none}header strong{font-size:28px}nav{display:flex;gap:24px;margin-top:12px}main{padding:32px 20px}h1,h2{color:#1a4a7a}h1{font-size:32px}h2{border-bottom:2px solid #1a4a7a;padding-bottom:8px}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}.card,.panel{background:white;padding:28px;border:1px solid #dce6f0}.card{text-align:center}.avatar{width:110px;height:110px;border-radius:50%;object-fit:cover;margin:0 auto 16px;display:block}.initials{background:#1a4a7a;color:white;line-height:110px;font-size:32px;text-align:center}.role{color:#5a6e84}.profile{display:grid;grid-template-columns:230px minmax(0,1fr);gap:32px}.bio{white-space:pre-line;overflow-wrap:anywhere}label{display:block;font-weight:bold;margin:16px 0 5px}input,select,textarea{width:100%;padding:12px;font:inherit;border:1px solid #aebed0}button,.button{background:#1a4a7a;color:white;border:0;padding:12px 20px;font:inherit;cursor:pointer;display:inline-block;margin-top:20px}.notice{color:#5a6e84}form{max-width:720px}.contact{overflow-wrap:anywhere}@media(max-width:700px){.grid,.profile{grid-template-columns:1fr}nav{flex-wrap:wrap}}</style><link rel="stylesheet" href="../navigation.css"></head><body><div id="header">
+  <div class="inner">
+    <div id="logo">
+      <div class="name">mens <span>X</span> machina</div>
+      <div class="tagline">Machine Learning Research Group &nbsp;·&nbsp; University of Crete</div>
+    </div>
+    <div id="header-logos">
+      <div class="inst-badge"><strong>University<br>of Crete</strong></div>
+    </div>
+  </div>
+</div>
+
+<nav id="nav" aria-label="Main navigation"><div class="inner"><ul>
+<li data-page="home"><a href="../index.html">Home</a></li>
+<li><a href="../index.html#research">Research ▾</a><ul>
+<li><a href="../projects.html#proj-001">Causal Discovery</a></li>
+<li><a href="../projects.html#proj-002">AutoML</a></li>
+<li><a href="../projects.html#proj-005">Bioinformatics</a></li>
+<li><a href="../projects.html#proj-009">Feature Selection</a></li></ul></li>
+<li data-page="people" class="active"><a href="../team.html">People ▾</a><ul>
+<li><a href="../team.html">Full Team</a></li>
+<li><a href="../team.html#faculty">Faculty</a></li>
+<li><a href="../team.html#phd">PhD Students</a></li>
+<li><a href="../team.html#staff">Staff</a></li>
+<li><a href="../team.html#alumni">Alumni</a></li></ul></li>
+<li><a href="../index.html#publications">Publications ▾</a><ul>
+<li><a href="../index.html#publications">Recent Publications</a></li>
+<li><a href="https://www.bibsonomy.org/user/mensxmachina" target="_blank" rel="noopener">All Publications</a></li></ul></li>
+<li data-page="software"><a href="../software.html">Software</a></li>
+<li data-page="projects"><a href="../projects.html">Projects ▾</a><ul>
+<li><a href="../projects.html#current-projects">Current Projects</a></li>
+<li><a href="../projects.html#past-projects">Past Projects</a></li></ul></li>
+<li><a href="../index.html#news">News</a></li>
+<li><a href="../index.html#contact">Contact</a></li>
+</ul></div></nav><main><a href="../team.html">← Full team</a><h1>Konstantina Biza</h1><div class="profile"><aside class="panel"><span class="avatar initials">KB</span><p class="role">PhD Student</p></aside><article class="panel"><h2>Biography</h2><p class="bio">PhD student, Department of Computer Science, University of Crete. 2024 Excellence Award recipient.</p><h2>Contact</h2><div class="contact"><p>Contact the group for enquiries.</p></div></article></div></main></body></html>
